@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { motion, useTransform } from 'framer-motion';
 import './Home.css';
 import _ from 'lodash';
 import Preview from './Preview.js'
@@ -157,8 +158,17 @@ class Home extends Component {
           <div id='arrow-wrapper' onClick={this.handleClick} style={{'visibility': visibility}}>
             <img style={{'width': '100%'}} src={arrow} alt='arrow'/>
           </div>
-
-          <div id='landing-bg'>
+          <motion.div id='landing-bg'
+            animate={{
+              background: [
+                'linear-gradient(140deg, rgba(242,242,242,1) 0%, rgba(239,231,255,1) 50%, rgba(234,246,255,1) 100%)',
+                'linear-gradient(100deg, rgba(242,242,242,1) 0%, rgba(239,231,255,1) 30%, rgba(234,246,255,1) 80%)',
+                'linear-gradient(80deg, rgba(239,231,255,1) 0%, rgba(234,246,255,1) 40%, rgba(242,242,242,1) 80%)',
+                'linear-gradient(110deg, rgba(234,246,255,1) 0%, rgba(242,242,242,1) 50%, rgba(239,231,255,1) 80%)'
+              ]
+            }}
+            transition={{ duration: 3, flip: Infinity }}
+          >
             <div id='landing-text'>
               <p className='landing'>
                 I'm <span className='blue-text'>Lois</span>, a designer based in Berkeley, California.
@@ -166,7 +176,7 @@ class Home extends Component {
                 Marketing Web team.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           <div className='fade' id='proj-landscape'>
           {/* PROJECTS SECTION */}
