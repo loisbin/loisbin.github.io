@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95341a8459b6d68ed158853e08b20896",
+    "revision": "8fd60bb4cfa34287fe5e77b241b37761",
     "url": "/index.html"
   },
   {
-    "revision": "8ab5884027d1c35ddc49",
-    "url": "/static/css/main.8ba63a22.chunk.css"
+    "revision": "60a208f867b2878cfca6",
+    "url": "/static/css/main.57e9c149.chunk.css"
   },
   {
-    "revision": "9b3d8cb196b8015b8014",
-    "url": "/static/js/2.d2fa3682.chunk.js"
+    "revision": "d35954342cad772c5bbd",
+    "url": "/static/js/2.84fd2ee5.chunk.js"
   },
   {
     "revision": "23e75ecee431f5dfb96fa2deb80f243b",
-    "url": "/static/js/2.d2fa3682.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.84fd2ee5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ab5884027d1c35ddc49",
-    "url": "/static/js/main.c221687b.chunk.js"
+    "revision": "60a208f867b2878cfca6",
+    "url": "/static/js/main.97274683.chunk.js"
   },
   {
     "revision": "4f2b1704eab49d50853b",
@@ -86,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6632b0e3d29a810edf6278ab6ba10790",
     "url": "/static/media/friends.6632b0e3.png"
+  },
+  {
+    "revision": "98add260b834bdca6c76e96ee981dfff",
+    "url": "/static/media/funnel cake.98add260.png"
   },
   {
     "revision": "7a05cdbc7116ac0ae758fbecb8e4e866",
@@ -176,6 +180,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/pain-points.8d0bd664.png"
   },
   {
+    "revision": "15e1a0194fb8e91197cfb0faffb52e45",
+    "url": "/static/media/palomar.15e1a019.png"
+  },
+  {
     "revision": "736dafa8b3b58157e7110161cdfa2970",
     "url": "/static/media/personas.736dafa8.png"
   },
@@ -232,8 +240,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/snackpass-cover.6b242057.png"
   },
   {
+    "revision": "6c425ef5deddf9545f3533ec2378f8f3",
+    "url": "/static/media/square.6c425ef5.jpg"
+  },
+  {
     "revision": "171a111d19d6feec49ad931c1068fa96",
     "url": "/static/media/style-guide.171a111d.png"
+  },
+  {
+    "revision": "ac1bd73b34e112c2c707d8f51b8f5799",
+    "url": "/static/media/surfers.ac1bd73b.png"
   },
   {
     "revision": "5f3e6e335d30d7ef07ae0250a3565be9",
