@@ -41,7 +41,7 @@
   position: fixed;
   top: 1%;
   left: 3%;
-  font-family: moderno-fb, serif;
+  font-family: 'Yeseva One', serif;
   color: black;
 }
 
@@ -60,14 +60,13 @@
 .photo-img {
   width: 100%;
   margin-bottom: 5%;
-  opacity: 0;
 }
 
 .img-loc1 {
   z-index: 1;
   position: relative;
   color: white;
-  font-family: moderno-fb;
+  font-family: 'Yeseva One';
   font-size: 1.5em;
   top: -19%;
   margin: auto;
@@ -91,16 +90,9 @@
 
 .img-title {
   color: white;
-  font-family: moderno-fb, serif;
+  font-family: 'Yeseva One', serif;
   font-size: 2.5em;
   margin: 0;
-}
-
-.mobile-back {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 8%;
 }
 
 #body-photos {
@@ -142,6 +134,16 @@
 #text-venice {
   text-align: center;
   top: 5%;
+}
+
+/* TABLET PORTRAIT */
+@media screen and (min-width: 600px) and (orientation: portrait) {
+
+}
+
+/* TABLET LANDSCAPE */
+@media screen and (min-width: 600px) and (orientation: landscape) {
+
 }
 
 @media screen and (orientation: landscape) {
@@ -198,7 +200,7 @@
     position: fixed;
     top: 3%;
     left: 3%;
-    font-family: moderno-fb, serif;
+    font-family: 'Yeseva One', serif;
     color: black;
   }
 
@@ -215,16 +217,14 @@
   }
 
   .photo-img {
-    width: 100%;
-    margin-bottom: 5%;
-    opacity: 0;
+
   }
 
   .img-loc1 {
     z-index: 1;
     position: relative;
     color: white;
-    font-family: moderno-fb;
+    font-family: 'Yeseva One';
     font-size: 1.5em;
     top: -19%;
     margin: auto;
@@ -248,13 +248,9 @@
 
   .img-title {
     color: white;
-    font-family: moderno-fb, serif;
+    font-family: 'Yeseva One', serif;
     font-size: 2.5em;
     margin: 0;
-  }
-
-  .mobile-back {
-    display: none;
   }
 
   #body-photos {

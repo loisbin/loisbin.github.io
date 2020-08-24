@@ -48,7 +48,7 @@ class Enrollment extends Component {
 
   handleScroll() {
     let position = document.getElementById('body-proj').scrollTop;
-    let iframe = document.getElementsByClassName('iframe-wrapper')[0].offsetTop;
+    //let iframe = document.getElementsByClassName('iframe-wrapper')[0].offsetTop;
     const links = document.getElementsByClassName('links')[0];
 
     if (position > window.innerHeight*.9) {
@@ -63,9 +63,11 @@ class Enrollment extends Component {
       this.setState({'visibility': 'hidden'});
     }
 
+    /*
     if (position + window.innerHeight > iframe) {
       this.setState({'display': 'block'});
     }
+    */
 
     //FADE IN
     const fades = document.getElementsByClassName('fade');
@@ -316,6 +318,7 @@ class Enrollment extends Component {
           <br/>
 
           {/* Xd prototype */}
+          {/*
           <p className='text'>
             Click around!
           </p>
@@ -328,6 +331,7 @@ class Enrollment extends Component {
           <a className='prototype-link' target="_blank" href='https://xd.adobe.com/embed/b2cf6654-bbd5-409d-683d-a7b6cca89566-c4fe/'>
             Link to prototype ⟶
           </a>
+          */}
           <br/><br/><br/><br/>
 
         </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './Photos.css';
 import arrow from './misc/arrow.png';
 import back from './misc/back.png';
@@ -22,6 +23,8 @@ import field from './photos/field.png';
 import bookstore from './photos/bookstore.jpg';
 import car from './photos/car.png';
 import flora from './photos/flora.jpg';
+import palomar from './photos/palomar.png';
+import oceanside from './photos/oceanside.png';
 
 class Photos extends Component {
 
@@ -49,6 +52,8 @@ class Photos extends Component {
   componentDidMount() {
     document.title = "Photos | Lois Bin";
 
+    /*
+
     const imgs = document.getElementsByClassName('photo-img');
     const fade = {opacity: ['0', '1']};
     const animationOpts = {duration: 800, easing: 'ease-in-out', fill: 'forwards'};
@@ -56,6 +61,8 @@ class Photos extends Component {
     for (let i = 0; i < imgs.length; i++) {
       imgs[i].animate(fade, animationOpts);
     }
+
+    */
 
   };
 
@@ -67,10 +74,13 @@ class Photos extends Component {
         <div id='body-photos' onScroll={this.handleScroll}>
 
           <Link to='/'><p className='back'>Back</p></Link>
-          <Link to='/'><img className='mobile-back' src={back}/></Link>
 
-          <div id='photos'>
+          <motion.div id='photos'
+            animate={{opacity: [0, 1]}}
+            transition={{duration: 1}}
+          >
             <div className='col'>
+              <img className='photo-img' src={oceanside}/>
               <img className='photo-img' src={cars}/>
               <img className='photo-img' src={friends}/>
               <img className='photo-img' src={car}/>
@@ -79,6 +89,7 @@ class Photos extends Component {
             </div>
 
             <div className='col'>
+              <img className='photo-img' src={palomar}/>
               <img className='photo-img' src={carlsbad}/>
               <img className='photo-img' src={beach}/>
               <img className='photo-img' src={venice}/>
@@ -86,7 +97,7 @@ class Photos extends Component {
               <img className='photo-img' src={seoul}/>
               <img className='photo-img' src={field}/>
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>

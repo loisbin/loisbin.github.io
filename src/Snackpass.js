@@ -42,7 +42,7 @@ class Snackpass extends Component {
 
   handleScroll() {
     let position = document.getElementById('body-proj').scrollTop;
-    let iframe = document.getElementsByClassName('iframe-wrapper')[0].offsetTop;
+    //let iframe = document.getElementsByClassName('iframe-wrapper')[0].offsetTop;
     const links = document.getElementsByClassName('links')[0];
 
     if (position > window.innerHeight*.9) {
@@ -57,9 +57,11 @@ class Snackpass extends Component {
       this.setState({'visibility': 'hidden'});
     }
 
+    /*
     if (position + window.innerHeight > iframe) {
       this.setState({'display': 'block'});
     }
+    */
 
     //FADE IN
     const fades = document.getElementsByClassName('fade');
@@ -150,11 +152,6 @@ class Snackpass extends Component {
                     <span className='highlight'>No filter options</span><br/>
                     For the amount of restaurants that are available on the app, there is no feature for users to filter what
                     types of food they want to choose from, causing users to spend time scrolling instead.
-                  </li>
-                  <li>
-                    <span className='highlight'>Carousel images are cut off</span><br/>
-                    The use of carousels are common in the app but only show the first image while the next or second image is
-                    cut off by the mobile screen, making the UI uneven.
                   </li>
                   <li>
                     <span className='highlight'>User profile section lacks content</span><br/>
@@ -285,6 +282,7 @@ class Snackpass extends Component {
             <div className='img-wrapper-100-plus'><img className='img' src={prototype} alt='Prototype'/></div>
           </div>
           <br/>
+          {/*
           <p className='text'>Click around!</p>
           <div className='images'>
             <div className='iframe-wrapper'>
@@ -295,6 +293,7 @@ class Snackpass extends Component {
           <a className='prototype-link' target="_blank" href='https://xd.adobe.com/embed/192da914-cd67-416c-48b6-068ebb815ceb-6f1c/'>
             Link to prototype ⟶
           </a>
+          */}
           <br/><br/><br/><br/>
 
         </div>
