@@ -6,7 +6,7 @@ import Photos from './Photos';
 import Enrollment from './Enrollment';
 import Snackpass from './Snackpass';
 import Chairish from './Chairish';
-import Health from './Health';
+import Square from './Square';
 
 class App extends Component {
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
         <Route path='/enrollment' component={Enrollment} />
         <Route path='/snackpass' component={Snackpass} />
         <Route path='/chairish' component={Chairish} />
-        <Route path='/health' component={Health} />
+        <Route path='/square' component={Square} />
       </div>
     );
   }

@@ -11,9 +11,8 @@ import arrow from './misc/arrow.png';
 import background from './misc/background.png';
 import enrollmentGif from './enrollment/untitled.gif';
 import snackpassPic from './snackpass/snackpass-cover.png';
-import health from './health/health-cover.png';
 import chairish from './chairish/chairish-cover.png';
-import square from './square/square.jpg';
+import square from './square/cover.png';
 
 class Home extends Component {
 
@@ -85,6 +84,14 @@ class Home extends Component {
 
     anime({
       targets: '.intro-line-1',
+      translateX: [-300,0],
+      opacity: [0, 1],
+      easing: "easeOutExpo",
+      duration: 2000
+    })
+
+    anime({
+      targets: '.intro-line-2',
       translateX: [-400,0],
       opacity: [0, 1],
       easing: "easeOutExpo",
@@ -92,19 +99,11 @@ class Home extends Component {
     })
 
     anime({
-      targets: '.intro-line-2',
-      translateX: [-500,0],
-      opacity: [0, 1],
-      easing: "easeOutExpo",
-      duration: 2800
-    })
-
-    anime({
       targets: '.about-link',
       translateX: [200,0],
       opacity: [0, 1],
       easing: "easeOutExpo",
-      duration: 2400
+      duration: 2000
     })
 
     anime({
@@ -151,12 +150,13 @@ class Home extends Component {
 
           <div id='proj-landscape'>
           {/* PROJECTS SECTION */}
+            <Link to='/square'>
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='square'></div>
               <div className='proj-info-wrapper'>
                 <div className='proj-info'>
                   <h1 className='proj-title'>Square</h1>
-                  <p className='proj-sub'>Coming soon!</p>
+                  <p className='proj-sub'>On the Marketing Web team</p>
                 </div>
                 <div className='proj-type'>
                   <p className='margin-1'>UI/UX</p>
@@ -165,6 +165,7 @@ class Home extends Component {
                 </div>
               </div>
             </div>
+            </Link>
             <Link to='/chairish'>
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='chairish'></div>
@@ -205,7 +206,7 @@ class Home extends Component {
                   <p className='proj-sub'>Effortlessly navigate classes</p>
                 </div>
                 <div className='proj-type'>
-                  <p className='margin-1'>UI/UX</p>
+                  <p className='margin-1'>UI/UX, Web</p>
                 </div>
               </div>
             </div>

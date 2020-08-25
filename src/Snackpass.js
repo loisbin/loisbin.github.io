@@ -111,190 +111,192 @@ class Snackpass extends Component {
           <div id='arrow-wrapper' onClick={this.handleClick} style={{'visibility': visibility}}></div>
 
           <div className='overview-img' id='overview-snackpass'></div>
-          <br/>
-          <p className='overview-title'>Snackpass Redesign</p>
-          <div className='wrapper'>
-            <div className='overview-info'>
-              <p className='gray' id='no-margin'>Type</p>
-              <p id='no-margin'>Mobile</p>
-            </div>
-            <div className='overview-info'>
-              <p className='gray' id='no-margin'>Date</p>
-              <p id='no-margin'>Jan 2019</p>
-            </div>
-          </div>
-          <br/><br/>
 
-          <p className='header'>
-            How can I increase in-app efficiency and user-to-user interactions?
-          </p>
-          <p className='overview-text'>
-            A mobile redesign of a restaurant ordering and discount app, posed as a design challenge,
-            targeting student campuses.
-          </p>
-          <br/>
+          <div className='proj-body-text'>
+            <p className='overview-title'>Snackpass Redesign</p>
+            <div className='wrapper'>
+              <div className='overview-info'>
+                <p className='gray' id='no-margin'>Type</p>
+                <p id='no-margin'>UI/UX, Mobile</p>
+              </div>
+              <div className='overview-info'>
+                <p className='gray' id='no-margin'>Date</p>
+                <p id='no-margin'>Jan 2019</p>
+              </div>
+            </div>
+            <br/><br/>
 
-          <div className='img-wrapper-100 fade'>
-            <img className='img' src={overview} alt='Overview'/>
-          </div>
-          <br/>
+            <p className='header'>
+              How can I increase in-app efficiency and user-to-user interactions?
+            </p>
+            <p className='overview-text'>
+              A mobile redesign of a restaurant ordering and discount app, posed as a design challenge,
+              targeting student campuses.
+            </p>
+            <br/>
 
-          <div className='wrapper'>
-            <div className='proj-subtitle'>
-              <p>Defining the problem</p>
+            <div className='img-wrapper-100 fade'>
+              <img className='img' src={overview} alt='Overview'/>
             </div>
-            <div className='text-wrapper space-between'>
-              <p className='text'>
-                On review of the mobile app&#39;s features and UI, a few of its <span className='highlight'>usability issues</span> came down to these
-                points:
-                <ul>
-                  <li>
-                    <span className='highlight'>No filter options</span><br/>
-                    For the amount of restaurants that are available on the app, there is no feature for users to filter what
-                    types of food they want to choose from, causing users to spend time scrolling instead.
-                  </li>
-                  <li>
-                    <span className='highlight'>User profile section lacks content</span><br/>
-                    The profile section of the app lacks personalization and potential use of in-app friend interaction/emphasis.
-                  </li>
-                </ul>
-              </p>
-            </div>
-          </div>
-          <br/>
-          <div className='images fade'>
-            <div className='img-wrapper-100-plus'><img className='img' src={painPoints1} alt='Pain points'/></div>
-          </div>
-          <br/>
-          <div className='images fade'>
-            <div className='img-wrapper-100-plus'><img className='img' src={painPoints2} alt='Pain points'/></div>
-          </div>
-          <br/>
-          <p className='text'>
-            Through the <span className='highlight'>competitive analysis</span> of similar food-ordering apps,
-            like UberEats, and other meal discount apps, such as another campus-targeted mobile app called Hooked,
-            the <span className='highlight'>key features that differentiates Snackpass</span> from others are:
-            <ul>
-              <li>Ability to order in-app and use available discounts to a user&#39;s order</li>
-              <li>No delivery fee and an alternative emphasis on no in-line wait for food</li>
-              <li>Reward points for restaurants</li>
-            </ul>
-          </p>
-          <br/>
-          <div className='images fade'>
-            <div className='img-wrapper-100'><img className='img' src={competitive} alt='Competitive analysis'/></div>
-          </div>
-          <br/>
-          <p className='text'>
-            With these findings and key points in mind, the <span className='highlight'>goal</span> for this project was listed as such:
-          </p>
-          <br/>
-          <div className='images fade'>
-            <div className='img-wrapper-100'><img className='img' src={goals} alt='Goals'/></div>
-          </div>
-          <br/>
+            <br/>
 
-          <div className='wrapper'>
-            <div className='proj-subtitle'>
-              <p>Ideation and wireframing</p>
+            <div className='wrapper'>
+              <div className='proj-subtitle'>
+                <p>Defining the problem</p>
+              </div>
+              <div className='text-wrapper space-between'>
+                <p className='text'>
+                  On review of the mobile app&#39;s features and UI, a few of its <span className='highlight'>usability issues</span> came down to these
+                  points:
+                  <ul>
+                    <li>
+                      <span className='highlight'>No filter options</span><br/>
+                      For the amount of restaurants that are available on the app, there is no feature for users to filter what
+                      types of food they want to choose from, causing users to spend time scrolling instead.
+                    </li>
+                    <li>
+                      <span className='highlight'>User profile section lacks content</span><br/>
+                      The profile section of the app lacks personalization and potential use of in-app friend interaction/emphasis.
+                    </li>
+                  </ul>
+                </p>
+              </div>
             </div>
-            <div className='text-wrapper space-between'>
-              <p className='text'>
-                During the initial process of ideation, a redesign of the <span className='highlight'>information architecture</span> was done to improve the
-                searching UX. Thus, the main navigation removed the friends feed that showed the ordering feed on your campus
-                and replaced it with a map feature that could help navigate restaurants nearby.
-                <br/><br/>
-                New navigation architecture:
-                <ul>
-                  <li>Restaurant search</li>
-                  <li>Map</li>
-                  <li>User profile</li>
-                </ul>
-                <br/>
-              </p>
+            <br/>
+            <div className='images fade'>
+              <div className='img-wrapper-100-plus'><img className='img' src={painPoints1} alt='Pain points'/></div>
             </div>
-          </div>
-          <p className='text'>
-            On the <span className='highlight'>search tab</span>, the goal was to
-            <ul>
-              <li>Redesign and align the Featured Restaurant carousel</li>
-              <li>Add filter functionality by food type, distance, discounts, and restaurant business times</li>
-              <li>Move the search button to the top of the page for ease of accessibility</li>
-            </ul>
-          </p>
-          <br/>
-          <div className='images fade'>
-            <div className='img-wrapper-100-plus'><img className='img' src={wireframe1} alt='Wireframe search'/></div>
-          </div>
-          <br/>
-          <p className='text'>
-            For the <span className='highlight'>restaurant menu/detail pages</span>, the following key points led the design ideation:
-            <ul>
-              <li>Retaining but creating a more visual display of rewards at the top</li>
-              <li>Adding an info button near the top for details like opening/closing times, location, accessibility, etc.</li>
-              <li>Re-iterating the carousel format from the search feed for featured menu items</li>
-            </ul>
-            The <span className='highlight'>profile page</span> had the most features added, as the original page only displayed rewards and did not serve
-            so much as a social profile. The goal with the profile page was to:
-            <ul>
-              <li>Personalize user info with a bio and profile picture</li>
-              <li>Display rewards in a more easy-to-visualize way</li>
-              <li>Section for friends to emphasize the friending feature the app has</li>
-            </ul>
-          </p>
-          <br/>
-          <div className='images fade'>
-            <div className='img-wrapper-100-plus'><img className='img' src={wireframe2} alt='Wireframe'/></div>
-          </div>
-          <br/>
-          <p className='text'>
-            The current <span className='highlight'>color palette</span> of the app featured a variety of bright colors
-             mixed with the colors the emojis already give. I opted for a more consistent and streamlined palette to
-             work with for the final hi-fi prototype.
-          </p>
-          <br/>
-          <div className='images fade'>
-            <div className='img-wrapper-100'><img className='img' src={color} alt='Color guide'/></div>
-          </div>
-          <br/>
+            <br/>
+            <div className='images fade'>
+              <div className='img-wrapper-100-plus'><img className='img' src={painPoints2} alt='Pain points'/></div>
+            </div>
+            <br/>
+            <p className='text'>
+              Through the <span className='highlight'>competitive analysis</span> of similar food-ordering apps,
+              like UberEats, and other meal discount apps, such as another campus-targeted mobile app called Hooked,
+              the <span className='highlight'>key features that differentiates Snackpass</span> from others are:
+              <ul>
+                <li>Ability to order in-app and use available discounts to a user&#39;s order</li>
+                <li>No delivery fee and an alternative emphasis on no in-line wait for food</li>
+                <li>Reward points for restaurants</li>
+              </ul>
+            </p>
+            <br/>
+            <div className='images fade'>
+              <div className='img-wrapper-100'><img className='img' src={competitive} alt='Competitive analysis'/></div>
+            </div>
+            <br/>
+            <p className='text'>
+              With these findings and key points in mind, the <span className='highlight'>goal</span> for this project was listed as such:
+            </p>
+            <br/>
+            <div className='images fade'>
+              <div className='img-wrapper-100'><img className='img' src={goals} alt='Goals'/></div>
+            </div>
+            <br/>
 
-          <div className='wrapper'>
-            <div className='proj-subtitle'>
-              <p>Hi-fi prototyping and iterations</p>
+            <div className='wrapper'>
+              <div className='proj-subtitle'>
+                <p>Ideation and wireframing</p>
+              </div>
+              <div className='text-wrapper space-between'>
+                <p className='text'>
+                  During the initial process of ideation, a redesign of the <span className='highlight'>information architecture</span> was done to improve the
+                  searching UX. Thus, the main navigation removed the friends feed that showed the ordering feed on your campus
+                  and replaced it with a map feature that could help navigate restaurants nearby.
+                  <br/><br/>
+                  New navigation architecture:
+                  <ul>
+                    <li>Restaurant search</li>
+                    <li>Map</li>
+                    <li>User profile</li>
+                  </ul>
+                  <br/>
+                </p>
+              </div>
             </div>
-            <div className='text-wrapper space-between'>
-              <p className='text'>
-                With wireframes for each redesigned page, I was able to mockup an intial round of hi-fidelity prototypes.
-                 Afterwards, I went through and made stylistic iterations with the finalized color palette.
-              </p>
+            <p className='text'>
+              On the <span className='highlight'>search tab</span>, the goal was to
+              <ul>
+                <li>Redesign and align the Featured Restaurant carousel</li>
+                <li>Add filter functionality by food type, distance, discounts, and restaurant business times</li>
+                <li>Move the search button to the top of the page for ease of accessibility</li>
+              </ul>
+            </p>
+            <br/>
+            <div className='images fade'>
+              <div className='img-wrapper-100-plus'><img className='img' src={wireframe1} alt='Wireframe search'/></div>
             </div>
-          </div>
-          <br/>
-          <div className='images fade'>
-            <div className='img-wrapper-100-plus'><img className='img' src={iterations} alt='Prototype search'/></div>
-          </div>
-          <br/>
-          <p className='text'>
-            A final user flow for the hi-fi prototype is shown below.
-          </p>
-          <br/>
-          <div className='images fade'>
-            <div className='img-wrapper-100-plus'><img className='img' src={prototype} alt='Prototype'/></div>
-          </div>
-          <br/>
-          {/*
-          <p className='text'>Click around!</p>
-          <div className='images'>
-            <div className='iframe-wrapper'>
-              <iframe style={{'display':display}} src="https://xd.adobe.com/embed/192da914-cd67-416c-48b6-068ebb815ceb-6f1c/" frameborder="0" allowfullscreen></iframe>
+            <br/>
+            <p className='text'>
+              For the <span className='highlight'>restaurant menu/detail pages</span>, the following key points led the design ideation:
+              <ul>
+                <li>Retaining but creating a more visual display of rewards at the top</li>
+                <li>Adding an info button near the top for details like opening/closing times, location, accessibility, etc.</li>
+                <li>Re-iterating the carousel format from the search feed for featured menu items</li>
+              </ul>
+              The <span className='highlight'>profile page</span> had the most features added, as the original page only displayed rewards and did not serve
+              so much as a social profile. The goal with the profile page was to:
+              <ul>
+                <li>Personalize user info with a bio and profile picture</li>
+                <li>Display rewards in a more easy-to-visualize way</li>
+                <li>Section for friends to emphasize the friending feature the app has</li>
+              </ul>
+            </p>
+            <br/>
+            <div className='images fade'>
+              <div className='img-wrapper-100-plus'><img className='img' src={wireframe2} alt='Wireframe'/></div>
             </div>
+            <br/>
+            <p className='text'>
+              The current <span className='highlight'>color palette</span> of the app featured a variety of bright colors
+               mixed with the colors the emojis already give. I opted for a more consistent and streamlined palette to
+               work with for the final hi-fi prototype.
+            </p>
+            <br/>
+            <div className='images fade'>
+              <div className='img-wrapper-100'><img className='img' src={color} alt='Color guide'/></div>
+            </div>
+            <br/>
+
+            <div className='wrapper'>
+              <div className='proj-subtitle'>
+                <p>Hi-fi prototyping and iterations</p>
+              </div>
+              <div className='text-wrapper space-between'>
+                <p className='text'>
+                  With wireframes for each redesigned page, I was able to mockup an intial round of hi-fidelity prototypes.
+                   Afterwards, I went through and made stylistic iterations with the finalized color palette.
+                </p>
+              </div>
+            </div>
+            <br/>
+            <div className='images fade'>
+              <div className='img-wrapper-100-plus'><img className='img' src={iterations} alt='Prototype search'/></div>
+            </div>
+            <br/>
+            <p className='text'>
+              A final user flow for the hi-fi prototype is shown below.
+            </p>
+            <br/>
+            <div className='images fade'>
+              <div className='img-wrapper-100-plus'><img className='img' src={prototype} alt='Prototype'/></div>
+            </div>
+            <br/>
+            {/*
+            <p className='text'>Click around!</p>
+            <div className='images'>
+              <div className='iframe-wrapper'>
+                <iframe style={{'display':display}} src="https://xd.adobe.com/embed/192da914-cd67-416c-48b6-068ebb815ceb-6f1c/" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <br/>
+            <a className='prototype-link' target="_blank" href='https://xd.adobe.com/embed/192da914-cd67-416c-48b6-068ebb815ceb-6f1c/'>
+              Link to prototype ⟶
+            </a>
+            */}
+            <br/><br/><br/><br/>
           </div>
-          <br/>
-          <a className='prototype-link' target="_blank" href='https://xd.adobe.com/embed/192da914-cd67-416c-48b6-068ebb815ceb-6f1c/'>
-            Link to prototype ⟶
-          </a>
-          */}
-          <br/><br/><br/><br/>
 
         </div>
       </div>

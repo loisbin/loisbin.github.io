@@ -72,6 +72,7 @@ h2 {
 .about-link {
   align-self: flex-end;
   text-align: right;
+  visibility: hidden;
 }
 
 .background {
@@ -264,11 +265,9 @@ h2 {
 }
 
 #square {
-  background-image: url('./square/square.jpg');
-  background-size: 40%;
+  background-image: url('./square/cover.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  border: 1px #e1e1e1 solid;
-  border-radius: 8px;
 }
 
 #chairish {
@@ -281,7 +280,7 @@ h2 {
 
 #enrollment {
   background-image: url('./enrollment/untitled.gif');
-  background-size: auto;
+  background-size: cover;
 }
 
 #contact {
@@ -493,27 +492,6 @@ h2 {
     opacity: 0;
   }
 
-  #chairish {
-    background-image: url('./chairish/chairish-cover.png');
-  }
-
-  #snackpass {
-    background-image: url('./snackpass/snackpass-cover.png');
-  }
-
-  #enrollment {
-    background-image: url('./enrollment/untitled.gif');
-    background-size: auto;
-  }
-
-  #health {
-    background-image: url('./health/health-cover.png');
-  }
-
-  #contact {
-
-  }
-
   #copyright {
     position: absolute;
     bottom: 5%;
@@ -522,10 +500,6 @@ h2 {
 
   #proj-landscape {
     top: 20%;
-  }
-
-  #proj-portrait {
-
   }
 
   ::-webkit-scrollbar {
