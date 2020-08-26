@@ -38,12 +38,12 @@ class Home extends Component {
     //FADE IN
     const fades = document.getElementsByClassName('fade');
     for (let i = 0; i < fades.length; i++) {
-      if (fades[i].offsetTop < position + window.innerHeight - 300 && fades[i].style.opacity === '') {
+      if (fades[i].offsetTop < position + window.innerHeight/2 && fades[i].style.opacity === '') {
         fades[i].animate(
           {opacity: [0, 1]},
           {duration: 800, fill: 'forwards', easing: 'ease-in-out'}
         )
-        fades[i].style.cssText = 'opacity: 1';
+        fades[i].style.opacity = 1;
       }
     }
 
@@ -206,21 +206,13 @@ class Home extends Component {
                   <p className='proj-sub'>Effortlessly navigate classes</p>
                 </div>
                 <div className='proj-type'>
-                  <p className='margin-1'>UI/UX, Web</p>
+                  <p className='margin-1'>UI/UX</p>
+                  <p className='margin-1'>Web</p>
                 </div>
               </div>
             </div>
             </Link>
           </div>
-
-          {/*
-            <div id='proj-portrait' className='fade'>
-              <Preview image={chairish} title='Chairish' type='Web, Mobile' link='chairish' num='1'/>
-              <Preview image={snackpassPic} title='Snackpass' type='Mobile' link='snackpass' num='2'/>
-              <Preview image={enrollmentGif} title='Course Enrollment' type='Web, Desktop' link='enrollment' num='3'/>
-              <Preview image={health} title='Health Tracker' type='Desktop, Mobile' link='health' num='4'/>
-            </div>
-          */}
 
           <div id='contact' className='fade'>
           {/* CONTACT */}

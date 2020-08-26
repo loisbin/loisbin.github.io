@@ -9,6 +9,14 @@ import header from './square/header.png';
 import checkoutCover from './square/checkout-cover.png';
 import posCover from './square/pickmypos-cover.png';
 import smsCover from './square/sms-cover.png';
+import cartOld from './square/cart-old.png';
+import cartNew from './square/cart-new.png';
+import cartOldMobile from './square/cart-old-mobile.png';
+import cartNewMobile from './square/cart-new-mobile.png';
+import checkoutOld from './square/checkout-old.png';
+import checkoutNew from './square/checkout-new.png';
+import checkoutOldMobile from './square/checkout-old-mobile.png';
+import checkoutNewMobile from './square/checkout-new-mobile.png';
 
 class Square extends Component {
 
@@ -53,8 +61,8 @@ class Square extends Component {
     //FADE IN
     const fades = document.getElementsByClassName('fade');
     for (let i = 0; i < fades.length; i++) {
-      if (fades[i].offsetTop < position + window.innerHeight - 250 && fades[i].style.opacity === '') {
-        fades[i].style.cssText = 'opacity: 1';
+      if (fades[i].offsetTop < position + window.innerHeight/2 && fades[i].style.opacity === '') {
+        fades[i].style.opacity = 1;
         fades[i].animate(
           {opacity: [0, 1], marginTop: ['4%', 0]},
           {duration: 600, fill: 'forwards', easing: 'ease-in-out'}
@@ -124,7 +132,7 @@ class Square extends Component {
             </p>
             <br/><br/>
 
-            <div className='img-wrapper-100-plus fade'><img className='img' src={checkoutCover} alt=''/></div>
+            <div className='img-wrapper-full fade'><img className='img' src={checkoutCover} alt=''/></div>
             <br/>
             <p className='header'>
               Shop Checkout Redesign
@@ -134,9 +142,53 @@ class Square extends Component {
               long-standing buildup of features on a years-old checkout experience and to reduce the user-dropoff
               rates within checkout pages.
             </p>
+            <br/>
+            <div className='img-wrapper-100-plus fade'><img className='img' src={cartOld} alt=''/></div>
+            <p className='text'>
+              Previous cart
+            </p>
+            <br/>
+            <div className='img-wrapper-100-plus fade'><img className='img' src={cartNew} alt=''/></div>
+            <p className='text'>
+              Redesigned cart
+            </p>
+            <br/>
+            <div className='img-2-wrapper img-wrapper-100-plus'>
+              <div className='img-wrapper-25 fade'><img className='img' src={cartOldMobile} alt=''/></div>
+              <div className='img-wrapper-25 fade'><img className='img' src={cartNewMobile} alt=''/></div>
+            </div>
+            <br/>
+            <p className='text'>
+              The cart redesign created a <span className='highlight'>more uniform experience</span> from cart to checkout,
+              with the price card to the left of the items, and shortened the real estate of the page. The button was moved above
+              the fold for <span className='highlight'>easy accessibility</span> for the user and prevent un-needed scrolling.
+            </p>
+            <br/>
+            <div className='img-wrapper-100-plus fade'><img className='img' src={checkoutOld} alt=''/></div>
+            <p className='text'>
+              Previous checkout
+            </p>
+            <br/>
+            <div className='img-wrapper-100-plus fade'><img className='img' src={checkoutNew} alt=''/></div>
+            <p className='text'>
+              Redesigned checkout
+            </p>
+            <br/>
+            <div className='img-2-wrapper img-wrapper-100-plus'>
+              <div className='img-wrapper-25 fade'><img className='img' src={checkoutOldMobile} alt=''/></div>
+              <div className='img-wrapper-25 fade'><img className='img' src={checkoutNewMobile} alt=''/></div>
+            </div>
+            <br/>
+            <p className='text'>
+              The heavy-lifting of the redesign was within the checkout flow, funnelling design iterations
+              down to the <span className='highlight'>usability tests</span> of a progress bar version of checkout
+              vs. a single-page sectioned version, similar to the current experience. Users showed an overall
+              <span className='highlight'> preference for the progress-bar checkout</span> for both desktop and mobile.
+              The new cart and checkout pages are set to ship October 2020.
+            </p>
             <br/><br/><br/>
 
-            <div className='img-wrapper-100-plus fade'><img className='img' src={smsCover} alt=''/></div>
+            <div className='img-wrapper-full fade'><img className='img' src={smsCover} alt=''/></div>
             <br/>
             <p className='header'>
               SMS Marketing Page
@@ -149,10 +201,10 @@ class Square extends Component {
             </p>
             <br/><br/><br/>
 
-            <div className='img-wrapper-100-plus fade'><img className='img' src={posCover} alt=''/></div>
+            <div className='img-wrapper-full fade'><img className='img' src={posCover} alt=''/></div>
             <br/>
             <p className='header'>
-              Pick My POS / Intern Hack Week
+              Pick My POS — Intern Hack Week
             </p>
             <p className='text'>
               During a week-long hack week for interns, I designed the interface and interaction of my team's web questionnaire that

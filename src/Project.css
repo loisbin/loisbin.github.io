@@ -21,31 +21,11 @@
   margin: 5% 0;
 }
 
-.img-wrapper-25 {
+.img-wrapper-25, .img-wrapper-30, .img-wrapper-40, .img-wrapper-70, .img-wrapper-80, .img-wrapper-90 {
   width: 100%;
 }
 
-.img-wrapper-30 {
-  width: 100%;
-}
-
-.img-wrapper-40 {
-  width: 100%;
-}
-
-.img-wrapper-70 {
-  width: 100%;
-}
-
-.img-wrapper-80 {
-  width: 100%;
-}
-
-.img-wrapper-90 {
-  width: 100%;
-}
-
-.img-wrapper-100-plus {
+.img-wrapper-100-plus, .img-wrapper-full {
   width: 120%;
   margin-left: -10%;
   margin-right: -10%;
@@ -159,7 +139,7 @@
 
 #body-proj {
   background-color: white;
-  padding: 0 10% 5% 10%;
+  padding: 3% 8%;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -167,6 +147,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-y: scroll;
+  overflow-x: hidden;
   font-size: 1em;
   line-height: 2em;
 }
@@ -196,35 +177,9 @@
 /* TABLET PORTRAIT */
 @media screen and (min-width: 600px) and (orientation: portrait) {
 
-  .header {
-  }
-
-  .overview-info {
-    width: 40%;
-    margin: 0;
-  }
-
-  .proj-subtitle {
-    width: 20%;
-  }
-
-  .text-wrapper {
-    width: 70%;
-  }
-
-  .wrapper {
-    -ms-flex-direction: row;
-        flex-direction: row;
-  }
-
-}
-
-/* TABLET LANDSCAPE */
-@media screen and (min-width: 600px) and (orientation: landscape) {
-
-  video {
-    -o-object-fit: contain;
-       object-fit: contain;
+  .img-wrapper-full {
+    width: 180%;
+    margin: 0 -40%;
   }
 
   .link-proj {
@@ -248,10 +203,11 @@
         flex-direction: row;
     height: 20%;
     width: 100%;
-    padding: 3% 5%;
+    padding: 3% 3%;
     font-family: Karla, sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    z-index: 1;
   }
 
   .mobile-back {
@@ -259,8 +215,12 @@
   }
 
   .overview-info {
-    width: 30%;
+    width: 40%;
     margin: 0;
+  }
+
+  .proj-body-text {
+    top: 65%;
   }
 
   .proj-subtitle {
@@ -276,22 +236,32 @@
         flex-direction: row;
   }
 
-}
-
-@media screen and (min-width: 1200px) and (orientation: landscape) {
-
-  .carousel {
-    display: none;
+  #body-proj {
+    padding: 3% 20%;
   }
 
-  .divider {
-    width: 50%;
-    margin-right: 50%;
-    border: 0.5px solid lightgrey;
+}
+
+/* TABLET LANDSCAPE */
+@media screen and (min-width: 600px) and (orientation: landscape) {
+
+  .images {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .img {
     width: 100%;
+  }
+
+  .img-2-wrapper {
+    display: flex;
+    justify-content: space-around;
   }
 
   .img-wrapper {
@@ -328,24 +298,54 @@
   }
 
   .img-wrapper-100-plus {
-    width: 140%;
-    margin-left: -20%;
-    margin-right: -20%;
+    width: 180%;
+    margin: 0 -40%;
   }
 
-  .images {
+  .img-wrapper-full {
+    width: 202%;
+    margin: 0 -51%;
+  }
+
+  .link-proj {
+    display: block;
+    transition: color .2s ease-in-out;
+  }
+
+  .link-proj:hover {
+    color: #3864FF;
+  }
+
+  .links {
+    position: absolute;
+    top: 65%;
+    left: 0;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     -ms-flex-direction: row;
         flex-direction: row;
+    height: 20%;
     width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    padding: 3% 3%;
+    font-family: Karla, sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 1;
   }
-  
+
+  .mobile-back {
+    display: none;
+  }
+
   .overview-info {
-    width: 40%;
+    width: 30%;
     margin: 0;
+  }
+
+  .proj-body-text {
+    top: 70%;
   }
 
   .proj-subtitle {
@@ -366,17 +366,30 @@
   }
 
   #body-proj {
-    background-color: white;
     padding: 3% 25%;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    overflow-y: scroll;
-    font-size: 1em;
-    line-height: 2em;
+  }
+
+}
+
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+
+  .divider {
+    width: 50%;
+    margin-right: 50%;
+    border: 0.5px solid lightgrey;
+  }
+
+  .img-wrapper-full {
+    width: 230%;
+    margin: 0 -65%;
+  }
+
+  .overview-info {
+    width: 40%;
+  }
+
+  #body-proj {
+    padding: 3% 28%;
   }
 
 }
