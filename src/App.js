@@ -7,6 +7,7 @@ import Enrollment from './Enrollment';
 import Snackpass from './Snackpass';
 import Chairish from './Chairish';
 import Square from './Square';
+import About from './About';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Route path='/snackpass' component={Snackpass} />
         <Route path='/chairish' component={Chairish} />
         <Route path='/square' component={Square} />
+        <Route path='/about' component={About} />
       </div>
     );
   }

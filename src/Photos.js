@@ -47,23 +47,23 @@ class Photos extends Component {
 
   handleScroll() {
 
+    let position = document.getElementById('body2').scrollTop;
+    const fades = document.getElementsByClassName('fade');
+    for (let i = 0; i < fades.length; i++) {
+      if (fades[i].offsetTop < position + window.innerHeight-300 && fades[i].style.opacity === '') {
+        fades[i].animate(
+          {opacity: [0, 1]},
+          {duration: 800, fill: 'forwards', easing: 'ease-in-out'}
+        )
+        fades[i].style.opacity = 1;
+      }
+    }
+
+
   };
 
   componentDidMount() {
     document.title = "Photos | Lois Bin";
-
-    /*
-
-    const imgs = document.getElementsByClassName('photo-img');
-    const fade = {opacity: ['0', '1']};
-    const animationOpts = {duration: 800, easing: 'ease-in-out', fill: 'forwards'};
-
-    for (let i = 0; i < imgs.length; i++) {
-      imgs[i].animate(fade, animationOpts);
-    }
-
-    */
-
   };
 
   render() {
@@ -71,9 +71,18 @@ class Photos extends Component {
 
     return (
       <div id='body'>
-        <div id='body-photos' onScroll={this.handleScroll}>
+        <div id='body2' onScroll={this.handleScroll}>
 
-          <Link to='/'><p className='back'>Back</p></Link>
+          <div className='nav'>
+            <div className='nav-main'>
+              <Link to='/' className='nav-link'>Home</Link>
+            </div>
+            <div className='nav-contact'>
+              <span className='nav-email'>lois.bin@gmail.com</span>
+              <a className='nav-link' href='http://linkedin.com/in/loisbin' target='_blank'>LinkedIn</a>
+            </div>
+          </div>
+          <span className='copyright'>c. Lois Bin</span>
 
           <motion.div id='photos'
             animate={{opacity: [0, 1]}}
@@ -81,21 +90,21 @@ class Photos extends Component {
           >
             <div className='col'>
               <img className='photo-img' src={oceanside}/>
-              <img className='photo-img' src={cars}/>
-              <img className='photo-img' src={friends}/>
-              <img className='photo-img' src={car}/>
-              <img className='photo-img' src={flora}/>
-              <img className='photo-img' src={bags}/>
+              <img className='photo-img fade' src={cars}/>
+              <img className='photo-img fade' src={friends}/>
+              <img className='photo-img fade' src={car}/>
+              <img className='photo-img fade' src={flora}/>
+              <img className='photo-img fade' src={bags}/>
             </div>
 
             <div className='col'>
               <img className='photo-img' src={palomar}/>
-              <img className='photo-img' src={carlsbad}/>
-              <img className='photo-img' src={beach}/>
-              <img className='photo-img' src={venice}/>
-              <img className='photo-img' src={bookstore}/>
-              <img className='photo-img' src={seoul}/>
-              <img className='photo-img' src={field}/>
+              <img className='photo-img fade' src={carlsbad}/>
+              <img className='photo-img fade' src={beach}/>
+              <img className='photo-img fade' src={venice}/>
+              <img className='photo-img fade' src={bookstore}/>
+              <img className='photo-img fade' src={seoul}/>
+              <img className='photo-img fade' src={field}/>
             </div>
           </motion.div>
 

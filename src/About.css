@@ -1,0 +1,59 @@
+
+.about-images {
+  margin: auto;
+  width: 100%;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-overlay {
+  z-index: 1;
+  margin-top: -100%;
+}
+
+.about-text {
+  margin: auto;
+  width: 70%;
+  line-height: 2em;
+  font-size: 1em;
+  margin-bottom: 5%;
+}
+
+/* TABLET PORTRAIT */
+@media screen and (min-width: 600px) and (orientation: portrait) {
+
+  .about-images {
+    margin: 0 0 0 10%;
+    width: 55%;
+  }
+
+  .about-text {
+    margin: 0 0 0 40%;
+    width: 35%;
+    font-size: 1.5em;
+  }
+
+}
+
+/* TABLET LANDSCAPE */
+@media screen and (min-width: 600px) and (orientation: landscape) {
+
+  .about-images {
+    margin: 0 0 0 10%;
+    width: 55%;
+  }
+
+  .about-text {
+    margin: 0 0 0 40%;
+    width: 35%;
+    font-size: 1.5em;
+  }
+
+}
+
+/* Desktop & iPad Pro landscape */
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+
+}

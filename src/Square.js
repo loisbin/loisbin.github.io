@@ -61,7 +61,7 @@ class Square extends Component {
     //FADE IN
     const fades = document.getElementsByClassName('fade');
     for (let i = 0; i < fades.length; i++) {
-      if (fades[i].offsetTop < position + window.innerHeight/2 && fades[i].style.opacity === '') {
+      if (fades[i].offsetTop < position && fades[i].style.opacity === '') {
         fades[i].style.opacity = 1;
         fades[i].animate(
           {opacity: [0, 1], marginTop: ['4%', 0]},

@@ -29,6 +29,7 @@ class Home extends Component {
   handleScroll = () => {
 
     let position = document.getElementById('body2').scrollTop;
+    const bodyHeight = document.getElementById('body2').scrollHeight;
     const fadeIn = {opacity: ['0', '1']};
     const fadeOut = {opacity: ['1', '0']};
     const animationOpts = {duration: 200, fill: 'forwards', easing: 'ease-out'};
@@ -37,13 +38,19 @@ class Home extends Component {
 
     //FADE IN
     const fades = document.getElementsByClassName('fade');
-    for (let i = 0; i < fades.length; i++) {
-      if (fades[i].offsetTop < position + window.innerHeight/2 && fades[i].style.opacity === '') {
+    for (let i = 0; i < fades.length-1; i++) {
+      if (fades[i].offsetTop < position-200 && fades[i].style.opacity === '') {
         fades[i].animate(
           {opacity: [0, 1]},
           {duration: 800, fill: 'forwards', easing: 'ease-in-out'}
         )
         fades[i].style.opacity = 1;
+      } else if (position + window.innerHeight >= bodyHeight && fades[fades.length-1].style.opacity === '') {
+        fades[fades.length-1].animate(
+          {opacity: [0, 1]},
+          {duration: 800, fill: 'forwards', easing: 'ease-in-out'}
+        )
+        fades[fades.length-1].style.opacity = 1;
       }
     }
 
@@ -87,7 +94,8 @@ class Home extends Component {
       translateX: [-300,0],
       opacity: [0, 1],
       easing: "easeOutExpo",
-      duration: 2000
+      duration: 2000,
+      delay: 50,
     })
 
     anime({
@@ -95,7 +103,8 @@ class Home extends Component {
       translateX: [-400,0],
       opacity: [0, 1],
       easing: "easeOutExpo",
-      duration: 2400
+      duration: 2400,
+      delay: 50,
     })
 
     anime({
@@ -103,7 +112,8 @@ class Home extends Component {
       translateX: [200,0],
       opacity: [0, 1],
       easing: "easeOutExpo",
-      duration: 2000
+      duration: 2000,
+      delay: 50,
     })
 
     anime({
@@ -145,12 +155,12 @@ class Home extends Component {
               <h1 className='intro-line-1'>Hello, I'm <span className='blue-text'>Lois</span>.</h1>
               <h2 className='intro-line-2'>Designer focused on creating human-centered experiences. Based in California.</h2>
             </div>
-            <a className='about-link blue-text'>More about me / Coming soon</a>
+            <Link className='about-link blue-text' to='/about' target='_blank'>More about me</Link>
           </div>
 
           <div id='proj-landscape'>
           {/* PROJECTS SECTION */}
-            <Link to='/square'>
+            <Link to='/square' target='_blank'>
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='square'></div>
               <div className='proj-info-wrapper'>
@@ -166,7 +176,7 @@ class Home extends Component {
               </div>
             </div>
             </Link>
-            <Link to='/chairish'>
+            <Link to='/chairish' target='_blank'>
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='chairish'></div>
               <div className='proj-info-wrapper'>
@@ -182,7 +192,7 @@ class Home extends Component {
               </div>
             </div>
             </Link>
-            <Link to='/snackpass'>
+            <Link to='/snackpass' target='_blank'>
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='snackpass'></div>
               <div className='proj-info-wrapper'>
@@ -197,7 +207,7 @@ class Home extends Component {
               </div>
             </div>
             </Link>
-            <Link to='/enrollment'>
+            <Link to='/enrollment' target='_blank'>
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='enrollment'></div>
               <div className='proj-info-wrapper'>
@@ -220,6 +230,9 @@ class Home extends Component {
             <h2 className='contact-text'>My email is lois.bin@gmail.com</h2>
             <h2 className='contact-text'>
               My LinkedIn is <a className='blue-text' href='http://linkedin.com/in/loisbin' target='_blank'>here</a>.
+            </h2>
+            <h2 className='contact-text'>
+              More about me <Link className='blue-text' to='/about' target='_blank'>here</Link>.
             </h2>
 
           </div>

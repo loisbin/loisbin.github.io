@@ -72,7 +72,6 @@ h2 {
 .about-link {
   align-self: flex-end;
   text-align: right;
-  visibility: hidden;
 }
 
 .background {
@@ -165,6 +164,7 @@ h2 {
 }
 
 .intro-wrapper {
+  width: 80%;
 }
 
 .italic {
