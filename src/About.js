@@ -40,6 +40,7 @@ class About extends Component {
       opacity: [0, 1],
       easing: "easeOutExpo",
       duration: 2000,
+      delay: 400,
     })
 
     anime({
@@ -47,6 +48,7 @@ class About extends Component {
       translateY: [200, 0],
       easing: "easeOutExpo",
       duration: 2000,
+      delay: 400,
     })
 
     anime({
@@ -54,13 +56,16 @@ class About extends Component {
       translateY: [-200, 0],
       easing: "easeOutExpo",
       duration: 2000,
+      delay: 400,
     })
 
     anime({
       targets: '.about-text',
       translateX: [200, 0],
+      opacity: [0, 1],
       easing: "easeOutExpo",
       duration: 2000,
+      delay: 400,
     })
 
   };

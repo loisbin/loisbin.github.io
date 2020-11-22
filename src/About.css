@@ -2,6 +2,7 @@
 .about-images {
   margin: auto;
   width: 100%;
+  opacity: 0;
 }
 
 .about-img {

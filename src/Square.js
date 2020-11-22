@@ -126,9 +126,8 @@ class Square extends Component {
               Helping small businesses succeed through design initiatives.
             </p>
             <p className='overview-text'>
-              During my design internship with Square, WFH in all its glory, I was part of the Marketing Web team,
+              During my design internship with Square (WFH, video calls, and all) I was part of the Marketing Web team,
               creating and redesigning pages on Square's website to market, educate, and assist business owners.
-              <span className='highlight'> More details coming soon!</span>
             </p>
             <br/><br/>
 

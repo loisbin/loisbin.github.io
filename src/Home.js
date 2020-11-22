@@ -95,7 +95,7 @@ class Home extends Component {
       opacity: [0, 1],
       easing: "easeOutExpo",
       duration: 2000,
-      delay: 50,
+      delay: 400,
     })
 
     anime({
@@ -104,7 +104,7 @@ class Home extends Component {
       opacity: [0, 1],
       easing: "easeOutExpo",
       duration: 2400,
-      delay: 50,
+      delay: 400,
     })
 
     anime({
@@ -113,7 +113,7 @@ class Home extends Component {
       opacity: [0, 1],
       easing: "easeOutExpo",
       duration: 2000,
-      delay: 50,
+      delay: 400,
     })
 
     anime({
@@ -155,12 +155,12 @@ class Home extends Component {
               <h1 className='intro-line-1'>Hello, I'm <span className='blue-text'>Lois</span>.</h1>
               <h2 className='intro-line-2'>Designer focused on creating human-centered experiences. Based in California.</h2>
             </div>
-            <Link className='about-link blue-text' to='/about' target='_blank'>More about me</Link>
+            <Link className='about-link blue-text' to='/about'>More about me</Link>
           </div>
 
           <div id='proj-landscape'>
           {/* PROJECTS SECTION */}
-            <Link to='/square' target='_blank'>
+            <Link to='/square' >
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='square'></div>
               <div className='proj-info-wrapper'>
@@ -176,7 +176,7 @@ class Home extends Component {
               </div>
             </div>
             </Link>
-            <Link to='/chairish' target='_blank'>
+            <Link to='/chairish' >
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='chairish'></div>
               <div className='proj-info-wrapper'>
@@ -192,7 +192,7 @@ class Home extends Component {
               </div>
             </div>
             </Link>
-            <Link to='/snackpass' target='_blank'>
+            <Link to='/snackpass' >
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='snackpass'></div>
               <div className='proj-info-wrapper'>
@@ -207,7 +207,7 @@ class Home extends Component {
               </div>
             </div>
             </Link>
-            <Link to='/enrollment' target='_blank'>
+            <Link to='/enrollment' >
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='enrollment'></div>
               <div className='proj-info-wrapper'>
@@ -232,7 +232,7 @@ class Home extends Component {
               My LinkedIn is <a className='blue-text' href='http://linkedin.com/in/loisbin' target='_blank'>here</a>.
             </h2>
             <h2 className='contact-text'>
-              More about me <Link className='blue-text' to='/about' target='_blank'>here</Link>.
+              More about me <Link className='blue-text' to='/about' >here</Link>.
             </h2>
 
           </div>
