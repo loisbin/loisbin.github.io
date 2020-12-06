@@ -123,7 +123,7 @@ class Enrollment extends Component {
 
           <div className='proj-body-text'>
             <p className='overview-title'>Course Enrollment Redesign</p>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='overview-info'>
                 <p className='gray' id='no-margin'>Type</p>
                 <p id='no-margin'>UI/UX, Web</p>
@@ -143,13 +143,13 @@ class Enrollment extends Component {
             </p>
             <br/>
 
-            <div className='img-wrapper-100-plus fade'>
+            <div className='img-wrapper-100 fade'>
               <img className='img' src={overview} alt='Overview'/>
             </div>
             <br/>
 
             {/* Defining the problem */}
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Defining the problem</p>
               </div>
@@ -182,12 +182,12 @@ class Enrollment extends Component {
             {/* Pain points */}
             <p className='proj-subtitle'>Pain points</p>
             <div className='images fade'>
-              <div className='img-wrapper-100-plus'><img className='img' src={painPoints} alt='Current user pain points'/></div>
+              <div className='img-wrapper-100'><img className='img' src={painPoints} alt='Current user pain points'/></div>
             </div>
             <br/>
 
             {/* Use cases */}
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Use cases</p>
               </div>
@@ -216,7 +216,7 @@ class Enrollment extends Component {
             <br/>
 
             {/* Goals */}
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Goals</p>
               </div>
@@ -240,7 +240,7 @@ class Enrollment extends Component {
             <br/>
 
             {/* Ideation and wireframing */}
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Ideation and wireframing</p>
               </div>
@@ -278,7 +278,7 @@ class Enrollment extends Component {
             </p>
             <br/>
             <div className='images fade'>
-              <div className='img-wrapper-100-plus'><img className='img' src={wireframe} alt='Wireframe'/></div>
+              <div className='img-wrapper-100'><img className='img' src={wireframe} alt='Wireframe'/></div>
             </div>
             <br/>
 

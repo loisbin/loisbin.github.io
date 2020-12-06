@@ -7,7 +7,7 @@ import back from './misc/back.png';
 
 import header from './square/header.png';
 import checkoutCover from './square/checkout-cover.png';
-import posCover from './square/pickmypos-cover.png';
+import posCover from './square/Device Mockup.png';
 import smsCover from './square/sms-cover.png';
 import cartOld from './square/cart-old.png';
 import cartNew from './square/cart-new.png';
@@ -99,7 +99,7 @@ class Square extends Component {
 
           <div className='links' style={{'position': position, 'top': top}}>
             <div><Link className='link-proj' to='/'><p>Home</p></Link></div>
-            <div><Link className='link-proj' to='/chairish'><p>Next project</p></Link></div>
+            <div><Link className='link-proj' to='/snackpass'><p>Next project</p></Link></div>
           </div>
           <Link to='/'><img className='mobile-back' src={back}/></Link>
 
@@ -123,11 +123,11 @@ class Square extends Component {
             <br/><br/>
 
             <p className='header'>
-              Helping small businesses succeed through design initiatives.
+              Economic empowerment through sleek, efficient design interfaces.
             </p>
             <p className='overview-text'>
-              During my design internship with Square (WFH, video calls, and all) I was part of the Marketing Web team,
-              creating and redesigning pages on Square's website to market, educate, and assist business owners.
+              During my summer with Square's Marketing Web team, I
+              created and redesigned pages on Square's website to market, educate, and assist business owners.
             </p>
             <br/><br/>
 
@@ -136,69 +136,96 @@ class Square extends Component {
             <p className='header'>
               Shop Checkout Redesign
             </p>
-            <p className='text'>
-              My main project was a redesign of Square's Shop cart and checkout flows, in order to address
-              long-standing buildup of features on a years-old checkout experience and to reduce the user-dropoff
-              rates within checkout pages.
-            </p>
-            <br/>
-            <div className='img-wrapper-100-plus fade'><img className='img' src={cartOld} alt=''/></div>
-            <p className='text'>
-              Previous cart
-            </p>
-            <br/>
-            <div className='img-wrapper-100-plus fade'><img className='img' src={cartNew} alt=''/></div>
-            <p className='text'>
-              Redesigned cart
-            </p>
-            <br/>
-            <div className='img-2-wrapper img-wrapper-100-plus'>
-              <div className='img-wrapper-25 fade'><img className='img' src={cartOldMobile} alt=''/></div>
-              <div className='img-wrapper-25 fade'><img className='img' src={cartNewMobile} alt=''/></div>
+            <div className='wrapper space-between'>
+              <div className='proj-subtitle'>
+                <p>Overview</p>
+              </div>
+              <div className='text-wrapper '>
+                <p className='text'>
+                  My main project was a redesign of Square's Shop cart and checkout flows, in order to address
+                  long-standing buildup of features on a years-old checkout experience and to reduce the user-dropoff
+                  rates within checkout pages.
+                </p>
+              </div>
+            </div>
+            <div className='wrapper space-between'>
+              <div className='proj-subtitle'>
+                <p>Current cart</p>
+              </div>
+              <div className='text-wrapper '>
+                <p className='text'>
+                  Issues with the current cart experience largely stems from the layout and hierarchy of the
+                  information within the page. A cart with a large number of items will push info regarding price
+                  and the button to checkout or sign in <span className='highlight'>below the fold</span>,
+                  resulting in unnecessary scrolling. The
+                  <span className='highlight'> current layout does not mirror the checkout pages</span>,
+                  requiring users to become accustomed to 2 layouts.
+                </p>
+              </div>
             </div>
             <br/>
-            <p className='text'>
-              The cart redesign created a <span className='highlight'>more uniform experience</span> from cart to checkout,
-              with the price card to the left of the items, and shortened the real estate of the page. The button was moved above
-              the fold for <span className='highlight'>easy accessibility</span> for the user and prevent un-needed scrolling.
-            </p>
-            <br/>
-            <div className='img-wrapper-100-plus fade'><img className='img' src={checkoutOld} alt=''/></div>
-            <p className='text'>
-              Previous checkout
-            </p>
-            <br/>
-            <div className='img-wrapper-100-plus fade'><img className='img' src={checkoutNew} alt=''/></div>
-            <p className='text'>
-              Redesigned checkout
-            </p>
-            <br/>
-            <div className='img-2-wrapper img-wrapper-100-plus'>
-              <div className='img-wrapper-25 fade'><img className='img' src={checkoutOldMobile} alt=''/></div>
-              <div className='img-wrapper-25 fade'><img className='img' src={checkoutNewMobile} alt=''/></div>
+            <div className='img-2-wrapper img-wrapper-100-plus fade'>
+              <div className='img-wrapper-70'><img className='img' src={cartOld} alt=''/></div>
+              <div className='img-wrapper-25'><img className='img' src={cartOldMobile} alt=''/></div>
+            </div>
+            <br/><br/>
+            <div className='wrapper space-between'>
+              <div className='proj-subtitle'>
+                <p>Re-designed cart</p>
+              </div>
+              <div className='text-wrapper '>
+                <p className='text'>
+                The cart redesign created a <span className='highlight'>more uniform experience</span> from cart to checkout,
+                with the price card to the left of the items, and shortened the real estate of the page. The button was moved above
+                the fold for <span className='highlight'>easy accessibility</span> for the user and prevent un-needed scrolling.
+                </p>
+              </div>
             </div>
             <br/>
-            <p className='text'>
-              The heavy-lifting of the redesign was within the checkout flow, funnelling design iterations
-              down to the <span className='highlight'>usability tests</span> of a progress bar version of checkout
-              vs. a single-page sectioned version, similar to the current experience. Users showed an overall
-              <span className='highlight'> preference for the progress-bar checkout</span> for both desktop and mobile.
-              The new cart and checkout pages are set to ship October 2020.
-            </p>
-            <br/><br/><br/>
-
-            <div className='img-wrapper-full fade'><img className='img' src={smsCover} alt=''/></div>
+            <div className='img-2-wrapper img-wrapper-100-plus fade'>
+              <div className='img-wrapper-70'><img className='img' src={cartNew} alt=''/></div>
+              <div className='img-wrapper-25'><img className='img' src={cartNewMobile} alt=''/></div>
+            </div>
+            <br/><br/>
+            <div className='wrapper space-between'>
+              <div className='proj-subtitle'>
+                <p>Current checkout</p>
+              </div>
+              <div className='text-wrapper '>
+                <p className='text'>
+                From an SEO perspective, the main goal of the redesign of the checkout pages is to
+                <span className='highlight'> reduce the rate of dropoff</span> from within the experience. UX difficulties of the
+                experience are seen in the user's inability to overview the number of steps
+                of the checkout process.
+                </p>
+              </div>
+            </div>
             <br/>
-            <p className='header'>
-              SMS Marketing Page
-            </p>
-            <p className='text'>
-              With the addition of the much-requested text message marketing onto the existing Marketing campaigns
-              that Square sellers can opt into, a new web page for Square Marketing needed to be launched. In
-              collaboration with a content strategist, copy writer, designer, and PMMs, I designed the page working in
-              multiple iterations. It is set to release October 2020.
-            </p>
-            <br/><br/><br/>
+            <div className='img-2-wrapper img-wrapper-100-plus fade'>
+              <div className='img-wrapper-70'><img className='img' src={checkoutOld} alt=''/></div>
+              <div className='img-wrapper-25'><img className='img' src={checkoutOldMobile} alt=''/></div>
+            </div>
+            <br/><br/>
+            <div className='wrapper space-between'>
+              <div className='proj-subtitle'>
+                <p>Re-designed checkout</p>
+              </div>
+              <div className='text-wrapper '>
+                <p className='text'>
+                I designed and iterated between two checkout experiences, funnelling them
+                down through <span className='highlight'>usability tests</span> to the use of the progress bar,
+                at the top of the checkout page shown below, as a means for users to view which step of the process they're at.
+                Tests showed an overall preference for this design of the checkout on both desktop and mobile.
+                The new cart and checkout pages are set to ship <span className='highlight'>Q4 2020</span>.
+                </p>
+              </div>
+            </div>
+            <br/>
+            <div className='img-2-wrapper img-wrapper-100-plus fade'>
+              <div className='img-wrapper-70'><img className='img' src={checkoutNew} alt=''/></div>
+              <div className='img-wrapper-25'><img className='img' src={checkoutNewMobile} alt=''/></div>
+            </div>
+            <br/><br/><br/><br/>
 
             <div className='img-wrapper-full fade'><img className='img' src={posCover} alt=''/></div>
             <br/>
@@ -211,6 +238,20 @@ class Square extends Component {
               project won 1st place, allowing us the opportunity to present to the Square leads.
             </p>
             <br/><br/><br/><br/>
+
+            <div className='img-wrapper-full fade'><img className='img' src={smsCover} alt=''/></div>
+            <br/>
+            <p className='header'>
+              SMS Marketing Page
+            </p>
+            <p className='text'>
+              With the addition of the much-requested text message marketing onto the existing Marketing campaigns
+              that Square sellers can opt into, a new web page for Square Marketing needed to be launched. In
+              collaboration with a content strategist, copy writer, designer, and PMMs, I designed the page working in
+              multiple iterations. It is set to release Q4 2020.
+            </p>
+            <br/><br/><br/>
+
           </div>
 
         </div>

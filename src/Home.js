@@ -176,6 +176,21 @@ class Home extends Component {
               </div>
             </div>
             </Link>
+            <Link to='/snackpass' >
+            <div className='proj-wrapper'>
+              <div className='proj-img fade' id='snackpass'></div>
+              <div className='proj-info-wrapper'>
+                <div className='proj-info'>
+                  <h1 className='proj-title'>Snackpass</h1>
+                  <p className='proj-sub'>Snag a meal deal on campus</p>
+                </div>
+                <div className='proj-type'>
+                  <p className='margin-1'>UI/UX</p>
+                  <p className='margin-1'>Mobile</p>
+                </div>
+              </div>
+            </div>
+            </Link>
             <Link to='/chairish' >
             <div className='proj-wrapper'>
               <div className='proj-img fade' id='chairish'></div>
@@ -187,21 +202,6 @@ class Home extends Component {
                 <div className='proj-type'>
                   <p className='margin-1'>UI/UX</p>
                   <p className='margin-1'>Web</p>
-                  <p className='margin-1'>Mobile</p>
-                </div>
-              </div>
-            </div>
-            </Link>
-            <Link to='/snackpass' >
-            <div className='proj-wrapper'>
-              <div className='proj-img fade' id='snackpass'></div>
-              <div className='proj-info-wrapper'>
-                <div className='proj-info'>
-                  <h1 className='proj-title'>Snackpass</h1>
-                  <p className='proj-sub'>Snag a meal deal on campus</p>
-                </div>
-                <div className='proj-type'>
-                  <p className='margin-1'>UI/UX</p>
                   <p className='margin-1'>Mobile</p>
                 </div>
               </div>

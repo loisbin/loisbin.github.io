@@ -6,12 +6,9 @@ import arrow from './misc/arrow.png';
 import back from './misc/back.png';
 
 import chairish from './chairish/chairish-cover.png';
-import oldAdmin from './chairish/previous-admin.png';
-import newAdmin from './chairish/new-admin.png';
-import oldUser from './chairish/previous-user.png';
-import newUser from './chairish/new-user.png';
-import iteration1 from './chairish/iteration-1.png';
-import iteration2 from './chairish/iteration-2.png';
+import previous from './chairish/previous.png';
+import redesign from './chairish/redesign.png';
+import iterations from './chairish/iterations.png';
 import hover from './chairish/hover.png';
 import mobileCart from './chairish/mobile-cart.png';
 import mobileNullCart from './chairish/mobile-cart-empty.png';
@@ -90,7 +87,7 @@ class Chairish extends Component {
 
           <div className='links' style={{'position': position, 'top': top}}>
             <div className='link-proj'><Link to='/'><p>Home</p></Link></div>
-            <div className='link-proj'><Link to='/snackpass'><p>Next project</p></Link></div>
+            <div className='link-proj'><Link to='/enrollment'><p>Next project</p></Link></div>
           </div>
           <Link to='/'><img className='mobile-back' src={back}/></Link>
 
@@ -101,7 +98,7 @@ class Chairish extends Component {
 
           <div className='proj-body-text'>
             <p className='overview-title'>Chairish</p>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='overview-info'>
                 <p className='gray' id='no-margin'>Type</p>
                 <p id='no-margin'>UI/UX, Web, Mobile</p>
@@ -124,7 +121,7 @@ class Chairish extends Component {
             <br/>
 
             <p className='proj-name'>Order Management</p>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Overview</p>
               </div>
@@ -139,7 +136,7 @@ class Chairish extends Component {
               </div>
             </div>
             <br/>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>The problem</p>
               </div>
@@ -153,10 +150,9 @@ class Chairish extends Component {
                 </p>
               </div>
             </div>
-            <div className='img-wrapper-100-plus fade'><img className='img' src={oldUser} alt='Order'/></div>
-            <div className='img-wrapper-100-plus fade'><img className='img' src={oldAdmin} alt='Order'/></div>
+            <div className='img-wrapper-100 fade'><img className='img' src={previous} alt='Previous pages'/></div>
             <br/>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Use cases</p>
               </div>
@@ -182,7 +178,7 @@ class Chairish extends Component {
               </div>
             </div>
             <br/>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Goals</p>
               </div>
@@ -208,7 +204,7 @@ class Chairish extends Component {
               </div>
             </div>
             <br/>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Iterations</p>
               </div>
@@ -219,34 +215,25 @@ class Chairish extends Component {
                 </p>
               </div>
             </div>
-            <div className='img-wrapper-100 fade'><img className='img' src={iteration2} alt='Order'/></div>
-            <p className='subtext'>
-              Unifying table styling while keeping the current layout.
-            </p>
+            <div className='img-wrapper-100 fade'><img className='img' src={iterations} alt='Iterations'/></div>
             <br/>
-            <div className='img-wrapper-100 fade'><img className='img' src={iteration1} alt='Order'/></div>
-            <p className='subtext'>
-              Unifying table styling and re-working the layout to reduce white space.
-            </p>
-            <br/>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Finals</p>
               </div>
               <div className='text-wrapper space-between'>
                 <p className='text'>
                   Upon review with designers and end users of the order pages, the final iteration was reached,
-                  based on what <span className='highlight'>best addressed the usability issues and eased the use cases</span>
+                  based on what <span className='highlight'> best addressed the usability issues and eased the use cases </span>
                   for these pages.
                 </p>
               </div>
             </div>
-            <div className='img-wrapper-100-plus fade'><img className='img' src={newUser} alt='Order'/></div>
-            <div className='img-wrapper-100-plus fade'><img className='img' src={newAdmin} alt='Order'/></div>
+            <div className='img-wrapper-100 fade'><img className='img' src={redesign} alt='Redesigned pages'/></div>
             <br/><br/>
 
             <p className='proj-name'>Hover Modals</p>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Overview</p>
               </div>
@@ -258,21 +245,21 @@ class Chairish extends Component {
               </div>
             </div>
             <br/>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
-                <p>Objective</p>
+                <p>For desktop</p>
               </div>
               <div className='text-wrapper space-between'>
                 <p className='text'>
-                  Create hover states for different use cases for each icon that lives in the nav bar.
+                  New desktop modals are <span className='highlight'>uniform </span> across all of the nav's links
+                  and incorporate more <span className='highlight'>visual hierarchy</span> using new component
+                  library fonts and sizing.
                 </p>
               </div>
             </div>
-            <br/>
-            <p className='proj-subtitle'>For desktop</p>
             <div className='img-wrapper-100 fade'><img className='img' src={hover} alt='Hover modals'/></div>
             <br/>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>For mobile</p>
               </div>
@@ -288,25 +275,23 @@ class Chairish extends Component {
               <div className='img-wrapper-40'><img className='img' src={mobileNullCart} alt='Cart modal'/></div>
               <div className='img-wrapper-40'><img className='img' src={mobileCart} alt='Cart modal'/></div>
             </div>
-            <p className='subtext'>
-              Left: Null cart modal. Right: Full cart modal.
-            </p>
             <br/><br/>
 
             <p className='proj-name'>User Personas</p>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Overview</p>
               </div>
               <div className='text-wrapper space-between'>
                 <p className='text'>
-                  With user personas, design decisions could hold a stronger case, backed with demographic and
-                  user-based information on how they use Chairish.
+                  With user personas, design decisions could hold a stronger case, backed with
+                  <span className='highlight'> demographic and user-based </span> information on how consumers
+                  use Chairish.
                 </p>
               </div>
             </div>
             <br/>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Objective</p>
               </div>
@@ -316,6 +301,7 @@ class Chairish extends Component {
                 </p>
               </div>
             </div>
+            <br/>
             <div className='img-wrapper-100 fade'><img className='img' src={personas} alt='Personas'/></div>
             <br/><br/>
           </div>

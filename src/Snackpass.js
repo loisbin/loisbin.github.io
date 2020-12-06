@@ -6,15 +6,12 @@ import arrow from './misc/arrow.png';
 import back from './misc/back.png';
 
 import overview from './snackpass/overview.png';
-import painPoints1 from './snackpass/pain-points-1.png';
-import painPoints2 from './snackpass/pain-points-2.png';
+import original from './snackpass/original.png';
 import competitive from './snackpass/competitive-analysis.png'
 import goals from './snackpass/goals.png'
-import wireframe1 from './snackpass/wireframe-1.png';
-import wireframe2 from './snackpass/wireframe-2.png';
+import lofi from './snackpass/lofi.png';
 import color from './snackpass/color-guide.png'
-import iterations from './snackpass/iterations.png'
-import prototype from './snackpass/prototype.png';
+import hifi from './snackpass/hifi.png'
 import snackpassPic from './snackpass/snackpass-cover.png';
 
 class Snackpass extends Component {
@@ -104,7 +101,7 @@ class Snackpass extends Component {
 
           <div className='links' style={{'position': position, 'top': top}}>
             <div className='link-proj'><Link to='/'><p>Home</p></Link></div>
-            <div className='link-proj'><Link to='/enrollment'><p>Next project</p></Link></div>
+            <div className='link-proj'><Link to='/chairish'><p>Next project</p></Link></div>
           </div>
           <Link to='/'><img className='mobile-back' src={back}/></Link>
 
@@ -114,7 +111,7 @@ class Snackpass extends Component {
 
           <div className='proj-body-text'>
             <p className='overview-title'>Snackpass Redesign</p>
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='overview-info'>
                 <p className='gray' id='no-margin'>Type</p>
                 <p id='no-margin'>UI/UX, Mobile</p>
@@ -140,11 +137,11 @@ class Snackpass extends Component {
             </div>
             <br/>
 
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Defining the problem</p>
               </div>
-              <div className='text-wrapper space-between'>
+              <div className='text-wrapper '>
                 <p className='text'>
                   On review of the mobile app&#39;s features and UI, a few of its <span className='highlight'>usability issues</span> came down to these
                   points:
@@ -164,11 +161,7 @@ class Snackpass extends Component {
             </div>
             <br/>
             <div className='images fade'>
-              <div className='img-wrapper-100-plus'><img className='img' src={painPoints1} alt='Pain points'/></div>
-            </div>
-            <br/>
-            <div className='images fade'>
-              <div className='img-wrapper-100-plus'><img className='img' src={painPoints2} alt='Pain points'/></div>
+              <div className='img-wrapper-100-plus'><img className='img' src={original} alt='Original interface'/></div>
             </div>
             <br/>
             <p className='text'>
@@ -195,11 +188,11 @@ class Snackpass extends Component {
             </div>
             <br/>
 
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Ideation and wireframing</p>
               </div>
-              <div className='text-wrapper space-between'>
+              <div className='text-wrapper '>
                 <p className='text'>
                   During the initial process of ideation, a redesign of the <span className='highlight'>information architecture</span> was done to improve the
                   searching UX. Thus, the main navigation removed the friends feed that showed the ordering feed on your campus
@@ -225,7 +218,7 @@ class Snackpass extends Component {
             </p>
             <br/>
             <div className='images fade'>
-              <div className='img-wrapper-100-plus'><img className='img' src={wireframe1} alt='Wireframe search'/></div>
+              <div className='img-wrapper-100-plus'><img className='img' src={lofi} alt='Low fidelity'/></div>
             </div>
             <br/>
             <p className='text'>
@@ -244,10 +237,6 @@ class Snackpass extends Component {
               </ul>
             </p>
             <br/>
-            <div className='images fade'>
-              <div className='img-wrapper-100-plus'><img className='img' src={wireframe2} alt='Wireframe'/></div>
-            </div>
-            <br/>
             <p className='text'>
               The current <span className='highlight'>color palette</span> of the app featured a variety of bright colors
                mixed with the colors the emojis already give. I opted for a more consistent and streamlined palette to
@@ -259,11 +248,11 @@ class Snackpass extends Component {
             </div>
             <br/>
 
-            <div className='wrapper'>
+            <div className='wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Hi-fi prototyping and iterations</p>
               </div>
-              <div className='text-wrapper space-between'>
+              <div className='text-wrapper '>
                 <p className='text'>
                   With wireframes for each redesigned page, I was able to mockup an intial round of hi-fidelity prototypes.
                    Afterwards, I went through and made stylistic iterations with the finalized color palette.
@@ -272,15 +261,7 @@ class Snackpass extends Component {
             </div>
             <br/>
             <div className='images fade'>
-              <div className='img-wrapper-100-plus'><img className='img' src={iterations} alt='Prototype search'/></div>
-            </div>
-            <br/>
-            <p className='text'>
-              A final user flow for the hi-fi prototype is shown below.
-            </p>
-            <br/>
-            <div className='images fade'>
-              <div className='img-wrapper-100-plus'><img className='img' src={prototype} alt='Prototype'/></div>
+              <div className='img-wrapper-100-plus'><img className='img' src={hifi} alt='High fidelity'/></div>
             </div>
             <br/>
             {/*
