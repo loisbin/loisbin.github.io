@@ -216,7 +216,7 @@ class Square extends Component {
                 down through <span className='highlight'>usability tests</span> to the use of the progress bar,
                 at the top of the checkout page shown below, as a means for users to view which step of the process they're at.
                 Tests showed an overall preference for this design of the checkout on both desktop and mobile.
-                The new cart and checkout pages are set to ship <span className='highlight'>Q4 2020</span>.
+                The new cart and checkout pages are set to ship <span className='highlight'>Q1 2021</span>.
                 </p>
               </div>
             </div>
@@ -248,7 +248,8 @@ class Square extends Component {
               With the addition of the much-requested text message marketing onto the existing Marketing campaigns
               that Square sellers can opt into, a new web page for Square Marketing needed to be launched. In
               collaboration with a content strategist, copy writer, designer, and PMMs, I designed the page working in
-              multiple iterations. It is set to release Q4 2020.
+              multiple iterations. The <a className='blue-text' href='https://squareup.com/us/en/software/marketing/sms' target='_blank'>page </a>
+              launched in Q4 2020.
             </p>
             <br/><br/><br/>
 
