@@ -91,20 +91,29 @@ class Home extends Component {
 
     anime({
       targets: '.intro-line-1',
-      translateX: [-300,0],
+      translateX: [-400,0],
       opacity: [0, 1],
       easing: "easeOutExpo",
-      duration: 2000,
+      duration: 1600,
       delay: 400,
     })
 
     anime({
       targets: '.intro-line-2',
-      translateX: [-400,0],
+      translateX: [-600,0],
       opacity: [0, 1],
       easing: "easeOutExpo",
-      duration: 2400,
-      delay: 400,
+      duration: 1700,
+      delay: 450,
+    })
+
+    anime({
+      targets: '.intro-line-3',
+      translateX: [-800,0],
+      opacity: [0, 1],
+      easing: "easeOutExpo",
+      duration: 1800,
+      delay: 500,
     })
 
     anime({
@@ -112,7 +121,7 @@ class Home extends Component {
       translateX: [200,0],
       opacity: [0, 1],
       easing: "easeOutExpo",
-      duration: 2000,
+      duration: 1800,
       delay: 400,
     })
 
@@ -153,7 +162,8 @@ class Home extends Component {
           <div className='intro'>
             <div className='intro-wrapper'>
               <h1 className='intro-line-1'>Hello, I'm <span className='blue-text'>Lois</span>.</h1>
-              <h2 className='intro-line-2'>Designer focused on creating human-centered experiences. Based in California.</h2>
+              <h1 className='intro-line-2'>Designer of human-centered experiences.</h1>
+              <h1 className='intro-line-3'>Based in California.</h1>
             </div>
             <Link className='about-link blue-text' to='/about'>More about me</Link>
           </div>

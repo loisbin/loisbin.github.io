@@ -100,7 +100,7 @@ class About extends Component {
             California-native and UC Berkeley Class of 2020, earning my B.A. in Cognitive Science.<br/>
             Previous design experience includes <Link className='blue-text' to='/square' target='_blank'>Square</Link>
             , <Link className='blue-text' to='/chairish' target='_blank'>Chairish</Link>, and Bandwidth.<br/>
-            When I’m not moving pixels, I’m probably still moving pixels for leisure and digging into anything
+            When I’m not moving pixels, I’m digging into anything
             book, <Link className='blue-text' to='/photos' target='_blank'>photography</Link>, music, or film-related.
           </p>
 

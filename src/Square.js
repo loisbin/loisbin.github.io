@@ -7,7 +7,7 @@ import back from './misc/back.png';
 
 import header from './square/header.png';
 import checkoutCover from './square/checkout-cover.png';
-import posCover from './square/Device Mockup.png';
+import posCover from './square/pick my pos.png';
 import smsCover from './square/sms-cover.png';
 import cartOld from './square/cart-old.png';
 import cartNew from './square/cart-new.png';

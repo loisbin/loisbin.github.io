@@ -54,7 +54,7 @@ a {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 3.5em;
   font-family: 'Yeseva One', serif;
   margin: 1% 0;
   font-weight: normal;
@@ -165,7 +165,7 @@ h2 {
 
 .intro {
   position: relative;
-  top: 20%;
+  top: 2%;
   display: flex;
   justify-content: space-between;
   transform: translateX(0px);
@@ -299,6 +299,7 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
   top: 60%;
+  width: 80%;
 }
 
 #copyright {
@@ -313,7 +314,7 @@ h2 {
 
 #proj-landscape {
   position: relative;
-  top: 40%;
+  top: 0%;
 }
 
 ::-webkit-scrollbar {
@@ -335,7 +336,7 @@ h2 {
 @media screen and (min-width: 600px) and (orientation: portrait) {
 
   h1 {
-    font-size: 6em;
+    font-size: 5em;
   }
 
   h2 {
@@ -343,7 +344,7 @@ h2 {
   }
 
   .intro {
-    top: 50%;
+    top: 10%;
   }
 
   .proj-img {
@@ -389,7 +390,7 @@ h2 {
 @media screen and (min-width: 600px) and (orientation: landscape) {
 
   h1 {
-    font-size: 6em;
+    font-size: 5em;
   }
 
   h2 {
@@ -397,7 +398,7 @@ h2 {
   }
 
   .intro {
-    top: 50%;
+    top: 10%;
   }
 
   .nav-email {
@@ -442,7 +443,7 @@ h2 {
   }
 
   #proj-landscape {
-    top: 20%;
+    top: 0%;
   }
 
   #proj-portrait {
@@ -496,6 +497,14 @@ h2 {
     100% { -webkit-transform: translate(1px, -2px) rotate(-0.5deg); transform: translate(1px, -2px) rotate(-0.5deg); }
   }
 
+  h1 {
+    font-size: 5.5em;
+  }
+
+  .intro {
+    top: 20%;
+  }
+
   .fade {
     opacity: 0;
   }
@@ -507,7 +516,7 @@ h2 {
   }
 
   #proj-landscape {
-    top: 20%;
+    top: 0%;
   }
 
   ::-webkit-scrollbar {
