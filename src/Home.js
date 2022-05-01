@@ -6,8 +6,7 @@ import anime from 'animejs/lib/anime.es.js';
 import './Home.css';
 import _ from 'lodash';
 import Preview from './Preview.js';
-
-import arrow from './misc/arrow.png';
+import arrow from './misc/arrow-down-short.svg';
 import background from './misc/background.png';
 import enrollmentGif from './enrollment/untitled.gif';
 import snackpassPic from './snackpass/snackpass-cover.png';
@@ -87,8 +86,6 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    document.title = 'Lois Bin';
-
     anime({
       targets: '.intro-line-1',
       translateX: [-400,0],
@@ -135,6 +132,7 @@ class Home extends Component {
   };
 
   render() {
+    document.title = 'Lois Bin';
     let opacity = this.state.opacity;
     let navOpacity = this.state.navOpacity;
 
@@ -146,26 +144,26 @@ class Home extends Component {
         <div id='body2'>
         {/* BODY WITH PADDING */}
 
-          <img id='welcome' className='background' src={background} />
           <div className='nav'>
-            <div className='nav-main'>
-              <HashLink to='/#welcome' className='nav-link'>Welcome</HashLink>
-              <HashLink to='#proj-landscape' className='nav-link'>Work</HashLink>
-              <HashLink to='#contact' className='nav-link'>Links</HashLink>
-            </div>
+            {/* nav bar */}
+            <img src="" />
             <div className='nav-contact' style={{'opacity': navOpacity}}>
-              <span className='nav-email'>lois.bin@gmail.com</span>
+              <a className='nav-email'>lois.bin@gmail.com</a>
               <a className='nav-link' href='http://linkedin.com/in/loisbin' target='_blank'>LinkedIn</a>
             </div>
           </div>
-          <span className='copyright'>c. Lois Bin</span>
+          <span className='copyright'>c. Lois Bin — 2022</span>
           <div className='intro'>
-            <div className='intro-wrapper'>
-              <h1 className='intro-line-1'>Hello, I'm <span className='blue-text'>Lois</span>.</h1>
-              <h1 className='intro-line-2'>Designer of human-centered experiences.</h1>
-              <h1 className='intro-line-3'>Based in California.</h1>
-            </div>
-            <Link className='about-link blue-text' to='/about'>More about me</Link>
+            {/* intro */}
+              <div className='intro-wrapper'>
+                <h1 className='intro-line-1'>Hello, I'm <Link className='about-link' to='/about'>Lois</Link>.</h1>
+                <h1 className='intro-line-2'>Designer of human-centered experiences.</h1>
+              </div>
+              <h1 className='intro-line-3'>Currently designing and coding a universal API for IoT at <a>Seam</a>.</h1>
+          </div>
+          <hr style={{marginTop: "15%"}}/>
+          <div style={{ display: "flex", position: "absolute", top: "90%"}}>
+            <p style={{marginRight: 4}}>See below for projects</p> <img src={arrow}/>
           </div>
 
           <div id='proj-landscape'>

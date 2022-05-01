@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import anime from 'animejs/lib/anime.es.js';
 import './About.css';
 import back from './misc/back.png';
-import me from './about/pic.png';
+import me from './about/me.png';
 import lois from './about/lois.png';
 import bin from './about/bin.png';
 
