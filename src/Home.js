@@ -59,11 +59,11 @@ class Home extends Component {
     const projImg = document.getElementsByClassName('proj-img');
 
     intro.style.transform = 'translateY(' + (-position/3) + 'px)';
-    for (let i = 0; i < projInfo.length; i++) {
-      if (position + window.innerHeight > projImg[i].offsetTop+200) {
-        projInfo[i].style.transform = 'translateY(' + (-position/(3+i)+projImg[0].scrollHeight+(100*(-2+i))) + 'px)';
-      }
-    }
+    // for (let i = 0; i < projInfo.length; i++) {
+    //   if (position + window.innerHeight > projImg[i].offsetTop+200) {
+    //     projInfo[i].style.transform = 'translateY(' + (-position/(3+i)+projImg[0].scrollHeight+(100*(-2+i))) + 'px)';
+    //   }
+    // }
 
     //Nav links not visible when at contact section
     const body = document.getElementById('body2');
@@ -72,7 +72,6 @@ class Home extends Component {
     } else {
       this.setState({'navOpacity': 1})
     }
-
 
     /*
     //INTRO TEXT
@@ -139,10 +138,10 @@ class Home extends Component {
     return (
 
       <div id='body' onScroll={this.handleScroll}>
-      {/* BODY */}
+      {/* body */}
 
         <div id='body2'>
-        {/* BODY WITH PADDING */}
+        {/* body with padding */}
 
           <div className='nav'>
             {/* nav bar */}
@@ -167,73 +166,22 @@ class Home extends Component {
           </div>
 
           <div id='proj-landscape'>
-          {/* PROJECTS SECTION */}
-            <Link to='/square' >
+          {/* projects */}
             <div className='proj-wrapper'>
-              <div className='proj-img fade' id='square'></div>
-              <div className='proj-info-wrapper'>
-                <div className='proj-info'>
-                  <h1 className='proj-title'>Square</h1>
-                  <p className='proj-sub'>On the Marketing Web team</p>
-                </div>
-                <div className='proj-type'>
-                  <p className='margin-1'>UI/UX</p>
-                  <p className='margin-1'>Web</p>
-                  <p className='margin-1'>Mobile</p>
-                </div>
-              </div>
+            <Link className='proj-title' to='/square' >Square</Link>
+              <p className='proj-sub'>2020 — Redesigned the Square's Shop Checkout experience to reduce drop-off rates and more!</p>
+              <div className='proj-img fade' id='square'></div> 
             </div>
-            </Link>
-            <Link to='/snackpass' >
+
             <div className='proj-wrapper'>
-              <div className='proj-img fade' id='snackpass'></div>
-              <div className='proj-info-wrapper'>
-                <div className='proj-info'>
-                  <h1 className='proj-title'>Snackpass</h1>
-                  <p className='proj-sub'>Snag a meal deal on campus</p>
-                </div>
-                <div className='proj-type'>
-                  <p className='margin-1'>UI/UX</p>
-                  <p className='margin-1'>Mobile</p>
-                </div>
-              </div>
+            <Link className='proj-title' to='/chairish' >Chairish</Link>
+              <p className='proj-sub'>2019 — Internal tooling for Customer Success teams and creating user stories.</p>
+              <div className='proj-img fade' id='chairish'></div> 
             </div>
-            </Link>
-            <Link to='/chairish' >
-            <div className='proj-wrapper'>
-              <div className='proj-img fade' id='chairish'></div>
-              <div className='proj-info-wrapper'>
-                <div className='proj-info'>
-                  <h1 className='proj-title'>Chairish</h1>
-                  <p className='proj-sub'>E-commerce for vintage buffs</p>
-                </div>
-                <div className='proj-type'>
-                  <p className='margin-1'>UI/UX</p>
-                  <p className='margin-1'>Web</p>
-                  <p className='margin-1'>Mobile</p>
-                </div>
-              </div>
-            </div>
-            </Link>
-            <Link to='/enrollment' >
-            <div className='proj-wrapper'>
-              <div className='proj-img fade' id='enrollment'></div>
-              <div className='proj-info-wrapper'>
-                <div className='proj-info'>
-                  <h1 className='proj-title'>Course Enrollment</h1>
-                  <p className='proj-sub'>Effortlessly navigate classes</p>
-                </div>
-                <div className='proj-type'>
-                  <p className='margin-1'>UI/UX</p>
-                  <p className='margin-1'>Web</p>
-                </div>
-              </div>
-            </div>
-            </Link>
           </div>
 
           <div id='contact' className='fade'>
-          {/* CONTACT */}
+          {/* contact */}
             <h1>Let's <span className='blue-text'>create</span> something great <span className='blue-text'>together</span>.</h1>
             <h2 className='contact-text'>My email is lois.bin@gmail.com</h2>
             <h2 className='contact-text'>

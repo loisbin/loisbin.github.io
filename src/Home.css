@@ -27,7 +27,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #body2 {
@@ -193,9 +193,9 @@ h2 {
   width: 10%;
 }
 
-.margin-1 {
+/* .margin-1 {
   margin: 0.5em 0 0 0;
-}
+} */
 
 .nav {
   width: 100%;
@@ -231,6 +231,7 @@ h2 {
 }
 
 .proj-img {
+  border-radius: 8px;
   width: 100%;
   margin: auto;
   height: 400px;
@@ -238,39 +239,25 @@ h2 {
   background-size: cover;
 }
 
-.proj-info {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-
-.proj-info-wrapper {
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  margin-top: 0%;
-  text-align: center;
-}
-
 .proj-sub {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2em;
-  margin: 1% 0 0 0;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  width: 30%;
 }
 
 .proj-title {
-
+  font-size: 2em;
+  width: 25%
 }
 
-.proj-type {
+/* .proj-type {
   margin-top: 5%;
-}
+} */
 
 .proj-wrapper {
+  color: black;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   width: 100%;
   margin: 20% 0;
 }
@@ -317,7 +304,7 @@ h2 {
 
 #proj-landscape {
   position: relative;
-  top: 0%;
+  top: 10%;
 }
 
 ::-webkit-scrollbar {
@@ -352,31 +339,18 @@ h2 {
 
   .proj-img {
     width: 45%;
-    margin: auto;
-    height: 400px;
-    background-position: center;
-    background-size: cover;
+    height: 300px;
   }
-
-  .proj-info {
-    text-align: left;
-  }
-
-  .proj-info-wrapper {
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-    margin-top: -20%;
-  }
+  
 
   .proj-sub {
     margin: 0;
   }
 
-  .proj-type {
+  /* .proj-type {
     text-align: right;
     align-self: flex-end;
-  }
+  } */
 
   .proj-wrapper {
     width: 100%;
@@ -409,36 +383,22 @@ h2 {
   }
 
   .proj-img {
-    width: 45%;
-    margin: auto;
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .proj-info {
-    text-align: left;
-  }
-
-  .proj-info-wrapper {
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-    margin-top: -20%;
+    width: 30%;
+    height: 300px;
   }
 
   .proj-sub {
     margin: 0;
   }
 
-  .proj-type {
+  /* .proj-type {
     text-align: right;
     align-self: flex-end;
-  }
+  } */
 
   .proj-wrapper {
     width: 100%;
-    margin: 30% 0;
+    margin: 5% 0 10% 0;
   }
 
   #contact {
@@ -524,7 +484,7 @@ h2 {
   }
 
   #proj-landscape {
-    top: 0%;
+    top: 20%;
   }
 
   ::-webkit-scrollbar {
