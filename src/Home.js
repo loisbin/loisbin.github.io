@@ -184,7 +184,7 @@ class Home extends Component {
             <p style={{marginRight: 4}}>See below for contact info</p> <img src={arrow}/>
           </div>
 
-          <div id='contact' className='fade'>
+          <div id='contact'>
           {/* contact */}
             <h1 className='contact-text'>Feel free to shoot me an email at <a href="#" onClick={() => {navigator.clipboard.writeText("lois.bin@gmail.com")}} >lois.bin@gmail.com</a>.</h1>
             <h1 className='contact-text'>
