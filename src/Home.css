@@ -70,6 +70,10 @@ h2 {
   font-weight: normal;
 }
 
+hr {
+  margin-top: 15%;
+}
+
 .about-images {
   opacity: 0;
 }
@@ -134,7 +138,7 @@ h2 {
 }
 
 .contact-text {
-  margin: 1% 0 0 0;
+  margin: 0 0 2% 0;
 }
 
 .copyright {
@@ -193,10 +197,6 @@ h2 {
   width: 10%;
 }
 
-/* .margin-1 {
-  margin: 0.5em 0 0 0;
-} */
-
 .nav {
   width: 100%;
   height: 5%;
@@ -237,26 +237,29 @@ h2 {
   height: 400px;
   background-position: center;
   background-size: cover;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+.proj-img-link {
+  width: 100%;
 }
 
 .proj-sub {
-  /* font-family: 'Source Sans Pro', sans-serif; */
-  width: 30%;
+  margin: 4% 0;
+  width: 100%;
 }
 
 .proj-title {
+  font-family: 'Source Serif Pro', 'serif';
   font-size: 2em;
-  width: 25%
+  width: 100%
 }
-
-/* .proj-type {
-  margin-top: 5%;
-} */
 
 .proj-wrapper {
   color: black;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   margin: 20% 0;
@@ -283,13 +286,12 @@ h2 {
 
 #contact {
   font-family: 'Source Serif Pro', serif;
-  height: 100%;
+  height: 35%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  top: 60%;
-  width: 80%;
+  top: 80%;
 }
 
 #copyright {
@@ -337,22 +339,12 @@ h2 {
     top: 10%;
   }
 
-  .proj-img {
-    width: 45%;
-    height: 300px;
+  .intro-line-3 {
+    width: 100%;
   }
-  
-
-  .proj-sub {
-    margin: 0;
-  }
-
-  /* .proj-type {
-    text-align: right;
-    align-self: flex-end;
-  } */
 
   .proj-wrapper {
+    align-items: flex-end;
     width: 100%;
     margin: 30% 0;
   }
@@ -374,29 +366,44 @@ h2 {
     font-size: 2.5em;
   }
 
+  .contact-text {
+    margin: 0% 0 1% 0;
+  }
+
   .intro {
     top: 10%;
   }
 
+  .intro-line-3 {
+    width: 100%;
+  }
+
+
   .nav-email {
     margin-right: 80px;
   }
+  
 
   .proj-img {
-    width: 30%;
     height: 300px;
+  }
+
+  .proj-img-link {
+    width: 30%;
   }
 
   .proj-sub {
     margin: 0;
+    width: 30%;
   }
 
-  /* .proj-type {
-    text-align: right;
-    align-self: flex-end;
-  } */
+  .proj-title {
+    width: 25%
+  }
 
   .proj-wrapper {
+    align-items: flex-end;
+    flex-direction: row;
     width: 100%;
     margin: 5% 0 10% 0;
   }
@@ -467,7 +474,7 @@ h2 {
   .intro {
     top: 20%;
   }
-
+  
   .intro-wrapper {
     flex-direction: row;
     margin-bottom: 15%;

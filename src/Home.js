@@ -147,7 +147,7 @@ class Home extends Component {
             {/* nav bar */}
             <img src="" />
             <div className='nav-contact' style={{'opacity': navOpacity}}>
-              <a className='nav-email'>lois.bin@gmail.com</a>
+              <a className='nav-email' href="#" onClick={() => {navigator.clipboard.writeText("lois.bin@gmail.com")}}>lois.bin@gmail.com</a>
               <a className='nav-link' href='http://linkedin.com/in/loisbin' target='_blank'>LinkedIn</a>
             </div>
           </div>
@@ -160,8 +160,8 @@ class Home extends Component {
               </div>
               <h1 className='intro-line-3'>Currently designing and coding a universal API for IoT at <a>Seam</a>.</h1>
           </div>
-          <hr style={{marginTop: "15%"}}/>
-          <div style={{ display: "flex", position: "absolute", top: "90%"}}>
+          <hr/>
+          <div style={{ display: "flex"}}>
             <p style={{marginRight: 4}}>See below for projects</p> <img src={arrow}/>
           </div>
 
@@ -170,27 +170,26 @@ class Home extends Component {
             <div className='proj-wrapper'>
             <Link className='proj-title' to='/square' >Square</Link>
               <p className='proj-sub'>2020 — Redesigned the Square's Shop Checkout experience to reduce drop-off rates and more!</p>
-              <div className='proj-img fade' id='square'></div> 
+              <Link className='proj-img-link' to='/square'><div className='proj-img fade' id='square'></div></Link>
             </div>
 
             <div className='proj-wrapper'>
             <Link className='proj-title' to='/chairish' >Chairish</Link>
               <p className='proj-sub'>2019 — Internal tooling for Customer Success teams and creating user stories.</p>
-              <div className='proj-img fade' id='chairish'></div> 
+              <Link className='proj-img-link' to='/chairish' ><div className='proj-img fade' id='chairish'></div></Link>
             </div>
+          </div>
+          <hr style={{marginTop: "20%"}}/>
+          <div style={{ display: "flex"}}>
+            <p style={{marginRight: 4}}>See below for contact info</p> <img src={arrow}/>
           </div>
 
           <div id='contact' className='fade'>
           {/* contact */}
-            <h1>Let's <span className='blue-text'>create</span> something great <span className='blue-text'>together</span>.</h1>
-            <h2 className='contact-text'>My email is lois.bin@gmail.com</h2>
-            <h2 className='contact-text'>
-              My LinkedIn is <a className='blue-text' href='http://linkedin.com/in/loisbin' target='_blank'>here</a>.
-            </h2>
-            <h2 className='contact-text'>
-              More about me <Link className='blue-text' to='/about' >here</Link>.
-            </h2>
-
+            <h1 className='contact-text'>Feel free to shoot me an email at <a href="#" onClick={() => {navigator.clipboard.writeText("lois.bin@gmail.com")}} >lois.bin@gmail.com</a>.</h1>
+            <h1 className='contact-text'>
+              My LinkedIn is <a href='http://linkedin.com/in/loisbin' target='_blank'>here</a>.
+            </h1>
           </div>
 
         </div>
