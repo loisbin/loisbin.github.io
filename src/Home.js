@@ -27,11 +27,6 @@ class Home extends Component {
 
     let position = document.getElementById('body2').scrollTop;
     const bodyHeight = document.getElementById('body2').scrollHeight;
-    // const fadeIn = {opacity: ['0', '1']};
-    // const fadeOut = {opacity: ['1', '0']};
-    // const animationOpts = {duration: 200, fill: 'forwards', easing: 'ease-out'};
-    // const animationOpts2 = {duration: 300, delay: 600, fill: 'forwards', easing: 'ease-in-out'};
-    // const animationOpts3 = {duration: 600, fill: 'forwards', easing: 'cubic-bezier(.22,.53,.58,.83)'};
 
     // FADE IN
     const fades = document.getElementsByClassName('fade');
@@ -72,8 +67,8 @@ class Home extends Component {
       this.setState({'navOpacity': 1})
     }
 
-    /*
     // INTRO TEXT
+    /*
     if (position < window.innerHeight) {
       const text = document.getElementsByClassName('intro')[0];
       //text.style.transform = 'rotateX('+position/5+'deg)';
@@ -85,47 +80,13 @@ class Home extends Component {
 
   componentDidMount() {
 
-    // anime({
-    //   targets: '.intro-line-1',
-    //   translateX: [-400,0],
-    //   opacity: [0, 1],
-    //   easing: "easeOutExpo",
-    //   duration: 1600,
-    //   delay: 400,
-    // })
-
-    // anime({
-    //   targets: '.intro-line-2',
-    //   translateX: [-600,0],
-    //   opacity: [0, 1],
-    //   easing: "easeOutExpo",
-    //   duration: 1700,
-    //   delay: 450,
-    // })
-
-    // anime({
-    //   targets: '.intro-line-3',
-    //   translateX: [-800,0],
-    //   opacity: [0, 1],
-    //   easing: "easeOutExpo",
-    //   duration: 1800,
-    //   delay: 500,
-    // })
-
-    // anime({
-    //   targets: '.about-link',
-    //   translateX: [200,0],
-    //   opacity: [0, 1],
-    //   easing: "easeOutExpo",
-    //   duration: 1800,
-    //   delay: 400,
-    // })
-
     anime({
-      targets: '.nav',
+      targets: ['.nav', '.grid-container'],
       opacity: [0, 1],
-      easing: "easeOutExpo",
-      duration: 4000
+      easing: "easeInOutExpo",
+      duration: 1300
+      //   delay: 400,
+      //   translateX: [200,0],
     })
 
   };
@@ -138,29 +99,28 @@ class Home extends Component {
     return (
 
       <div id='body' onScroll={this.handleScroll}>
-      {/* body */}
 
-        <div id='body2'>
         {/* body with padding */}
+        <div id='body2'>
 
+          {/* nav bar */}
           <div className='nav'>
-            {/* nav bar */}
             <img src="" />
             <div className='nav-contact' style={{'opacity': navOpacity}}>
               <a className='nav-email' href="#" onClick={() => {navigator.clipboard.writeText("lois.bin@gmail.com")}}>lois.bin@gmail.com</a>
               <a className='nav-link' href='http://linkedin.com/in/loisbin' target='_blank'>LinkedIn</a>
             </div>
           </div>
-          {/*<span className='copyright'>c. Lois Bin — 2022</span>*/}
-
-
 
           <div className='grid-container'>
+
+            {/* intro */}
             <h1 className='grid-item-1'>Product designer @ Square.</h1>
             <h1 className='grid-item-2'><i>Based in California.</i></h1>
 
             <hr class='rounded' className='grid-item-full'/>
 
+            {/* projects */}
             <h4 className='grid-item-1'>UI/UX</h4>
 
             <h1 className='grid-item-1'>Resquared Reports</h1>
@@ -169,52 +129,31 @@ class Home extends Component {
 
             <div className='grid-item-full margin-v'></div>
 
-            <h1 className='grid-item-1'>Square Shop Checkout</h1>
-            <h1 className='grid-item-2'><i>2020 – Redesigned the marketing site's checkout experience.</i></h1>
-            <div className='grid-item-full proj-img'></div>
+            <Link to='/square'>
+              <h1 className='grid-item-1'>Square Shop Checkout</h1>
+              </Link>
+              <h1 className='grid-item-2'><i>2020 – Redesigned the marketing site's checkout experience.</i></h1>
+              <div className='grid-item-full proj-img' id='square'></div>
+            
 
-          </div>
+            <hr class='rounded' className='grid-item-full'/>
+            {/* <div className='grid-item-full margin-v'></div> */}
 
-
-
-          <div className='intro'>
-            {/* intro */}
-              {/* <div className='intro-wrapper'>
-                <h1 className='intro-line-1'>Hello, I'm <Link className='about-link' to='/about'>Lois</Link>.</h1>
-                <h1 className='intro-line-2'>Designer of human-centered experiences.</h1>
-              </div>
-              <h1 className='intro-line-3'>Currently designing and coding a universal API for IoT at <a>Seam</a>.</h1>
-          </div>
-          <hr/>
-          <div style={{ display: "flex"}}>
-            <p style={{marginRight: 4}}>See below for projects</p> <img src={arrow}/> */}
-          </div>
-
-          <div id='proj-landscape'>
-          {/* projects */}
-            {/* <div className='proj-wrapper'>
-            <Link className='proj-title' to='/square' >Square</Link>
-              <p className='proj-sub'>2020 — Redesigned the Square's Shop Checkout experience to reduce drop-off rates and more!</p>
-              <Link className='proj-img-link' to='/square'><div className='proj-img fade' id='square'></div></Link>
-            </div>
-
-            <div className='proj-wrapper'>
-            <Link className='proj-title' to='/chairish' >Chairish</Link>
-              <p className='proj-sub'>2019 — Internal tooling for Customer Success teams and creating user stories.</p>
-              <Link className='proj-img-link' to='/chairish' ><div className='proj-img fade' id='chairish'></div></Link>
-            </div>
-          </div>
-          <hr style={{marginTop: "20%"}}/>
-          <div style={{ display: "flex"}}>
-            <p style={{marginRight: 4}}>See below for contact info</p> <img src={arrow}/> */}
-          </div>
-
-          <div id='contact'>
-          {/* contact */}
-            <h1 className='contact-text'>Feel free to shoot me an email at <a href="#" onClick={() => {navigator.clipboard.writeText("lois.bin@gmail.com")}} >lois.bin@gmail.com</a>.</h1>
-            <h1 className='contact-text'>
-              My LinkedIn is <a href='http://linkedin.com/in/loisbin' target='_blank'>here</a>.
+            {/* contact */}
+            <h4 className='grid-item-1'>Email</h4>
+            <h4 className='grid-item-2'>Social</h4>
+            <h1 className='grid-item-1'>
+              <a href="#" onClick={() => {navigator.clipboard.writeText("lois.bin@gmail.com")}} >lois.bin@gmail.com</a>
             </h1>
+            <h1 className='grid-item-2'>
+              <a href='http://linkedin.com/in/loisbin' target='_blank'>Linkedin</a>
+            </h1>
+
+            <div className='grid-item-full margin-v'></div>
+
+            {/* copyright lol */}
+            <h4 className='grid-item-1'>c. Lois Bin, 2023</h4>
+
           </div>
 
         </div>

@@ -77,6 +77,9 @@ h4 {
 }
 
 hr {
+  background-color:#e4e4e4;
+  border: none;
+  height: 1px;
   margin: 5rem 0;
 }
 
@@ -298,7 +301,7 @@ hr {
 
 #square {
   background-image: url('./square/cover.png');
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
 }
 
