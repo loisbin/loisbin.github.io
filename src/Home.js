@@ -8,8 +8,6 @@ import _ from 'lodash';
 import Preview from './Preview.js';
 import arrow from './misc/arrow-down-short.svg';
 import background from './misc/background.png';
-import enrollmentGif from './enrollment/untitled.gif';
-import snackpassPic from './snackpass/snackpass-cover.png';
 import chairish from './chairish/chairish-cover.png';
 import square from './square/cover.png';
 
