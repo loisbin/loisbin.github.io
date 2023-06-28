@@ -25,8 +25,8 @@ class Home extends Component {
 
   handleScroll = () => {
 
-    let position = document.getElementById('body2').scrollTop;
-    const bodyHeight = document.getElementById('body2').scrollHeight;
+    let position = document.getElementById('body-inner').scrollTop;
+    const bodyHeight = document.getElementById('body-inner').scrollHeight;
 
     // FADE IN
     const fades = document.getElementsByClassName('fade');
@@ -60,7 +60,7 @@ class Home extends Component {
     // }
 
     // Nav links not visible when at contact section
-    const body = document.getElementById('body2');
+    const body = document.getElementById('body-inner');
     if (position + window.innerHeight > body.scrollHeight - window.innerHeight/2) {
       this.setState({'navOpacity': 0})
     } else {
@@ -101,7 +101,7 @@ class Home extends Component {
       <div id='body' onScroll={this.handleScroll}>
 
         {/* body with padding */}
-        <div id='body2'>
+        <div id='body-inner'>
 
           {/* nav bar */}
           <div className='nav'>
@@ -123,17 +123,19 @@ class Home extends Component {
             {/* projects */}
             <h4 className='grid-item-1'>UI/UX</h4>
 
+            {/*
             <h1 className='grid-item-1'>Resquared Reports</h1>
             <h1 className='grid-item-2'><i>2021 – Revamped data viz to show users valuable insights.</i></h1>
             <div className='grid-item-full proj-img'></div>
 
             <div className='grid-item-full margin-v'></div>
+            */}
 
-            <Link to='/square'>
-              <h1 className='grid-item-1'>Square Shop Checkout</h1>
-              </Link>
-              <h1 className='grid-item-2'><i>2020 – Redesigned the marketing site's checkout experience.</i></h1>
-              <div className='grid-item-full proj-img' id='square'></div>
+            <Link className='grid-item-1' to='/square'>
+              <h1>Square Shop Checkout</h1>
+            </Link>
+            <h1 className='grid-item-2'><i>2020 – Redesigned the marketing site's checkout experience.</i></h1>
+            <div className='grid-item-full proj-img' id='square'></div>
             
 
             <hr class='rounded' className='grid-item-full'/>
