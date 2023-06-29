@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import './Project.css';
-import Preview from './Preview.js'
-import arrow from './misc/arrow.png';
+import arrow from './misc/link-arrow.svg';
 import back from './misc/back.png';
 
 import header from './square/header.png';
@@ -45,18 +44,18 @@ class Square extends Component {
     let position = document.getElementById('body-proj').scrollTop;
 
     //absolute to fixed links
-    const links = document.getElementsByClassName('links')[0];
-    if (position > window.innerHeight*.65) {
-      this.setState({'position': 'fixed'});
-      this.setState({'top': '0'});
-    } else if (position < window.innerHeight*.65) {
-      this.setState({'position': 'absolute'});
-      this.setState({'top': '65%'});
-    } else if (position > 100) {
-      this.setState({'visibility': 'visible'});
-    } else if (position === 0) {
-      this.setState({'visibility': 'hidden'});
-    }
+    // const links = document.getElementsByClassName('links')[0];
+    // if (position > window.innerHeight*.65) {
+    //   this.setState({'position': 'fixed'});
+    //   this.setState({'top': '0'});
+    // } else if (position < window.innerHeight*.65) {
+    //   this.setState({'position': 'absolute'});
+    //   this.setState({'top': '65%'});
+    // } else if (position > 100) {
+    //   this.setState({'visibility': 'visible'});
+    // } else if (position === 0) {
+    //   this.setState({'visibility': 'hidden'});
+    // }
 
     //FADE IN
     const fades = document.getElementsByClassName('fade');
@@ -75,14 +74,14 @@ class Square extends Component {
   componentDidMount() {
     document.title = "Square | Lois Bin";
 
-    document.getElementsByClassName('overview-img')[0].animate(
-      {opacity: [0,1]},
-      {duration: 800, fill: 'forwards', easing: 'ease-in-out'}
-    )
-    document.getElementsByClassName('overview-title')[0].animate(
-      {opacity: [0,1]},
-      {duration: 800, fill: 'forwards', easing: 'ease-in-out'}
-    )
+    // document.getElementsByClassName('overview-img')[0].animate(
+    //   {opacity: [0,1]},
+    //   {duration: 800, fill: 'forwards', easing: 'ease-in-out'}
+    // )
+    // document.getElementsByClassName('overview-title')[0].animate(
+    //   {opacity: [0,1]},
+    //   {duration: 800, fill: 'forwards', easing: 'ease-in-out'}
+    // )
 
   };
 
@@ -95,48 +94,52 @@ class Square extends Component {
     return (
       <div id='body'>
 
+        {/* nav bar */}
+        <div className='nav'>
+          <div><Link className='link-proj' to='/'><p style={{fontWeight: 500}}>Back</p></Link></div>
+        </div>
+
         <div id='body-proj' onScroll={this.handleScroll}>
 
-          <div className='links' style={{'position': position, 'top': top}}>
-            <div><Link className='link-proj' to='/'><p>Home</p></Link></div>
-            <div><Link className='link-proj' to='/snackpass'><p>Next project</p></Link></div>
-          </div>
+          {/* <div className='links' style={{'position': position, 'top': top}}>
+            <div><Link className='link-proj' to='/'><p>Back</p></Link></div>
+          </div> */}
           <Link to='/'><img className='mobile-back' src={back}/></Link>
 
-          <div id='arrow-wrapper' onClick={this.handleClick} style={{'visibility': visibility}}>
-          </div>
+          {/* <div id='arrow-wrapper' onClick={this.handleClick} style={{'visibility': visibility}}>
+          </div> */}
 
-          <div className='overview-img' id='overview-square'></div>
+          <div className='grid-container'>
 
-          <div className='proj-body-text'>
-            <p className='overview-title'>Square</p>
-            <div className='wrapper'>
-              <div className='overview-info'>
-                <p className='gray' id='no-margin'>Type</p>
-                <p id='no-margin'>UI/UX, Desktop, Mobile</p>
-              </div>
-              <div className='overview-info'>
-                <p className='gray' id='no-margin'>Date</p>
-                <p id='no-margin'>June - August 2020</p>
-              </div>
+            <h4 className='grid-item-1'>UI/UX</h4>
+              <h4 className='grid-item-2'>Q3 2020</h4>
+              <div className='grid-item-5 nav-wrapper'>
+              <a><h4>Live page</h4></a>
+              <img src={arrow} />
             </div>
-            <br/><br/>
 
-            <p className='header'>
+            <h1 className='grid-item-1-4'>Square Shop Checkout</h1>
+            <h1 className='grid-item-5'><i>2020 – Redesigned the marketing site's checkout experience.</i></h1>
+            <div className='grid-item-full proj-img' id='square'></div>
+            {/* <div className='overview-img' id='overview-square'></div> */}
+
+            <hr class='rounded' className='grid-item-full'/>
+
+            <p className='header grid-item-1-8'>
               Economic empowerment through sleek, efficient design interfaces.
             </p>
-            <p className='overview-text'>
+            <p className='overview-text grid-item-1-8'>
               During my summer with Square's Marketing Web team, I
               created and redesigned pages on Square's website to market, educate, and assist business owners.
             </p>
             <br/><br/>
 
-            <div className='img-wrapper-full fade'><img className='img' src={checkoutCover} alt=''/></div>
+            <div className='img-wrapper-full fade grid-item-full'><img className='img' src={checkoutCover} alt=''/></div>
             <br/>
-            <p className='header'>
+            <p className='grid-item-1-8 header'>
               Shop Checkout Redesign
             </p>
-            <div className='wrapper space-between'>
+            <div className='grid-item-1-6 wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Overview</p>
               </div>
@@ -148,11 +151,11 @@ class Square extends Component {
                 </p>
               </div>
             </div>
-            <div className='wrapper space-between'>
+            <div className='grid-item-7 wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Current cart</p>
               </div>
-              <div className='text-wrapper '>
+              <div className='text-wrapper'>
                 <p className='text'>
                   Issues with the current cart experience largely stems from the layout and hierarchy of the
                   information within the page. A cart with a large number of items will push info regarding price
@@ -164,16 +167,16 @@ class Square extends Component {
               </div>
             </div>
             <br/>
-            <div className='img-2-wrapper img-wrapper-100-plus fade'>
+            <div className='grid-item-full img-2-wrapper img-wrapper-100 fade'>
               <div className='img-wrapper-70'><img className='img' src={cartOld} alt=''/></div>
               <div className='img-wrapper-25'><img className='img' src={cartOldMobile} alt=''/></div>
             </div>
             <br/><br/>
-            <div className='wrapper space-between'>
+            <div className='grid-item-1-8 wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Re-designed cart</p>
               </div>
-              <div className='text-wrapper '>
+              <div className='text-wrapper'>
                 <p className='text'>
                 The cart redesign created a <span className='highlight'>more uniform experience</span> from cart to checkout,
                 with the price card to the left of the items, and shortened the real estate of the page. The button was moved above
@@ -182,12 +185,12 @@ class Square extends Component {
               </div>
             </div>
             <br/>
-            <div className='img-2-wrapper img-wrapper-100-plus fade'>
+            <div className='grid-item-full img-2-wrapper img-wrapper-100 fade'>
               <div className='img-wrapper-70'><img className='img' src={cartNew} alt=''/></div>
               <div className='img-wrapper-25'><img className='img' src={cartNewMobile} alt=''/></div>
             </div>
             <br/><br/>
-            <div className='wrapper space-between'>
+            <div className='grid-item-1-8 wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Current checkout</p>
               </div>
@@ -201,12 +204,12 @@ class Square extends Component {
               </div>
             </div>
             <br/>
-            <div className='img-2-wrapper img-wrapper-100-plus fade'>
+            <div className='grid-item-full img-2-wrapper img-wrapper-100 fade'>
               <div className='img-wrapper-70'><img className='img' src={checkoutOld} alt=''/></div>
               <div className='img-wrapper-25'><img className='img' src={checkoutOldMobile} alt=''/></div>
             </div>
             <br/><br/>
-            <div className='wrapper space-between'>
+            <div className='grid-item-1-8 wrapper space-between'>
               <div className='proj-subtitle'>
                 <p>Re-designed checkout</p>
               </div>
@@ -221,30 +224,30 @@ class Square extends Component {
               </div>
             </div>
             <br/>
-            <div className='img-2-wrapper img-wrapper-100-plus fade'>
+            <div className='grid-item-full img-2-wrapper img-wrapper-100 fade'>
               <div className='img-wrapper-70'><img className='img' src={checkoutNew} alt=''/></div>
               <div className='img-wrapper-25'><img className='img' src={checkoutNewMobile} alt=''/></div>
             </div>
             <br/><br/><br/><br/>
 
-            <div className='img-wrapper-full fade'><img className='img' src={posCover} alt=''/></div>
+            <div className='grid-item-full img-wrapper-full fade'><img className='img' src={posCover} alt=''/></div>
             <br/>
-            <p className='header'>
+            <p className='grid-item-1-8 header'>
               Pick My POS — Intern Hack Week
             </p>
-            <p className='text'>
+            <p className='grid-item-1-8 text'>
               During a week-long hack week for interns, I designed the interface and interaction of my team's web questionnaire that
               recommends Square sellers, prospective or new, a POS device based on their business and needs. Our
               project won 1st place, allowing us the opportunity to present to the Square leads.
             </p>
             <br/><br/><br/><br/>
 
-            <div className='img-wrapper-full fade'><img className='img' src={smsCover} alt=''/></div>
+            <div className='grid-item-full img-wrapper-full fade'><img className='img' src={smsCover} alt=''/></div>
             <br/>
-            <p className='header'>
+            <p className='grid-item-1-8 header'>
               SMS Marketing Page
             </p>
-            <p className='text'>
+            <p className='grid-item-1-8 text'>
               With the addition of the much-requested text message marketing onto the existing Marketing campaigns
               that Square sellers can opt into, a new web page for Square Marketing needed to be launched. In
               collaboration with a content strategist, copy writer, designer, and PMMs, I designed the page working in

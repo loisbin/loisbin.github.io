@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import './Project.css';
-import Preview from './Preview.js'
-import arrow from './misc/arrow.png';
 import back from './misc/back.png';
 
 import chairish from './chairish/chairish-cover.png';
