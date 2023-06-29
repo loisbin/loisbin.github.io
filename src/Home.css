@@ -89,7 +89,7 @@ hr {
   display: grid;
   gap: 2rem;
   grid-template-rows: repeat(12, auto);
-  margin: 5rem 0 0 0;
+  margin: 5rem 0;
 }
 
 .grid-item-1 {
