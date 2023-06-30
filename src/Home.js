@@ -108,7 +108,7 @@ class Home extends Component {
               <img src={copy} />
             </div>
             <div className='nav-wrapper'>
-              <a className='nav-link' href='http://linkedin.com/in/loisbin' target='_blank'>LinkedIn</a>
+              <a className='nav-link' href='http://linkedin.com/in/loisbin' target='_blank'>Linkedin</a>
               <img src={arrow} />
             </div>
           </div>
@@ -140,7 +140,7 @@ class Home extends Component {
             <Link className='grid-item-1' to='/square'>
               <h1>Square Shop Checkout</h1>
             </Link>
-            <h1 className='grid-item-5'><i>2020 – Redesigned the marketing site's checkout experience.</i></h1>
+            <h1 className='grid-item-5'><i>2020 – Redesign of the marketing site's checkout experience.</i></h1>
             <div className='grid-item-full proj-img' id='square'></div>
             
 
@@ -160,7 +160,7 @@ class Home extends Component {
             <div className='grid-item-full margin-v'></div>
 
             {/* copyright lol */}
-            <h4 className='grid-item-1'>c. Lois Bin, 2023</h4>
+            <p className='grid-item-1'>c. Lois Bin, 2023</p>
 
           </div>
 
