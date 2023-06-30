@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Photos.css';
-import arrow from './misc/arrow.png';
 import back from './misc/back.png';
 
 import carlsbad from './photos/carlsbad.jpg';
