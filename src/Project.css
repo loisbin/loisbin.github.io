@@ -9,7 +9,7 @@ mark {
 .header {
   text-align: left;
   font-size: 1.8rem;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   line-height: 1.6rem;
 }
 
@@ -33,7 +33,11 @@ mark {
   width: 40%;
 }
 
-.img-wrapper-30, .img-wrapper-40, .img-wrapper-70, .img-wrapper-80, .img-wrapper-90 {
+.img-wrapper-30,
+.img-wrapper-40,
+.img-wrapper-70,
+.img-wrapper-80,
+.img-wrapper-90 {
   width: 100%;
 }
 
@@ -47,9 +51,9 @@ mark {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -68,28 +72,26 @@ mark {
   width: 100%;
   position: fixed;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-y: scroll;
   overflow-x: hidden;
   line-height: 1.5rem;
 }
 
 #overview-chairish {
-  background-image: url('./chairish/chairish-cover.png');
+  background-image: url("./chairish/chairish-cover.png");
   background-size: cover;
   background-position: center;
 }
 
 #overview-square {
-  background-image: url('./square/header.png');
+  background-image: url("./square/header.png");
   background-position: top;
   background-size: cover;
 }
 
-
 /* TABLET PORTRAIT */
 @media screen and (min-width: 600px) and (orientation: portrait) {
-
   .mobile-back {
     display: none;
   }
@@ -97,15 +99,14 @@ mark {
 
 /* TABLET LANDSCAPE */
 @media screen and (min-width: 600px) and (orientation: landscape) {
-
   .images {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     width: 100%;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 
   .img {
@@ -162,14 +163,11 @@ mark {
   .mobile-back {
     display: none;
   }
-
 }
 
 @media screen and (min-width: 1200px) and (orientation: landscape) {
-
   .img-wrapper-full {
     width: 100%;
     /* margin: 0 -65%; */
   }
-
 }
