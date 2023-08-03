@@ -101,37 +101,36 @@ class Home extends Component {
 
     return (
       <div id="body" onScroll={this.handleScroll}>
-        {/* nav bar */}
-        <div className="nav">
-          <p style={{ fontWeight: 500 }}>Lois Bin</p>
-          <div className="nav-contact" style={{ opacity: navOpacity }}>
-            <div className="nav-wrapper">
-              <a
-                className="nav-link"
-                href="#"
-                onClick={() => {
-                  navigator.clipboard.writeText("lois.bin@gmail.com");
-                }}
-              >
-                lois.bin@gmail.com
-              </a>
-              <img src={copy} />
-            </div>
-            <div className="nav-wrapper">
-              <a
-                className="nav-link"
-                href="http://linkedin.com/in/loisbin"
-                target="_blank"
-              >
-                Linkedin
-              </a>
-              <img src={arrow} />
-            </div>
-          </div>
-        </div>
-
         {/* body with padding */}
         <div id="body-inner">
+          {/* nav bar */}
+          <div className="nav" style={{ opacity: navOpacity }}>
+            <p style={{ fontWeight: 500 }}>Lois Bin</p>
+            <div className="nav-contact">
+              <div className="nav-wrapper">
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={() => {
+                    navigator.clipboard.writeText("lois.bin@gmail.com");
+                  }}
+                >
+                  lois.bin@gmail.com
+                </a>
+                <img src={copy} />
+              </div>
+              <div className="nav-wrapper">
+                <a
+                  className="nav-link"
+                  href="http://linkedin.com/in/loisbin"
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
+                <img src={arrow} />
+              </div>
+            </div>
+          </div>
           <div className="grid-container">
             {/* intro */}
             <h1 className="grid-item-1">Product designer @ Square.</h1>
@@ -166,23 +165,35 @@ class Home extends Component {
             {/* <div className='grid-item-full margin-v'></div> */}
 
             {/* contact */}
-            <h4 className="grid-item-1">Email</h4>
-            <h4 className="grid-item-5">Social</h4>
-            <h1 className="grid-item-1">
-              <a
-                href="#"
-                onClick={() => {
-                  navigator.clipboard.writeText("lois.bin@gmail.com");
-                }}
-              >
-                lois.bin@gmail.com
-              </a>
-            </h1>
-            <h1 className="grid-item-5">
-              <a href="http://linkedin.com/in/loisbin" target="_blank">
-                Linkedin
-              </a>
-            </h1>
+            <div className="grid-item-1">
+              <h4>Email</h4>
+              <div className="link-wrapper">
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={() => {
+                    navigator.clipboard.writeText("lois.bin@gmail.com");
+                  }}
+                >
+                  <h1>lois.bin@gmail.com</h1>
+                </a>
+                <img className="contact-icon" src={copy} />
+              </div>
+            </div>
+
+            <div className="grid-item-5">
+              <h4>Social</h4>
+              <div className="link-wrapper">
+                <a
+                  className="nav-link"
+                  href="http://linkedin.com/in/loisbin"
+                  target="_blank"
+                >
+                  <h1>Linkedin</h1>
+                </a>
+                <img className="contact-icon" src={arrow} />
+              </div>
+            </div>
 
             <div className="grid-item-full margin-v"></div>
 
