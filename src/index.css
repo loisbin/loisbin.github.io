@@ -6,3 +6,8 @@ html, body {
   width: 100%;
   position: fixed;
 }
+/* 
+@font-face {
+  font-family: 'Apercu';
+  src: local('Apercu'), url(misc/apercu-pro/apercu_regular_pro.otf) format('otf');
+} */

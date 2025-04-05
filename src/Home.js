@@ -105,7 +105,7 @@ class Home extends Component {
         <div id="body-inner">
           {/* nav bar */}
           <div className="nav" style={{ opacity: navOpacity }}>
-            <p style={{ fontWeight: 500 }}>Lois Bin</p>
+            <p>Lois Bin</p>
             <div className="nav-contact">
               <div className="nav-wrapper">
                 <a
@@ -125,7 +125,7 @@ class Home extends Component {
                   href="http://linkedin.com/in/loisbin"
                   target="_blank"
                 >
-                  Linkedin
+                  LinkedIn
                 </a>
                 <img src={arrow} />
               </div>
@@ -133,15 +133,14 @@ class Home extends Component {
           </div>
           <div className="grid-container">
             {/* intro */}
-            <h1 className="grid-item-1">Product designer @ Square.</h1>
-            <h1 className="grid-item-5">
-              <i>Based in California.</i>
-            </h1>
+            <h1 className="grid-item-1-5">Product designer @ Square.</h1>
+            <h1 className="grid-item-5">Based in New York City.</h1>
 
             <hr class="rounded" className="grid-item-full" />
 
             {/* projects */}
             <h4 className="grid-item-1">UI/UX</h4>
+            <h4 className="grid-item-2">Q3 2020</h4>
 
             {/*
             <h1 className='grid-item-1'>Resquared Reports</h1>
@@ -151,13 +150,11 @@ class Home extends Component {
             <div className='grid-item-full margin-v'></div>
             */}
 
-            <Link className="grid-item-1" to="/square">
-              <h1>Square Shop Checkout</h1>
+            <Link className="grid-item-1-5" to="/square">
+              <h1>Cart & checkout @ Square</h1>
             </Link>
             <h1 className="grid-item-5">
-              <i>
-                2020 – Redesign of the marketing site's checkout experience.
-              </i>
+              Redesign of the hardware cart & checkout experience.
             </h1>
             <div className="grid-item-full proj-img" id="square"></div>
 
@@ -189,7 +186,7 @@ class Home extends Component {
                   href="http://linkedin.com/in/loisbin"
                   target="_blank"
                 >
-                  <h1>Linkedin</h1>
+                  <h1>LinkedIn</h1>
                 </a>
                 <img className="contact-icon" src={arrow} />
               </div>
@@ -198,7 +195,7 @@ class Home extends Component {
             <div className="grid-item-full margin-v"></div>
 
             {/* copyright lol */}
-            <p className="grid-item-1">c. Lois Bin, 2023</p>
+            <p className="grid-item-1">c. Lois Bin, 2025</p>
           </div>
         </div>
       </div>

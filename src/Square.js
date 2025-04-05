@@ -4,18 +4,22 @@ import "./Project.css";
 import arrow from "./misc/link-arrow.svg";
 import copy from "./misc/copy.svg";
 
-import header from "./square/header.png";
-import checkoutCover from "./square/checkout-cover.png";
-import posCover from "./square/pick my pos.png";
-import smsCover from "./square/sms-cover.png";
-import cartOld from "./square/cart-old.png";
-import cartNew from "./square/cart-new.png";
-import cartOldMobile from "./square/cart-old-mobile.png";
-import cartNewMobile from "./square/cart-new-mobile.png";
-import checkoutOld from "./square/checkout-old.png";
-import checkoutNew from "./square/checkout-new.png";
-import checkoutOldMobile from "./square/checkout-old-mobile.png";
-import checkoutNewMobile from "./square/checkout-new-mobile.png";
+import header from "./assets-cart/header.png";
+import checkoutCover from "./assets-cart/checkout-cover.png";
+import posCover from "./assets-cart/pick my pos.png";
+import smsCover from "./assets-cart/sms-cover.png";
+import cartOld from "./assets-cart/cart-old.png";
+import cartNew from "./assets-cart/cart-new.png";
+import checkoutTest from "./assets-cart/checkout-test.png";
+import cartOldMobile from "./assets-cart/cart-old-mobile.png";
+import cartNewMobile from "./assets-cart/cart-new-mobile.png";
+import checkoutTestMobile from "./assets-cart/checkout-test-mobile.png";
+import checkoutOld from "./assets-cart/checkout-old.png";
+import checkoutNew from "./assets-cart/checkout-new.png";
+import checkoutOldMobile from "./assets-cart/checkout-old-mobile.png";
+import checkoutNewMobile from "./assets-cart/checkout-new-mobile.png";
+import users78 from "./assets-cart/7-8-users.png";
+import users58 from "./assets-cart/5-8-users.png";
 
 class Square extends Component {
   constructor(props) {
@@ -60,7 +64,7 @@ class Square extends Component {
     const fades = document.getElementsByClassName("fade");
     for (let i = 0; i < fades.length; i++) {
       if (
-        fades[i].offsetTop - 500 < position &&
+        fades[i].offsetTop - 600 < position &&
         fades[i].style.opacity === ""
       ) {
         fades[i].style.opacity = 1;
@@ -73,7 +77,7 @@ class Square extends Component {
   }
 
   componentDidMount() {
-    document.title = "Square | Lois Bin";
+    document.title = "Cart & checkout • Lois Bin";
 
     document
       .getElementsByClassName("grid-container")[0]
@@ -111,150 +115,300 @@ class Square extends Component {
             <div className="grid-item-5 link-wrapper">
               <a
                 className="nav-link"
-                href="https://squareup.com/us/en/"
+                href="https://squareup.com/shop/hardware/us/en/cart"
                 target="_blank"
               >
                 <h4>Live page</h4>
               </a>
               <img src={arrow} />
             </div>
-
-            <h1 className="grid-item-1-4">Square Shop Checkout</h1>
-            <h1 className="grid-item-5">
-              <i>Redesign of the marketing site's checkout experience.</i>
-            </h1>
-            <div className="grid-item-full">
-              <img className="img" src={checkoutCover} alt="" />
-            </div>
-            {/*
-            <div className="grid-item-1-6">
+            <h1 className="grid-item-full">Cart & checkout @ Square</h1>
+            <div
+              className="grid-item-full proj-img"
+              id="square"
+              style={{ height: "30rem" }}
+            ></div>
+            <div className="grid-item-1-4">
               <h4>Overview</h4>
-              <div>
-                <h1>
-                  During my summer with Square's Marketing Web team, I created
-                  and redesigned pages on Square's website to market, educate,
-                  and assist business owners.
-                </h1>
-                <h1>
-                  My main project was a redesign of Square's Shop cart and
-                  checkout flows, in order to address long-standing buildup of
-                  features on a years-old checkout experience and to reduce the
-                  user-dropoff rates within checkout pages.
-                </h1>
-              </div>
-            </div> */}
-            
+              <h2>
+                Redesign of the hardware cart & checkout experience, in order to
+                increase purchase completion rates.
+              </h2>
+            </div>
+            <div className="grid-item-5">
+              <h4>Impact</h4>
+              <h2>
+                <span className="font-success">
+                  Full U.S. & international rollout
+                </span>{" "}
+                in 5 countries.
+              </h2>
+            </div>
+
             {/* <div className="grid-item-full proj-img" id="square"></div> */}
             {/* <div className='overview-img' id='overview-square'></div> */}
 
             <hr class="rounded" className="grid-item-full" />
 
-            {/* <p className="header grid-item-1-8">
-              Economic empowerment through sleek, efficient design interfaces.
-            </h1> */}
-
-            <div className="grid-item-1-8">
+            <div className="grid-item-1-6">
               <h4>Problem</h4>
               <div>
-                <h1>
-                  Issues with the current cart experience largely stems from the
-                  layout and hierarchy of the information within the page. A
-                  cart with a large number of items will push info regarding
-                  price and the button to checkout or sign in{" "}
-                  <mark>below the fold</mark>, resulting in unnecessary
-                  scrolling. The
-                  <mark>
-                    {" "}
-                    current layout does not mirror the checkout pages
-                  </mark>
-                  , requiring users to become accustomed to 2 layouts.
-                </h1>
+                <h2>
+                  <span className="font-bold">Hidden CTAs:</span> CTAs to check
+                  out are at the bottom of the page and move below the fold with
+                  a larger cart.{" "}
+                </h2>
               </div>
             </div>
-            <br />
-            <div className="grid-item-full img-2-wrapper img-wrapper-100 fade">
-              <div className="img-wrapper-70">
-                <img className="img" src={cartOld} alt="" />
-              </div>
-              <div className="img-wrapper-25">
-                <img className="img" src={cartOldMobile} alt="" />
-              </div>
-            </div>
-            <br />
-            <br />
-            <div className="grid-item-1-8">
-              <h1>
-                From an SEO perspective, the main goal of the redesign of the
-                checkout pages is to
-                <mark> reduce the rate of dropoff</mark> from within the
-                experience. UX difficulties of the experience are seen in the
-                user's inability to overview the number of steps of the checkout
-                process.
-              </h1>
-            </div>
-            <br />
-            <div className="grid-item-full img-2-wrapper img-wrapper-100 fade">
-              <div className="img-wrapper-70">
-                <img className="img" src={checkoutOld} alt="" />
-              </div>
-              <div className="img-wrapper-25">
-                <img className="img" src={checkoutOldMobile} alt="" />
-              </div>
-            </div>
-            <br />
-            <br />
-            <div className="grid-item-1-8">
-              <h4>New cart</h4>
-              <div>
-                <h1>
-                  The cart redesign created a{" "}
-                  <mark>more uniform experience</mark> from cart to checkout,
-                  with the price card to the left of the items, and shortened
-                  the real estate of the page. The button was moved above the
-                  fold for <mark>easy accessibility</mark> for the user and
-                  prevent un-needed scrolling.
-                </h1>
-              </div>
-            </div>
-            <br />
-            <div className="grid-item-full img-2-wrapper img-wrapper-100 fade">
-              <div className="img-wrapper-70">
-                <img className="img" src={cartNew} alt="" />
-              </div>
-              <div className="img-wrapper-25">
-                <img className="img" src={cartNewMobile} alt="" />
-              </div>
-            </div>
-            <br />
-            <br />
 
-            <div className="grid-item-1-8">
-              <h4>New checkout</h4>
-              <div>
-                <h1>
-                  I designed and iterated between two checkout experiences,
-                  funnelling them down through <mark>usability tests</mark> to
-                  the use of the progress bar, at the top of the checkout page
-                  shown below, as a means for users to view which step of the
-                  process they're at. Tests showed an overall preference for
-                  this design of the checkout on both desktop and mobile. The
-                  new cart and checkout pages are set to ship{" "}
-                  <mark>Q1 2021</mark>.
-                </h1>
+            <div className="img-gray-container fade">
+              <h4>Previous cart</h4>
+              <div className="img-wrapper">
+                <div className="img-wrapper-desktop">
+                  <img className="img" src={cartOld} alt="" />
+                </div>
+                <div className="img-wrapper-mobile">
+                  <img className="img" src={cartOldMobile} alt="" />
+                </div>
               </div>
             </div>
-            <br />
-            <div className="grid-item-full img-2-wrapper img-wrapper-100 fade">
-              <div className="img-wrapper-70">
-                <img className="img" src={checkoutNew} alt="" />
+
+            <div className="grid-item-1-6">
+              <div>
+                <h2>
+                  <span className="font-bold"> No expectation setting:</span>{" "}
+                  Users don’t have a proper sense of how long checkout is or how
+                  many questions there are – leading to drop-off.
+                </h2>
+                <h2>
+                  <span className="font-bold">Lack of consistency:</span> Users
+                  have to re-adjust expectations moving between the different
+                  layouts from the cart & checkout pages.
+                </h2>
               </div>
-              <div className="img-wrapper-25">
-                <img className="img" src={checkoutNewMobile} alt="" />
+            </div>
+
+            <div className="img-gray-container fade">
+              <h4>Previous checkout</h4>
+              <div className="img-wrapper">
+                <div className="img-wrapper-desktop">
+                  <img className="img" src={checkoutOld} alt="" />
+                </div>
+                <div className="img-wrapper-mobile">
+                  <img className="img" src={checkoutOldMobile} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="grid-item-full">
+              <h4>And so...</h4>
+              <div
+                className="img-gray-container img-wrapper"
+                style={{ justifyContent: "center" }}
+              >
+                <h2 style={{ textAlign: "center", width: "60%" }}>
+                  How might we{" "}
+                  <span className="font-bold">
+                    improve expectation-setting and consistency{" "}
+                  </span>{" "}
+                  of the cart & checkout pages, in order to{" "}
+                  <span className="font-bold">
+                    increase hardware purchase rates
+                  </span>
+                  ?
+                </h2>
               </div>
             </div>
 
             <hr class="rounded" className="grid-item-full" />
-            {/* <div className='grid-item-full margin-v'></div> */}
+
+            <div className="grid-item-1-6">
+              <h4>Explorations</h4>
+              <div>
+                <h2>
+                  After a couple rounds of design explorations and looping in
+                  feedback from the design team and our stakeholders from the
+                  hardware shop team, we landed on two potential design
+                  solutions:
+                </h2>
+                <br />
+                <h2>
+                  <span className="font-bold">
+                    Single-page, scrollable checkout
+                  </span>
+                  <ul>
+                    <li>All on 1 page.</li>{" "}
+                    <li>
+                      Users can review all steps as they’re filling out all
+                      steps.
+                    </li>
+                  </ul>
+                </h2>
+              </div>
+            </div>
+
+            <div className="img-gray-container fade">
+              <div className="img-wrapper">
+                <div className="img-wrapper-desktop">
+                  <img className="img" src={checkoutTest} alt="" />
+                </div>
+                <div className="img-wrapper-mobile">
+                  <img className="img" src={checkoutTestMobile} alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div className="grid-item-1-6">
+              <div>
+                <h2>
+                  <span className="font-bold">
+                    Multi-page, progress bar checkout
+                  </span>
+                  <ul>
+                    <li>No scrolling needed.</li>{" "}
+                    <li>
+                      Users can track progress and steps completed from the
+                      progress bar.
+                    </li>
+                  </ul>
+                </h2>
+              </div>
+            </div>
+
+            <div className="img-gray-container fade">
+              <div className="img-wrapper">
+                <div className="img-wrapper-desktop">
+                  <img className="img" src={checkoutNew} alt="" />
+                </div>
+                <div className="img-wrapper-mobile">
+                  <img className="img" src={checkoutNewMobile} alt="" />
+                </div>
+              </div>
+            </div>
+
+            <hr class="rounded" className="grid-item-full" />
+
+            <div className="grid-item-1-6">
+              <h4>Usability testing</h4>
+              <div>
+                <h2>
+                  In order to validate which design will have the best outcome
+                  with users, we usability tested both designs with{" "}
+                  <span className="font-bold">
+                    16 participants – 8 on desktop and 8 on mobile.
+                  </span>
+                </h2>
+              </div>
+            </div>
+
+            <div className="grid-item-full img-wrapper">
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "48%",
+                }}
+              >
+                <h2>
+                  <span className="font-stats">7/8 </span> desktop users
+                  preferred the <span className="font-bold">progress bar</span>
+                </h2>
+                <br />
+                <div
+                  className="img-gray-container img-wrapper fade "
+                  style={{ justifyContent: "center" }}
+                >
+                  <div className="img-wrapper-40">
+                    <img className="img" src={users78} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "48%",
+                }}
+              >
+                <h2>
+                  <span className="font-stats">5/8 </span> mobile users
+                  preferred the <span className="font-bold">progress bar</span>
+                </h2>
+                <br />
+                <div
+                  className="img-gray-container img-wrapper fade"
+                  style={{ justifyContent: "center" }}
+                >
+                  <div className="img-wrapper-40">
+                    <img className="img" src={users58} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2 className="grid-item-1-5">
+              A majority of participants across{" "}
+              <span className="font-bold">desktop and mobile tests </span>
+              preferred the multi-page checkout and{" "}
+              <span className="font-bold">
+                favored the use of the progress bar
+              </span>{" "}
+              as a way to visualize where they are in the checkout process and
+              to set expectations, despite being spread across multiple pages.
+            </h2>
+
+            <hr class="rounded" className="grid-item-full" />
+
+            <div className="grid-item-full">
+              <h4>Final designs</h4>
+              <div className="img-gray-container fade">
+                <h4>Cart</h4>
+                <div className="img-wrapper">
+                  <div className="img-wrapper-desktop">
+                    <img className="img" src={cartNew} alt="" />
+                  </div>
+                  <div className="img-wrapper-mobile">
+                    <img className="img" src={cartNewMobile} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="img-gray-container fade">
+                <h4>Checkout</h4>
+                <div className="img-wrapper">
+                  <div className="img-wrapper-desktop">
+                    <img className="img" src={checkoutNew} alt="" />
+                  </div>
+                  <div className="img-wrapper-mobile">
+                    <img className="img" src={checkoutNewMobile} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="rounded" className="grid-item-full" />
+
+            <div className="grid-item-1-6">
+              <h4>Impact</h4>
+              <div>
+                <h2>
+                  Based on the results of our usability tests, I finalized and
+                  handed off designs using the multi-page, progress bar
+                  direction.
+                </h2>
+                <h2>
+                  After my summer internship at Square, my manager reached out
+                  and let me know that the experiment rolled out to 100% of
+                  users and has since launched in all international markets,
+                  including the U.K., France, Spain, and Japan.In order to
+                  validate which design will have the best outcome with users,
+                  we usability tested both designs with{" "}
+                  <span className="font-bold">
+                    16 participants – 8 on desktop and 8 on mobile.
+                  </span>
+                </h2>
+              </div>
+            </div>
+
+            <hr class="rounded" className="grid-item-full" />
 
             {/* contact */}
             <div className="grid-item-1">
@@ -267,7 +421,7 @@ class Square extends Component {
                     navigator.clipboard.writeText("lois.bin@gmail.com");
                   }}
                 >
-                  <h1>lois.bin@gmail.com</h1>
+                  <h2>lois.bin@gmail.com</h2>
                 </a>
                 <img className="contact-icon" src={copy} />
               </div>
@@ -281,7 +435,7 @@ class Square extends Component {
                   href="http://linkedin.com/in/loisbin"
                   target="_blank"
                 >
-                  <h1>Linkedin</h1>
+                  <h2>LinkedIn</h2>
                 </a>
                 <img className="contact-icon" src={arrow} />
               </div>
