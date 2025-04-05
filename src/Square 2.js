@@ -4,7 +4,7 @@ import "./Project.css";
 import arrow from "./misc/link-arrow.svg";
 import back from "./misc/back.png";
 
-import header from "./square/header.png";
+import header from "./assets-cart/header.png";
 import checkoutCover from "./square/checkout-cover.png";
 import posCover from "./square/pick my pos.png";
 import smsCover from "./square/sms-cover.png";

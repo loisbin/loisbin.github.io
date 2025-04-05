@@ -165,7 +165,7 @@ hr {
 }
 
 #square {
-  background-image: url("./square/cover.png");
+  background-image: url("./assets-cart/cover.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
