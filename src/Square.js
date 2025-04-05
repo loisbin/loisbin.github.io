@@ -137,12 +137,7 @@ class Square extends Component {
             </div>
             <div className="grid-item-5">
               <h4>Impact</h4>
-              <h2>
-                <span className="font-success">
-                  Full U.S. & international rollout
-                </span>{" "}
-                in 5 countries.
-              </h2>
+              <h2>Full U.S. & international rollout in 8 countries.</h2>
             </div>
 
             {/* <div className="grid-item-full proj-img" id="square"></div> */}
@@ -154,36 +149,9 @@ class Square extends Component {
               <h4>Problem</h4>
               <div>
                 <h2>
-                  <span className="font-bold">Hidden CTAs:</span> CTAs to check
-                  out are at the bottom of the page and move below the fold with
-                  a larger cart.{" "}
-                </h2>
-              </div>
-            </div>
-
-            <div className="img-gray-container fade">
-              <h4>Previous cart</h4>
-              <div className="img-wrapper">
-                <div className="img-wrapper-desktop">
-                  <img className="img" src={cartOld} alt="" />
-                </div>
-                <div className="img-wrapper-mobile">
-                  <img className="img" src={cartOldMobile} alt="" />
-                </div>
-              </div>
-            </div>
-
-            <div className="grid-item-1-6">
-              <div>
-                <h2>
                   <span className="font-bold"> No expectation setting:</span>{" "}
                   Users don’t have a proper sense of how long checkout is or how
                   many questions there are – leading to drop-off.
-                </h2>
-                <h2>
-                  <span className="font-bold">Lack of consistency:</span> Users
-                  have to re-adjust expectations moving between the different
-                  layouts from the cart & checkout pages.
                 </h2>
               </div>
             </div>
@@ -199,6 +167,32 @@ class Square extends Component {
                 </div>
               </div>
             </div>
+
+            <div className="grid-item-1-6">
+              <h2>
+                <span className="font-bold">Lack of consistency:</span> Users
+                have to re-adjust expectations moving between the different
+                layouts from the cart & checkout pages.
+              </h2>
+              <h2>
+                <span className="font-bold">CTAs below the fold:</span> CTAs to
+                check out are at the bottom of the page and move below the fold
+                with a larger cart.{" "}
+              </h2>
+            </div>
+
+            <div className="img-gray-container fade">
+              <h4>Previous cart</h4>
+              <div className="img-wrapper">
+                <div className="img-wrapper-desktop">
+                  <img className="img" src={cartOld} alt="" />
+                </div>
+                <div className="img-wrapper-mobile">
+                  <img className="img" src={cartOldMobile} alt="" />
+                </div>
+              </div>
+            </div>
+
             <div className="grid-item-full">
               <h4>And so...</h4>
               <div
@@ -208,7 +202,7 @@ class Square extends Component {
                 <h2 style={{ textAlign: "center", width: "60%" }}>
                   How might we{" "}
                   <span className="font-bold">
-                    improve expectation-setting and consistency{" "}
+                    improve expectation-setting, consistency, and general UX{" "}
                   </span>{" "}
                   of the cart & checkout pages, in order to{" "}
                   <span className="font-bold">
@@ -225,10 +219,12 @@ class Square extends Component {
               <h4>Explorations</h4>
               <div>
                 <h2>
-                  After a couple rounds of design explorations and looping in
-                  feedback from the design team and our stakeholders from the
-                  hardware shop team, we landed on two potential design
-                  solutions:
+                  After{" "}
+                  <span className="font-bold">
+                    rounds of design explorations and looping in feedback{" "}
+                  </span>
+                  from the design team and our stakeholders from the hardware
+                  shop team, we landed on two potential design solutions:
                 </h2>
                 <br />
                 <h2>
@@ -358,28 +354,32 @@ class Square extends Component {
 
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-full">
+            <div className="grid-item-1-5">
               <h4>Final designs</h4>
-              <div className="img-gray-container fade">
-                <h4>Cart</h4>
-                <div className="img-wrapper">
-                  <div className="img-wrapper-desktop">
-                    <img className="img" src={cartNew} alt="" />
-                  </div>
-                  <div className="img-wrapper-mobile">
-                    <img className="img" src={cartNewMobile} alt="" />
-                  </div>
+              <h2>
+                Based on the results of our usability tests, I finalized and
+                handed off designs using the multi-page, progress bar direction.
+              </h2>
+            </div>
+            <div className="img-gray-container fade">
+              <h4>Cart</h4>
+              <div className="img-wrapper">
+                <div className="img-wrapper-desktop">
+                  <img className="img" src={cartNew} alt="" />
+                </div>
+                <div className="img-wrapper-mobile">
+                  <img className="img" src={cartNewMobile} alt="" />
                 </div>
               </div>
-              <div className="img-gray-container fade">
-                <h4>Checkout</h4>
-                <div className="img-wrapper">
-                  <div className="img-wrapper-desktop">
-                    <img className="img" src={checkoutNew} alt="" />
-                  </div>
-                  <div className="img-wrapper-mobile">
-                    <img className="img" src={checkoutNewMobile} alt="" />
-                  </div>
+            </div>
+            <div className="img-gray-container fade">
+              <h4>Checkout</h4>
+              <div className="img-wrapper">
+                <div className="img-wrapper-desktop">
+                  <img className="img" src={checkoutNew} alt="" />
+                </div>
+                <div className="img-wrapper-mobile">
+                  <img className="img" src={checkoutNewMobile} alt="" />
                 </div>
               </div>
             </div>
@@ -390,19 +390,24 @@ class Square extends Component {
               <h4>Impact</h4>
               <div>
                 <h2>
-                  Based on the results of our usability tests, I finalized and
-                  handed off designs using the multi-page, progress bar
-                  direction.
+                  After my summer internship at Square, the experiment{" "}
+                  <span className="font-bold">
+                    GA'd and has since launched in all international markets
+                  </span>
+                  , including Canada, Australia, the U.K., Ireland, France,
+                  Spain, and Japan.
                 </h2>
                 <h2>
-                  After my summer internship at Square, my manager reached out
-                  and let me know that the experiment rolled out to 100% of
-                  users and has since launched in all international markets,
-                  including the U.K., France, Spain, and Japan.In order to
-                  validate which design will have the best outcome with users,
-                  we usability tested both designs with{" "}
-                  <span className="font-bold">
-                    16 participants – 8 on desktop and 8 on mobile.
+                  You can view the live page{" "}
+                  <span>
+                    <a
+                      className="nav-link"
+                      href="https://squareup.com/shop/hardware/us/en/cart"
+                      target="_blank"
+                    >
+                      <span>here</span>
+                    </a>
+                    <img src={arrow} />
                   </span>
                 </h2>
               </div>
