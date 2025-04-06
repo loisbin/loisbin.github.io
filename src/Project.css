@@ -121,12 +121,6 @@ mark {
   background-position: center;
 }
 
-#overview-square {
-  background-image: url("./assets-cart/header.png");
-  background-position: top;
-  background-size: cover;
-}
-
 /* TABLET PORTRAIT */
 @media screen and (min-width: 600px) and (orientation: portrait) {
   .mobile-back {

@@ -7,8 +7,6 @@ import "./Home.css";
 import _ from "lodash";
 import arrow from "./misc/link-arrow.svg";
 import copy from "./misc/copy.svg";
-import chairish from "./chairish/chairish-cover.png";
-import square from "./assets-cart/cover.png";
 
 class Home extends Component {
   constructor(props) {

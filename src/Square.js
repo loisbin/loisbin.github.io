@@ -4,10 +4,6 @@ import "./Project.css";
 import arrow from "./misc/link-arrow.svg";
 import copy from "./misc/copy.svg";
 
-import header from "./assets-cart/header.png";
-import checkoutCover from "./assets-cart/checkout-cover.png";
-import posCover from "./assets-cart/pick my pos.png";
-import smsCover from "./assets-cart/sms-cover.png";
 import cartOld from "./assets-cart/cart-old.png";
 import cartNew from "./assets-cart/cart-new.png";
 import checkoutTest from "./assets-cart/checkout-test.png";
