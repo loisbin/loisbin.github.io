@@ -240,6 +240,7 @@ mark {
   }
 }
 
+/* DESKTOP OR IPAD PRO LANDSCAPE */
 @media screen and (min-width: 1200px) and (orientation: landscape) {
   .img-gray-container {
     padding: 3rem 5rem;
@@ -248,4 +249,8 @@ mark {
   .img-wrapper-30 {
     width: 30%;
   }
+}
+
+/* XL DESKTOP */
+@media screen and (min-width: 1800px) and (orientation: landscape) {
 }

@@ -110,11 +110,7 @@ class Sales extends Component {
             <h4 className="grid-item-1">UI/UX • A/B test</h4>
             <h4 className="grid-item-2">Q3 2023</h4>
             <h1 className="grid-item-full">Sales handoff @ Square</h1>
-            <div
-              className="grid-item-full proj-img"
-              id="sales-handoff"
-              style={{ height: "30rem" }}
-            ></div>
+            <div className="grid-item-full proj-img" id="sales-handoff"></div>
             <div className="grid-item-1-4">
               <h4>Overview</h4>
               <h2>
@@ -122,7 +118,7 @@ class Sales extends Component {
                 get in touch with our sales team during signup.
               </h2>
             </div>
-            <div className="grid-item-5-10">
+            <div className="grid-item-5-9">
               <h4>Impact</h4>
               <h2>
                 Launched to 100% of users in the U.S., after a 4% stat-sig.
