@@ -125,6 +125,10 @@ hr {
 }
 
 .grid-item-5 {
+  grid-column: 5 / 12;
+}
+
+.grid-item-5-9 {
   grid-column: 5 / 9;
 }
 

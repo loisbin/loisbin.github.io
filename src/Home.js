@@ -142,7 +142,7 @@ class Home extends Component {
               <h1>Sales handoff @ Square</h1>
             </Link>
             <h1 className="grid-item-5">
-              Give upmarket businesses options to talk to sales.
+              Connect upmarket businesses to white-glove onboarding.
             </h1>
             <div className="grid-item-full proj-img" id="sales-handoff"></div>
 

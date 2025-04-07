@@ -131,7 +131,7 @@ class Shop extends Component {
                 increase purchase completion rates.
               </h2>
             </div>
-            <div className="grid-item-5">
+            <div className="grid-item-5-9">
               <h4>Impact</h4>
               <h2>
                 Launched to 100% of users in the U.S. & 7 international
