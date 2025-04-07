@@ -253,4 +253,25 @@ mark {
 
 /* XL DESKTOP */
 @media screen and (min-width: 1800px) and (orientation: landscape) {
+  .img-wrapper-d-m {
+    margin: 0 1rem;
+    width: 60%;
+  }
+
+  .img-wrapper-m {
+    width: 15%;
+    margin: 0 1rem;
+  }
+
+  .img-wrapper-30 {
+    width: 25%;
+  }
+
+  .img-wrapper-50 {
+    width: 45%;
+  }
+
+  .img-wrapper-60 {
+    width: 50%;
+  }
 }

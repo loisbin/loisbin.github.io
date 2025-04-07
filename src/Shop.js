@@ -154,7 +154,7 @@ class Shop extends Component {
             <div className="img-gray-container fade">
               <h4>Previous checkout</h4>
               <div className="img-wrapper">
-                <div className="img-wrapper-d">
+                <div className="img-wrapper-d-m">
                   <img className="img" src={checkoutOld} alt="" />
                 </div>
                 <br />
@@ -180,7 +180,7 @@ class Shop extends Component {
             <div className="img-gray-container fade">
               <h4>Previous cart</h4>
               <div className="img-wrapper">
-                <div className="img-wrapper-d">
+                <div className="img-wrapper-d-m">
                   <img className="img" src={cartOld} alt="" />
                 </div>
                 <br />
@@ -238,7 +238,7 @@ class Shop extends Component {
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-d">
+                <div className="img-wrapper-d-m">
                   <img className="img" src={checkoutTest} alt="" />
                 </div>
                 <br />
@@ -267,7 +267,7 @@ class Shop extends Component {
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-d">
+                <div className="img-wrapper-d-m">
                   <img className="img" src={checkoutNew} alt="" />
                 </div>
                 <br />
@@ -341,7 +341,7 @@ class Shop extends Component {
             <div className="img-gray-container fade">
               <h4>Cart</h4>
               <div className="img-wrapper">
-                <div className="img-wrapper-d">
+                <div className="img-wrapper-d-m">
                   <img className="img" src={cartNew} alt="" />
                 </div>
                 <br />
@@ -353,7 +353,7 @@ class Shop extends Component {
             <div className="img-gray-container fade">
               <h4>Checkout</h4>
               <div className="img-wrapper">
-                <div className="img-wrapper-d">
+                <div className="img-wrapper-d-m">
                   <img className="img" src={checkoutNew} alt="" />
                 </div>
                 <br />
