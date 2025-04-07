@@ -17,7 +17,7 @@ import checkoutNewMobile from "./assets-cart/checkout-new-mobile.png";
 import users78 from "./assets-cart/7-8-users.png";
 import users58 from "./assets-cart/5-8-users.png";
 
-class Square extends Component {
+class Shop extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -106,7 +106,7 @@ class Square extends Component {
           </div>
 
           <div className="grid-container">
-            <h4 className="grid-item-1">UI/UX</h4>
+            <h4 className="grid-item-1-2">UI/UX • Usability test</h4>
             <h4 className="grid-item-2">Q3 2020</h4>
             <div className="grid-item-5 link-wrapper">
               <a
@@ -121,7 +121,7 @@ class Square extends Component {
             <h1 className="grid-item-full">Cart & checkout @ Square</h1>
             <div
               className="grid-item-full proj-img"
-              id="square"
+              id="shop-redesign"
               style={{ height: "30rem" }}
             ></div>
             <div className="grid-item-1-4">
@@ -133,7 +133,10 @@ class Square extends Component {
             </div>
             <div className="grid-item-5">
               <h4>Impact</h4>
-              <h2>Full U.S. & international rollout in 8 countries.</h2>
+              <h2>
+                Launched to 100% of users in the U.S. & 7 international
+                countries.
+              </h2>
             </div>
 
             {/* <div className="grid-item-full proj-img" id="square"></div> */}
@@ -155,10 +158,10 @@ class Square extends Component {
             <div className="img-gray-container fade">
               <h4>Previous checkout</h4>
               <div className="img-wrapper">
-                <div className="img-wrapper-desktop">
+                <div className="img-wrapper-d">
                   <img className="img" src={checkoutOld} alt="" />
                 </div>
-                <div className="img-wrapper-mobile">
+                <div className="img-wrapper-m">
                   <img className="img" src={checkoutOldMobile} alt="" />
                 </div>
               </div>
@@ -180,10 +183,10 @@ class Square extends Component {
             <div className="img-gray-container fade">
               <h4>Previous cart</h4>
               <div className="img-wrapper">
-                <div className="img-wrapper-desktop">
+                <div className="img-wrapper-d">
                   <img className="img" src={cartOld} alt="" />
                 </div>
-                <div className="img-wrapper-mobile">
+                <div className="img-wrapper-m">
                   <img className="img" src={cartOldMobile} alt="" />
                 </div>
               </div>
@@ -240,10 +243,10 @@ class Square extends Component {
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-desktop">
+                <div className="img-wrapper-d">
                   <img className="img" src={checkoutTest} alt="" />
                 </div>
-                <div className="img-wrapper-mobile">
+                <div className="img-wrapper-m">
                   <img className="img" src={checkoutTestMobile} alt="" />
                 </div>
               </div>
@@ -268,10 +271,10 @@ class Square extends Component {
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-desktop">
+                <div className="img-wrapper-d">
                   <img className="img" src={checkoutNew} alt="" />
                 </div>
-                <div className="img-wrapper-mobile">
+                <div className="img-wrapper-m">
                   <img className="img" src={checkoutNewMobile} alt="" />
                 </div>
               </div>
@@ -360,10 +363,10 @@ class Square extends Component {
             <div className="img-gray-container fade">
               <h4>Cart</h4>
               <div className="img-wrapper">
-                <div className="img-wrapper-desktop">
+                <div className="img-wrapper-d">
                   <img className="img" src={cartNew} alt="" />
                 </div>
-                <div className="img-wrapper-mobile">
+                <div className="img-wrapper-m">
                   <img className="img" src={cartNewMobile} alt="" />
                 </div>
               </div>
@@ -371,10 +374,10 @@ class Square extends Component {
             <div className="img-gray-container fade">
               <h4>Checkout</h4>
               <div className="img-wrapper">
-                <div className="img-wrapper-desktop">
+                <div className="img-wrapper-d">
                   <img className="img" src={checkoutNew} alt="" />
                 </div>
-                <div className="img-wrapper-mobile">
+                <div className="img-wrapper-m">
                   <img className="img" src={checkoutNewMobile} alt="" />
                 </div>
               </div>
@@ -445,22 +448,7 @@ class Square extends Component {
             <div className="grid-item-full margin-v"></div>
 
             {/* copyright lol */}
-            <p className="grid-item-1">c. Lois Bin, 2023</p>
-
-            {/* <div className="grid-item-full img-wrapper-full fade">
-              <img className="img" src={posCover} alt="" />
-            </div>
-            <br />
-            <p className="grid-item-1-8 header">
-              Pick My POS — Intern Hack Week
-            </h1>
-            <p className="grid-item-1-8 text">
-              During a week-long hack week for interns, I designed the interface
-              and interaction of my team's web questionnaire that recommends
-              Square sellers, prospective or new, a POS device based on their
-              business and needs. Our project won 1st place, allowing us the
-              opportunity to present to the Square leads.
-            </h1> */}
+            <p className="grid-item-1">c. Lois Bin, 2025</p>
           </div>
         </div>
       </div>
@@ -468,4 +456,4 @@ class Square extends Component {
   }
 }
 
-export default withRouter(Square);
+export default withRouter(Shop);

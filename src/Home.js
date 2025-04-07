@@ -137,24 +137,35 @@ class Home extends Component {
             <hr class="rounded" className="grid-item-full" />
 
             {/* projects */}
-            <h4 className="grid-item-1">UI/UX</h4>
-            <h4 className="grid-item-2">Q3 2020</h4>
+            <h4 className="grid-item-1">UI/UX • A/B test</h4>
+            <Link className="grid-item-1-5" to="/sales">
+              <h1>Sales handoff @ Square</h1>
+            </Link>
+            <h1 className="grid-item-5">
+              Give upmarket businesses options to talk to sales.
+            </h1>
+            <div className="grid-item-full proj-img" id="sales-handoff"></div>
 
-            {/*
-            <h1 className='grid-item-1'>Resquared Reports</h1>
-            <h1 className='grid-item-5'><i>2021 – Revamped data viz to show users valuable insights.</i></h1>
-            <div className='grid-item-full proj-img'></div>
+            <hr class="rounded" className="grid-item-full" />
 
-            <div className='grid-item-full margin-v'></div>
-            */}
-
-            <Link className="grid-item-1-5" to="/square">
+            <h4 className="grid-item-1">UI/UX • Usability test</h4>
+            <div className="grid-item-5 link-wrapper">
+              <a
+                className="nav-link"
+                href="https://squareup.com/shop/hardware/us/en/cart"
+                target="_blank"
+              >
+                <h4>Live page</h4>
+              </a>
+              <img src={arrow} />
+            </div>
+            <Link className="grid-item-1-5" to="/shop">
               <h1>Cart & checkout @ Square</h1>
             </Link>
             <h1 className="grid-item-5">
               Redesign of the hardware cart & checkout experience.
             </h1>
-            <div className="grid-item-full proj-img" id="square"></div>
+            <div className="grid-item-full proj-img" id="shop-redesign"></div>
 
             <hr class="rounded" className="grid-item-full" />
             {/* <div className='grid-item-full margin-v'></div> */}
