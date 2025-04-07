@@ -186,7 +186,7 @@ class Sales extends Component {
             </div>
 
             <div className="grid-item-1-6">
-              <h4>Research & context</h4>
+              <h4>Discovery</h4>
               <div>
                 <h2>
                   Although we didn’t have research support for the project, we
