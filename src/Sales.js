@@ -278,7 +278,7 @@ class Sales extends Component {
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-50">
+                <div className="img-wrapper-30">
                   <img className="img" src={userFlow} alt="" />
                 </div>
               </div>

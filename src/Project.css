@@ -45,7 +45,7 @@
 }
 
 .img-wrapper-30 {
-  width: 80%;
+  width: 90%;
 }
 
 .img-wrapper-40 {
@@ -245,10 +245,6 @@ mark {
   .img-gray-container {
     padding: 3rem 5rem;
   }
-
-  .img-wrapper-30 {
-    width: 30%;
-  }
 }
 
 /* XL DESKTOP */
@@ -264,7 +260,7 @@ mark {
   }
 
   .img-wrapper-30 {
-    width: 25%;
+    width: 30%;
   }
 
   .img-wrapper-50 {
