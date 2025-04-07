@@ -158,12 +158,12 @@ class Sales extends Component {
             <div className="img-gray-container fade">
               <div className="img-wrapper">
                 <div className="column-wrapper">
-                  <h4>
+                  <h3>
                     1. Business info.{" "}
                     <span style={{ color: "#757575" }}>
                       User's annual revenue is captured.
                     </span>
-                  </h4>
+                  </h3>
                   <br />
                   <div className="img-wrapper-d">
                     <img className="img" src={businessInfo} alt="" />
@@ -171,12 +171,12 @@ class Sales extends Component {
                 </div>
                 <br />
                 <div className="column-wrapper">
-                  <h4>
+                  <h3>
                     2. Business type.{" "}
                     <span style={{ color: "#757575" }}>
                       No action is taken to route upmarket sellers.
                     </span>
-                  </h4>
+                  </h3>
                   <br />
                   <div className="img-wrapper-d">
                     <img className="img" src={businessType} alt="" />
@@ -330,7 +330,7 @@ class Sales extends Component {
               <h4>Final designs</h4>
             </div>
             <div className="img-gray-container fade">
-              <h4>1. Upmarket sellers are shown options to contact sales</h4>
+              <h3>1. Upmarket sellers are shown options to contact sales</h3>
               <br />
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
@@ -343,7 +343,7 @@ class Sales extends Component {
               </div>
             </div>
             <div className="img-gray-container fade">
-              <h4>2. Users can schedule a call</h4>
+              <h3>2. Users can schedule a call</h3>
               <br />
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
@@ -356,7 +356,7 @@ class Sales extends Component {
               </div>
             </div>
             <div className="img-gray-container fade">
-              <h4>3. Call is confirmed</h4>
+              <h3>3. Call is confirmed</h3>
               <br />
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
@@ -369,7 +369,7 @@ class Sales extends Component {
               </div>
             </div>
             <div className="img-gray-container fade">
-              <h4>4. User can continue setup or exit</h4>
+              <h3>4. User can continue setup or exit</h3>
               <br />
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">

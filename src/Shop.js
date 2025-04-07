@@ -152,7 +152,7 @@ class Shop extends Component {
             </div>
 
             <div className="img-gray-container fade">
-              <h4>Previous checkout</h4>
+              <h3>Previous checkout</h3>
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={checkoutOld} alt="" />
@@ -178,7 +178,7 @@ class Shop extends Component {
             </div>
 
             <div className="img-gray-container fade">
-              <h4>Previous cart</h4>
+              <h3>Previous cart</h3>
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={cartOld} alt="" />
@@ -339,7 +339,7 @@ class Shop extends Component {
               </h2>
             </div>
             <div className="img-gray-container fade">
-              <h4>Cart</h4>
+              <h3>Cart</h3>
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={cartNew} alt="" />
@@ -351,7 +351,7 @@ class Shop extends Component {
               </div>
             </div>
             <div className="img-gray-container fade">
-              <h4>Checkout</h4>
+              <h3>Checkout</h3>
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={checkoutNew} alt="" />

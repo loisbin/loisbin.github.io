@@ -69,6 +69,11 @@ h2 {
   font-weight: 300;
 }
 
+h3 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+
 h4 {
   font-family: "Inconsolata", monospace;
   text-transform: uppercase;
