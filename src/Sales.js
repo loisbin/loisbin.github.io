@@ -18,19 +18,6 @@ import handoffConfirmM from "./assets-sales/handoff-confirm-m.png";
 import handoffThanks from "./assets-sales/handoff-thanks.png";
 import handoffThanksM from "./assets-sales/handoff-thanks-m.png";
 
-import cartOld from "./assets-cart/cart-old.png";
-import cartNew from "./assets-cart/cart-new.png";
-import checkoutTest from "./assets-cart/checkout-test.png";
-import cartOldMobile from "./assets-cart/cart-old-mobile.png";
-import cartNewMobile from "./assets-cart/cart-new-mobile.png";
-import checkoutTestMobile from "./assets-cart/checkout-test-mobile.png";
-import checkoutOld from "./assets-cart/checkout-old.png";
-import checkoutNew from "./assets-cart/checkout-new.png";
-import checkoutOldMobile from "./assets-cart/checkout-old-mobile.png";
-import checkoutNewMobile from "./assets-cart/checkout-new-mobile.png";
-import users78 from "./assets-cart/7-8-users.png";
-import users58 from "./assets-cart/5-8-users.png";
-
 class Sales extends Component {
   constructor(props) {
     super(props);
@@ -87,7 +74,7 @@ class Sales extends Component {
   }
 
   componentDidMount() {
-    document.title = "Cart & checkout • Lois Bin";
+    document.title = "Sales handoff • Lois Bin";
 
     document
       .getElementsByClassName("grid-container")[0]
@@ -178,7 +165,7 @@ class Sales extends Component {
                   <h4>
                     1. Business info.{" "}
                     <span style={{ color: "#757575" }}>
-                      Annual revenue is captured.
+                      User's annual revenue is captured.
                     </span>
                   </h4>
                   <br />
@@ -186,6 +173,7 @@ class Sales extends Component {
                     <img className="img" src={businessInfo} alt="" />
                   </div>
                 </div>
+                <br />
                 <div className="column-wrapper">
                   <h4>
                     2. Business type.{" "}
@@ -244,7 +232,7 @@ class Sales extends Component {
                 className="img-gray-container img-wrapper"
                 style={{ justifyContent: "center" }}
               >
-                <h2 style={{ textAlign: "center", width: "60%" }}>
+                <h2 className="how-might-we">
                   How might we{" "}
                   <span className="font-bold">
                     give upmarket sellers options to contact our sales team
@@ -352,6 +340,7 @@ class Sales extends Component {
                 <div className="img-wrapper-d-m">
                   <img className="img" src={handoffStart} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={handoffStartM} alt="" />
                 </div>
@@ -364,6 +353,7 @@ class Sales extends Component {
                 <div className="img-wrapper-d-m">
                   <img className="img" src={handoffSchedule} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={handoffScheduleM} alt="" />
                 </div>
@@ -376,6 +366,7 @@ class Sales extends Component {
                 <div className="img-wrapper-d-m">
                   <img className="img" src={handoffConfirm} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={handoffConfirmM} alt="" />
                 </div>
@@ -388,6 +379,7 @@ class Sales extends Component {
                 <div className="img-wrapper-d-m">
                   <img className="img" src={handoffThanks} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={handoffThanksM} alt="" />
                 </div>

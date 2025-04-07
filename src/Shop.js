@@ -161,6 +161,7 @@ class Shop extends Component {
                 <div className="img-wrapper-d">
                   <img className="img" src={checkoutOld} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={checkoutOldMobile} alt="" />
                 </div>
@@ -186,6 +187,7 @@ class Shop extends Component {
                 <div className="img-wrapper-d">
                   <img className="img" src={cartOld} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={cartOldMobile} alt="" />
                 </div>
@@ -198,7 +200,7 @@ class Shop extends Component {
                 className="img-gray-container img-wrapper"
                 style={{ justifyContent: "center" }}
               >
-                <h2 style={{ textAlign: "center", width: "60%" }}>
+                <h2 className="how-might-we">
                   How might we{" "}
                   <span className="font-bold">
                     improve expectation-setting, consistency, and general UX{" "}
@@ -218,10 +220,7 @@ class Shop extends Component {
               <h4>Explorations</h4>
               <div>
                 <h2>
-                  After{" "}
-                  <span className="font-bold">
-                    rounds of design explorations and looping in feedback{" "}
-                  </span>
+                  After rounds of design explorations and looping in feedback
                   from the design team and our stakeholders from the hardware
                   shop team, we landed on two potential design solutions:
                 </h2>
@@ -246,6 +245,7 @@ class Shop extends Component {
                 <div className="img-wrapper-d">
                   <img className="img" src={checkoutTest} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={checkoutTestMobile} alt="" />
                 </div>
@@ -274,6 +274,7 @@ class Shop extends Component {
                 <div className="img-wrapper-d">
                   <img className="img" src={checkoutNew} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={checkoutNewMobile} alt="" />
                 </div>
@@ -288,61 +289,42 @@ class Shop extends Component {
                 <h2>
                   In order to validate which design will have the best outcome
                   with users, we usability tested both designs with{" "}
-                  <span className="font-bold">
-                    16 participants – 8 on desktop and 8 on mobile.
-                  </span>
+                  <span className="font-bold">16 participants </span> – 8 on
+                  desktop and 8 on mobile.
                 </h2>
               </div>
             </div>
 
-            <div className="grid-item-full img-wrapper">
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  width: "48%",
-                }}
-              >
-                <h2>
-                  <span className="font-stats">7/8 </span> desktop users
-                  preferred the <span className="font-bold">progress bar</span>
-                </h2>
-                <br />
-                <div
+            <div className="grid-item-1-6">
+              <h2>
+                <span className="font-stats">7/8&nbsp;</span> desktop users
+                preferred the progress bar
+              </h2>
+              <br />
+              {/* <div
                   className="img-gray-container img-wrapper fade "
                   style={{ justifyContent: "center" }}
                 >
                   <div className="img-wrapper-40">
                     <img className="img" src={users78} alt="" />
                   </div>
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  width: "48%",
-                }}
-              >
-                <h2>
-                  <span className="font-stats">5/8 </span> mobile users
-                  preferred the <span className="font-bold">progress bar</span>
-                </h2>
-                <br />
-                <div
+                </div> */}
+              <h2>
+                <span className="font-stats">5/8&nbsp;</span> mobile users
+                preferred the progress bar
+              </h2>
+              {/* <div
                   className="img-gray-container img-wrapper fade"
                   style={{ justifyContent: "center" }}
                 >
                   <div className="img-wrapper-40">
                     <img className="img" src={users58} alt="" />
                   </div>
-                </div>
-              </div>
+                </div> */}
             </div>
 
-            <h2 className="grid-item-1-5">
-              A majority of participants across{" "}
-              <span className="font-bold">desktop and mobile tests </span>
+            <h2 className="grid-item-1-6">
+              A majority of participants across desktop and mobile tests
               preferred the multi-page checkout and{" "}
               <span className="font-bold">
                 favored the use of the progress bar
@@ -353,7 +335,7 @@ class Shop extends Component {
 
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-5">
+            <div className="grid-item-1-6">
               <h4>Final designs</h4>
               <h2>
                 Based on the results of our usability tests, I finalized and
@@ -366,6 +348,7 @@ class Shop extends Component {
                 <div className="img-wrapper-d">
                   <img className="img" src={cartNew} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={cartNewMobile} alt="" />
                 </div>
@@ -377,6 +360,7 @@ class Shop extends Component {
                 <div className="img-wrapper-d">
                   <img className="img" src={checkoutNew} alt="" />
                 </div>
+                <br />
                 <div className="img-wrapper-m">
                   <img className="img" src={checkoutNewMobile} alt="" />
                 </div>
@@ -389,12 +373,10 @@ class Shop extends Component {
               <h4>Impact</h4>
               <div>
                 <h2>
-                  After my summer internship at Square, the experiment{" "}
-                  <span className="font-bold">
-                    GA'd and has since launched in all international markets
-                  </span>
-                  , including Canada, Australia, the U.K., Ireland, France,
-                  Spain, and Japan.
+                  After my summer internship at Square, the experiment GA'd and
+                  has since launched in all international markets, including
+                  Canada, Australia, the U.K., Ireland, France, Spain, and
+                  Japan.
                 </h2>
                 <h2>
                   You can view the live page{" "}
