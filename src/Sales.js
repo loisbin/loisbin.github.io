@@ -121,7 +121,7 @@ class Sales extends Component {
             <div className="grid-item-5-9">
               <h4>Impact</h4>
               <h2>
-                Launched to 100% of users in the U.S., after a 4% stat-sig.
+                Launched to 100% of users in the U.S., after a 9% stat-sig.
                 increase of sales accepted leads.
               </h2>
             </div>
@@ -389,7 +389,7 @@ class Sales extends Component {
               <h2>From the experiment we ran, the observed results were:</h2>
               <br />
               <h2>
-                <span className="font-stats font-success">+4% </span> Sales
+                <span className="font-stats font-success">+9% </span> Sales
                 Accepted Leads rate (stat-sig)
               </h2>
               <br />
