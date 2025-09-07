@@ -101,8 +101,9 @@ class Home extends Component {
       <div id="body" onScroll={this.handleScroll}>
         {/* body with padding */}
         <div id="body-inner">
-          {/* nav bar */}
-          <div className="nav" style={{ opacity: navOpacity }}>
+          {/* nav bar – for empty state, removing dynamic opacity*/}
+          {/* <div className="nav" style={{ opacity: navOpacity }}> */}
+          <div className="nav" style={{ position: "sticky" }}>
             <p>Lois Bin</p>
             <div className="nav-contact">
               <div className="nav-wrapper">
@@ -131,25 +132,29 @@ class Home extends Component {
           </div>
           <div className="grid-container">
             {/* intro */}
-            <h1 className="grid-item-1-5">Product designer @ Square.</h1>
+            <h1 className="grid-item-1-5">Designing @ Amazon.</h1>
             <h1 className="grid-item-5">Based in New York City.</h1>
 
-            <hr class="rounded" className="grid-item-full" />
+            {/* ~~~~~~START comment out for empty state~~~~~~ */}
+
+            <div className="grid-item-1" style={{ height: "25vh" }}></div>
+
+            {/* <hr class="rounded" className="grid-item-full" /> */}
 
             {/* projects */}
-            <h4 className="grid-item-1">UI/UX • A/B test</h4>
-            <Link className="grid-item-1-5" to="/sales">
+            {/* <h4 className="grid-item-1">UI/UX • A/B test</h4> */}
+            {/* <Link className="grid-item-1-5" to="/sales">
               <h1>Sales handoff @ Square</h1>
-            </Link>
-            <h1 className="grid-item-5">
+            </Link> */}
+            {/* <h1 className="grid-item-5">
               Connect upmarket businesses to white-glove onboarding.
-            </h1>
-            <div className="grid-item-full proj-img" id="sales-handoff"></div>
+            </h1> */}
+            {/* <div className="grid-item-full proj-img" id="sales-handoff"></div> */}
 
-            <hr class="rounded" className="grid-item-full" />
+            {/* <hr class="rounded" className="grid-item-full" /> */}
 
-            <h4 className="grid-item-1">UI/UX • Usability test</h4>
-            <div className="grid-item-5 link-wrapper">
+            {/* <h4 className="grid-item-1">UI/UX • Usability test</h4> */}
+            {/* <div className="grid-item-5 link-wrapper">
               <a
                 className="nav-link"
                 href="https://squareup.com/shop/hardware/us/en/cart"
@@ -158,16 +163,19 @@ class Home extends Component {
                 <h4>Live page</h4>
               </a>
               <img src={arrow} />
-            </div>
-            <Link className="grid-item-1-5" to="/shop">
+            </div> */}
+            {/* <Link className="grid-item-1-5" to="/shop">
               <h1>Cart & checkout @ Square</h1>
-            </Link>
-            <h1 className="grid-item-5">
+            </Link> */}
+            {/* <h1 className="grid-item-5">
               Redesign of the hardware cart & checkout experience.
-            </h1>
-            <div className="grid-item-full proj-img" id="shop-redesign"></div>
+            </h1> */}
+            {/* <div className="grid-item-full proj-img" id="shop-redesign"></div> */}
 
-            <hr class="rounded" className="grid-item-full" />
+            {/* <hr class="rounded" className="grid-item-full" /> */}
+
+            {/* ~~~~~~END comment out for empty state~~~~~~ /*}
+          
             {/* <div className='grid-item-full margin-v'></div> */}
 
             {/* contact */}
