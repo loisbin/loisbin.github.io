@@ -107,8 +107,8 @@ class Sales extends Component {
           </div>
 
           <div className="grid-container">
-            <h4 className="grid-item-1">UI/UX • A/B test</h4>
-            <h4 className="grid-item-2">Q3 2023</h4>
+            <h4 className="grid-item-1">Onboarding • Growth</h4>
+            {/* <h4 className="grid-item-2">Q3 2023</h4> */}
             <h1 className="grid-item-full">Sales handoff @ Square</h1>
             <div className="grid-item-full proj-img" id="sales-handoff"></div>
             <div className="grid-item-1-4">

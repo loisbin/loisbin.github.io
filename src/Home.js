@@ -134,27 +134,19 @@ class Home extends Component {
             {/* intro */}
             <h1 className="grid-item-1-5">Designing @ Amazon.</h1>
             <h1 className="grid-item-5">Based in New York City.</h1>
-
-            {/* ~~~~~~START comment out for empty state~~~~~~ */}
-
-            <div className="grid-item-1" style={{ height: "25vh" }}></div>
-
-            {/* <hr class="rounded" className="grid-item-full" /> */}
-
-            {/* projects */}
-            {/* <h4 className="grid-item-1">UI/UX • A/B test</h4> */}
-            {/* <Link className="grid-item-1-5" to="/sales">
+            {/* <div className="grid-item-1" style={{ height: "25vh" }}></div> */}
+            <hr class="rounded" className="grid-item-full" />
+            <h4 className="grid-item-1">Onboarding • Growth</h4>
+            <Link className="grid-item-1-5" to="/sales">
               <h1>Sales handoff @ Square</h1>
-            </Link> */}
-            {/* <h1 className="grid-item-5">
+            </Link>
+            <h1 className="grid-item-5">
               Connect upmarket businesses to white-glove onboarding.
-            </h1> */}
-            {/* <div className="grid-item-full proj-img" id="sales-handoff"></div> */}
-
-            {/* <hr class="rounded" className="grid-item-full" /> */}
-
-            {/* <h4 className="grid-item-1">UI/UX • Usability test</h4> */}
-            {/* <div className="grid-item-5 link-wrapper">
+            </h1>
+            <div className="grid-item-full proj-img" id="sales-handoff"></div>
+            <hr class="rounded" className="grid-item-full" />
+            <h4 className="grid-item-1">Web • Checkout</h4>
+            <div className="grid-item-5 link-wrapper">
               <a
                 className="nav-link"
                 href="https://squareup.com/shop/hardware/us/en/cart"
@@ -163,21 +155,18 @@ class Home extends Component {
                 <h4>Live page</h4>
               </a>
               <img src={arrow} />
-            </div> */}
-            {/* <Link className="grid-item-1-5" to="/shop">
+            </div>
+            <Link className="grid-item-1-5" to="/shop">
               <h1>Cart & checkout @ Square</h1>
-            </Link> */}
-            {/* <h1 className="grid-item-5">
+            </Link>
+            <h1 className="grid-item-5">
               Redesign of the hardware cart & checkout experience.
-            </h1> */}
-            {/* <div className="grid-item-full proj-img" id="shop-redesign"></div> */}
-
-            {/* <hr class="rounded" className="grid-item-full" /> */}
-
+            </h1>
+            <div className="grid-item-full proj-img" id="shop-redesign"></div>
+            <hr class="rounded" className="grid-item-full" />
             {/* ~~~~~~END comment out for empty state~~~~~~ /*}
           
             {/* <div className='grid-item-full margin-v'></div> */}
-
             {/* contact */}
             <div className="grid-item-1">
               <h4>Email</h4>
@@ -194,7 +183,6 @@ class Home extends Component {
                 <img className="contact-icon" src={copy} />
               </div>
             </div>
-
             <div className="grid-item-5">
               <h4>Social</h4>
               <div className="link-wrapper">
@@ -208,9 +196,7 @@ class Home extends Component {
                 <img className="contact-icon" src={arrow} />
               </div>
             </div>
-
             <div className="grid-item-full margin-v"></div>
-
             {/* copyright lol */}
             <p className="grid-item-1">c. Lois Bin, 2025</p>
           </div>

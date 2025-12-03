@@ -106,8 +106,8 @@ class Shop extends Component {
           </div>
 
           <div className="grid-container">
-            <h4 className="grid-item-1-2">UI/UX • Usability test</h4>
-            <h4 className="grid-item-2">Q3 2020</h4>
+            <h4 className="grid-item-1-2">Web • Checkout</h4>
+            {/* <h4 className="grid-item-2">Q3 2020</h4> */}
             <div className="grid-item-5 link-wrapper">
               <a
                 className="nav-link"
