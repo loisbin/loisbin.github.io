@@ -103,7 +103,7 @@ class Home extends Component {
         <div id="body-inner">
           {/* nav bar – for empty state, removing dynamic opacity*/}
           {/* <div className="nav" style={{ opacity: navOpacity }}> */}
-          <div className="nav" style={{ position: "sticky" }}>
+          <div className="nav">
             <p>Lois Bin</p>
             <div className="nav-contact">
               <div className="nav-wrapper">
