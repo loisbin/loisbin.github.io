@@ -60,12 +60,12 @@ class Shop extends Component {
     const fades = document.getElementsByClassName("fade");
     for (let i = 0; i < fades.length; i++) {
       if (
-        fades[i].offsetTop - 600 < position &&
+        fades[i].offsetTop - 500 < position &&
         fades[i].style.opacity === ""
       ) {
         fades[i].style.opacity = 1;
         fades[i].animate(
-          { opacity: [0, 1], marginTop: ["4%", 0] },
+          { opacity: [0, 1] },
           { duration: 600, fill: "forwards", easing: "ease-in-out" }
         );
       }

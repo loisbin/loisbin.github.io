@@ -98,13 +98,16 @@ class Home extends Component {
     let navOpacity = this.state.navOpacity;
 
     return (
-      <div id="body" onScroll={this.handleScroll}>
+      <div id="body">
         {/* body with padding */}
-        <div id="body-inner">
+        <div id="body-inner" onScroll={this.handleScroll}>
           {/* nav bar – for empty state, removing dynamic opacity*/}
           {/* <div className="nav" style={{ opacity: navOpacity }}> */}
           <div className="nav">
-            <p>Lois Bin</p>
+            <div className="status-wrapper">
+              <div className="status-icon" />
+              <p>Lois Bin</p>
+            </div>
             <div className="nav-contact">
               <div className="nav-wrapper">
                 <a
@@ -143,7 +146,9 @@ class Home extends Component {
             <h1 className="grid-item-5">
               Connect upmarket businesses to white-glove onboarding.
             </h1>
-            <div className="grid-item-full proj-img" id="sales-handoff"></div>
+            <Link className="grid-item-full" to="/sales">
+              <div className="grid-item-full proj-img" id="sales-handoff"></div>
+            </Link>
             <hr class="rounded" className="grid-item-full" />
             <h4 className="grid-item-1">Web • Checkout</h4>
             <div className="grid-item-5 link-wrapper">
@@ -162,7 +167,9 @@ class Home extends Component {
             <h1 className="grid-item-5">
               Redesign of the hardware cart & checkout experience.
             </h1>
-            <div className="grid-item-full proj-img" id="shop-redesign"></div>
+            <Link className="grid-item-full" to="/shop">
+              <div className="grid-item-full proj-img" id="shop-redesign"></div>
+            </Link>
             <hr class="rounded" className="grid-item-full" />
             {/* ~~~~~~END comment out for empty state~~~~~~ /*}
           

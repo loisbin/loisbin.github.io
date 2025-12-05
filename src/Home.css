@@ -198,6 +198,30 @@ hr {
   background-repeat: no-repeat;
 }
 
+.status-icon {
+  width: 9px;
+  height: 9px;
+  background: #43eb25;
+  border-radius: 50%;
+  animation: pulse 0.7s infinite alternate;
+}
+
+/* Mirror-loop pulse: 1 → 0.4 → 1 */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+.status-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }
