@@ -189,11 +189,9 @@ class Sales extends Component {
               <h4>Discovery</h4>
               <div>
                 <h2>
-                  Although we didn’t have research support for the project, we
-                  were able to pull from historical research, experiments, and
-                  competitive analyses for our onboarding & setup experiences,
-                  in order to understand the pain points users had going through
-                  onboarding.
+                  Pulling from previous research, experiments, and competitive
+                  analyses of our onboarding & setup experiences, we defined the
+                  pain points users had going through onboarding.
                 </h2>
                 <h2>
                   <span className="font-bold">
