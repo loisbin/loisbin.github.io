@@ -342,7 +342,7 @@ hr {
 @media screen and (min-width: 1200px) and (orientation: landscape) {
   /* impact on project page */
   .grid-item-secondary-text {
-    grid-column: 4 / 9;
+    grid-column: 4 / 8;
   }
 }
 
