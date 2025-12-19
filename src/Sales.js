@@ -111,27 +111,28 @@ class Sales extends Component {
             {/* <h4 className="grid-item-2">Q3 2023</h4> */}
             <h1 className="grid-item-full">Sales handoff @ Square</h1>
             <div className="grid-item-full proj-img" id="sales-handoff"></div>
-            <div className="grid-item-1-4">
+            <div className="grid-item-main-text">
               <h4>Overview</h4>
               <h2>
                 Give business owners with high processing volume the option to
                 get in touch with our sales team during signup.
               </h2>
             </div>
-            <div className="grid-item-5-9">
+            <div className="grid-item-secondary-text">
               <h4>Impact</h4>
               <h2>
-                Launched to 100% of users in the U.S., after a 9% stat-sig.
-                increase of sales accepted leads.
+                Launched to users in the U.S., after a{" "}
+                <span className=" font-success">+9% </span> stat-sig. increase
+                of sales accepted leads.
               </h2>
             </div>
 
-            {/* <div className="grid-item-full proj-img" id="square"></div> */}
+            {/* <div className="grid-item-img proj-img" id="square"></div> */}
             {/* <div className='overview-img' id='overview-square'></div> */}
 
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-6">
+            <div className="grid-item-main-text">
               <h4>Problem</h4>
               <div>
                 <h2>
@@ -156,36 +157,36 @@ class Sales extends Component {
             </div>
 
             <div className="img-gray-container fade">
-              <div className="img-wrapper">
-                <div className="column-wrapper">
-                  <h3>
-                    1. Business info.{" "}
-                    <span style={{ color: "#757575" }}>
-                      User's annual revenue is captured.
-                    </span>
-                  </h3>
-                  <br />
-                  <div className="img-wrapper-d">
-                    <img className="img" src={businessInfo} alt="" />
-                  </div>
-                </div>
+              <div className="img-wrapper-column">
+                <h4>
+                  1. Business info.{" "}
+                  <span style={{ color: "#757575" }}>
+                    User's annual revenue is captured.
+                  </span>
+                </h4>
                 <br />
-                <div className="column-wrapper">
-                  <h3>
-                    2. Business type.{" "}
-                    <span style={{ color: "#757575" }}>
-                      No action is taken to route upmarket sellers.
-                    </span>
-                  </h3>
-                  <br />
-                  <div className="img-wrapper-d">
-                    <img className="img" src={businessType} alt="" />
-                  </div>
+                <div className="img-wrapper-d">
+                  <img className="img" src={businessInfo} alt="" />
+                </div>
+              </div>
+              <br />
+              <div className="img-wrapper-column">
+                <h4>
+                  2. Business type.{" "}
+                  <span style={{ color: "#757575" }}>
+                    No action is taken to route upmarket sellers.
+                  </span>
+                </h4>
+                <br />
+                <div className="img-wrapper-d">
+                  <img className="img" src={businessType} alt="" />
                 </div>
               </div>
             </div>
 
-            <div className="grid-item-1-6">
+            <br />
+
+            <div className="grid-item-main-text">
               <h4>Discovery</h4>
               <div>
                 <h2>
@@ -207,7 +208,6 @@ class Sales extends Component {
                   A similar experiment was run only for restaurant sellers that
                   proved successful. However, there still remains a large
                   opportunity to route users from the primary onboarding flow.
-                  situation.
                 </h2>
                 <h2>
                   <span className="font-bold">
@@ -220,7 +220,7 @@ class Sales extends Component {
               </div>
             </div>
 
-            <div className="grid-item-full">
+            <div className="grid-item-img">
               <h4>And so...</h4>
               <div
                 className="img-gray-container img-wrapper"
@@ -233,7 +233,7 @@ class Sales extends Component {
                     during signup
                   </span>
                   , in order to{" "}
-                  <span className="font-bold">
+                  <span className="font-bold font-success">
                     increase the number of qualified sales leads
                   </span>
                   ?
@@ -241,19 +241,15 @@ class Sales extends Component {
               </div>
             </div>
 
-            <div className="grid-item-1-6">
+            <br />
+
+            <div className="grid-item-main-text">
               <h4>Measuring success</h4>
               <h2>
                 We collaborated closely with the sales team to understand the
                 sales funnel and decide on a valuable metric we can use to
                 measure success.
               </h2>
-              <br />
-              <h2>
-                <span className="font-stats">SAL&nbsp;</span> Sales Accepted
-                Leads
-              </h2>
-              <br />
               <h2>
                 The SALs are leads that are qualified by the sales team to move
                 further down the funnel. The SAL rate – ratio of SAL from
@@ -262,9 +258,21 @@ class Sales extends Component {
               </h2>
             </div>
 
+            <div className="grid-item-img">
+              <div
+                className="img-gray-container img-wrapper"
+                style={{ justifyContent: "center" }}
+              >
+                <h2>
+                  <span className="font-stats">SAL&nbsp;</span> Sales Accepted
+                  Leads
+                </h2>
+              </div>
+            </div>
+
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-6">
+            <div className="grid-item-main-text">
               <h4>Design & strategy</h4>
               <h2>
                 We had to build a solution that would only show for upmarket
@@ -276,13 +284,15 @@ class Sales extends Component {
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-30">
+                <div className="img-wrapper-60">
                   <img className="img" src={userFlow} alt="" />
                 </div>
               </div>
             </div>
 
-            <div className="grid-item-1-6">
+            <br />
+
+            <div className="grid-item-main-text">
               <div>
                 <h2>
                   With a dynamic screen after the revenue question, we were able
@@ -297,26 +307,28 @@ class Sales extends Component {
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-60">
+                <div className="img-wrapper-d">
                   <img className="img" src={handoffStartHighlight} alt="" />
                 </div>
               </div>
             </div>
 
-            <div className="grid-item-1-6">
+            <br />
+
+            <div className="grid-item-main-text">
               <div>
                 <h2>
-                  We used 3rd-party integrations, Marketo and Chili Piper, in
-                  order to show a scheduler feature in our onboarding flow to
-                  schedule time with the sales team. We re-skinned the tool, in
-                  order to be consistent with the Square brand.
+                  Using 3rd-party integrations Marketo and Chili Piper to allow
+                  users to schedule a call with our sales team was the fastest
+                  option while ensuring a comprehensive experience. The tool was
+                  re-skinned in order to be consistent with the Square brand.
                 </h2>
               </div>
             </div>
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-50">
+                <div className="img-wrapper-60">
                   <img className="img" src={chiliPiperExample} alt="" />
                 </div>
               </div>
@@ -324,12 +336,15 @@ class Sales extends Component {
 
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-6">
+            <div className="grid-item-main-text">
               <h4>Final designs</h4>
+              <h2>
+                Upmarket sellers will be shown options to contact sales right
+                away or to schedule a call for later.
+              </h2>
             </div>
+
             <div className="img-gray-container fade">
-              <h3>1. Upmarket sellers are shown options to contact sales</h3>
-              <br />
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={handoffStart} alt="" />
@@ -340,9 +355,15 @@ class Sales extends Component {
                 </div>
               </div>
             </div>
+
+            <br />
+
+            <div className="grid-item-main-text">
+              <h2>
+                The scheduler allows users to select an available date and time.
+              </h2>
+            </div>
             <div className="img-gray-container fade">
-              <h3>2. Users can schedule a call</h3>
-              <br />
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={handoffSchedule} alt="" />
@@ -353,9 +374,16 @@ class Sales extends Component {
                 </div>
               </div>
             </div>
+
+            <br />
+
+            <div className="grid-item-main-text">
+              <h2>
+                The user's call is confirmed. They're also able to optionally
+                add any questions or notes for the sales team.
+              </h2>
+            </div>
             <div className="img-gray-container fade">
-              <h3>3. Call is confirmed</h3>
-              <br />
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={handoffConfirm} alt="" />
@@ -366,9 +394,16 @@ class Sales extends Component {
                 </div>
               </div>
             </div>
+
+            <br />
+
+            <div className="grid-item-main-text">
+              <h2>
+                Upmarket sellers are then able to continue to setup or go
+                straight to the dashboard.
+              </h2>
+            </div>
             <div className="img-gray-container fade">
-              <h3>4. User can continue setup or exit</h3>
-              <br />
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={handoffThanks} alt="" />
@@ -382,30 +417,41 @@ class Sales extends Component {
 
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-6">
-              <h4>Experiment</h4>
-              <h2>From the experiment we ran, the observed results were:</h2>
-              <br />
+            <div className="grid-item-main-text">
+              <h4>Impact</h4>
               <h2>
-                <span className="font-stats font-success">+9% </span> Sales
-                Accepted Leads rate (stat-sig)
+                Based on the positive impact we observed, the feature launched
+                to 100% of U.S. users.
               </h2>
-              <br />
               <h2>
-                <span className="font-stats">11% </span> opt-in rate from
-                upmarket signups
+                Our team discussed opportunities to further improve the
+                experience, such as:
+                <ul>
+                  <li>Remove friction further up the funnel.</li>{" "}
+                  <li>Improve accuracy of targeting upmarket sellers.</li>
+                  <li>
+                    Provide options to contact sales at other stages of the user
+                    journey.
+                  </li>
+                </ul>
               </h2>
             </div>
 
-            <hr class="rounded" className="grid-item-full" />
-
-            <div className="grid-item-1-6">
-              <h4>Impact</h4>
-              <h2>The feature launched to 100% of U.S. users.</h2>
-              <h2>
-                Follow-up experiments for the project are in the works, as of
-                2025.
-              </h2>
+            <div className="img-gray-container fade">
+              <div
+                className="img-wrapper-column img-wrapper"
+                style={{ flexDirection: "column" }}
+              >
+                <h2>
+                  <span className="font-stats font-success">+9% </span> Sales
+                  Accepted Leads rate (stat-sig)
+                </h2>
+                <br />
+                <h2>
+                  <span className="font-stats">11% </span> opt-in rate from
+                  upmarket signups
+                </h2>
+              </div>
             </div>
 
             <hr class="rounded" className="grid-item-full" />
@@ -421,13 +467,13 @@ class Sales extends Component {
                     navigator.clipboard.writeText("lois.bin@gmail.com");
                   }}
                 >
-                  <h2>lois.bin@gmail.com</h2>
+                  <h1>lois.bin@gmail.com</h1>
                 </a>
                 <img className="contact-icon" src={copy} />
               </div>
             </div>
 
-            <div className="grid-item-5">
+            <div className="grid-item-4">
               <h4>Social</h4>
               <div className="link-wrapper">
                 <a
@@ -435,7 +481,7 @@ class Sales extends Component {
                   href="http://linkedin.com/in/loisbin"
                   target="_blank"
                 >
-                  <h2>LinkedIn</h2>
+                  <h1>LinkedIn</h1>
                 </a>
                 <img className="contact-icon" src={arrow} />
               </div>

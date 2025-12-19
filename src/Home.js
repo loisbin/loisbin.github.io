@@ -136,14 +136,14 @@ class Home extends Component {
           <div className="grid-container">
             {/* intro */}
             <h1 className="grid-item-1-5">Designing @ Amazon.</h1>
-            <h1 className="grid-item-5">Based in New York City.</h1>
+            <h1 className="grid-item-proj-desc">Based in New York City.</h1>
             {/* <div className="grid-item-1" style={{ height: "25vh" }}></div> */}
             <hr class="rounded" className="grid-item-full" />
             <h4 className="grid-item-1">Onboarding • Growth</h4>
             <Link className="grid-item-1-5" to="/sales">
               <h1>Sales handoff @ Square</h1>
             </Link>
-            <h1 className="grid-item-5">
+            <h1 className="grid-item-proj-desc">
               Connect upmarket businesses to white-glove onboarding.
             </h1>
             <Link className="grid-item-full" to="/sales">
@@ -151,7 +151,7 @@ class Home extends Component {
             </Link>
             <hr class="rounded" className="grid-item-full" />
             <h4 className="grid-item-1">Web • Checkout</h4>
-            <div className="grid-item-5 link-wrapper">
+            <div className="grid-item-proj-desc link-wrapper">
               <a
                 className="nav-link"
                 href="https://squareup.com/shop/hardware/us/en/cart"
@@ -164,7 +164,7 @@ class Home extends Component {
             <Link className="grid-item-1-5" to="/shop">
               <h1>Cart & checkout @ Square</h1>
             </Link>
-            <h1 className="grid-item-5">
+            <h1 className="grid-item-proj-desc">
               Redesign of the hardware cart & checkout experience.
             </h1>
             <Link className="grid-item-full" to="/shop">
@@ -190,7 +190,7 @@ class Home extends Component {
                 <img className="contact-icon" src={copy} />
               </div>
             </div>
-            <div className="grid-item-5">
+            <div className="grid-item-proj-desc">
               <h4>Social</h4>
               <div className="link-wrapper">
                 <a

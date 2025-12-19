@@ -108,7 +108,7 @@ class Shop extends Component {
           <div className="grid-container">
             <h4 className="grid-item-1-2">Web • Checkout</h4>
             {/* <h4 className="grid-item-2">Q3 2020</h4> */}
-            <div className="grid-item-5 link-wrapper">
+            <div className="grid-item-4 link-wrapper">
               <a
                 className="nav-link"
                 href="https://squareup.com/shop/hardware/us/en/cart"
@@ -120,27 +120,26 @@ class Shop extends Component {
             </div>
             <h1 className="grid-item-full">Cart & checkout @ Square</h1>
             <div className="grid-item-full proj-img" id="shop-redesign"></div>
-            <div className="grid-item-1-4">
+            <div className="grid-item-main-text">
               <h4>Overview</h4>
               <h2>
                 Redesign of the hardware cart & checkout experience, in order to
                 increase purchase completion rates.
               </h2>
             </div>
-            <div className="grid-item-5-9">
+            <div className="grid-item-secondary-text">
               <h4>Impact</h4>
               <h2>
-                Launched to 100% of users in the U.S. & 7 international
-                countries.
+                Launched to users in the U.S. & localized for 7 countries.
               </h2>
             </div>
 
-            {/* <div className="grid-item-full proj-img" id="square"></div> */}
+            {/* <div className="grid-item-img proj-img" id="square"></div> */}
             {/* <div className='overview-img' id='overview-square'></div> */}
 
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-6">
+            <div className="grid-item-main-text">
               <h4>Problem</h4>
               <div>
                 <h2>
@@ -152,7 +151,7 @@ class Shop extends Component {
             </div>
 
             <div className="img-gray-container fade">
-              <h3>Previous checkout</h3>
+              <h4>Previous checkout</h4>
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={checkoutOld} alt="" />
@@ -164,7 +163,9 @@ class Shop extends Component {
               </div>
             </div>
 
-            <div className="grid-item-1-6">
+            <br />
+
+            <div className="grid-item-main-text">
               <h2>
                 <span className="font-bold">Lack of consistency:</span> Users
                 have to re-adjust expectations moving between the different
@@ -178,7 +179,7 @@ class Shop extends Component {
             </div>
 
             <div className="img-gray-container fade">
-              <h3>Previous cart</h3>
+              <h4>Previous cart</h4>
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={cartOld} alt="" />
@@ -190,8 +191,13 @@ class Shop extends Component {
               </div>
             </div>
 
-            <div className="grid-item-full">
+            <br />
+
+            <div className="grid-item-main-text">
               <h4>And so...</h4>
+            </div>
+
+            <div className="grid-item-img">
               <div
                 className="img-gray-container img-wrapper"
                 style={{ justifyContent: "center" }}
@@ -202,7 +208,7 @@ class Shop extends Component {
                     improve expectation-setting, consistency, and general UX{" "}
                   </span>{" "}
                   of the cart & checkout pages, in order to{" "}
-                  <span className="font-bold">
+                  <span className="font-bold font-success">
                     increase hardware purchase rates
                   </span>
                   ?
@@ -212,7 +218,7 @@ class Shop extends Component {
 
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-6">
+            <div className="grid-item-main-text">
               <h4>Explorations</h4>
               <div>
                 <h2>
@@ -248,7 +254,9 @@ class Shop extends Component {
               </div>
             </div>
 
-            <div className="grid-item-1-6">
+            <br />
+
+            <div className="grid-item-main-text">
               <div>
                 <h2>
                   <span className="font-bold">
@@ -279,7 +287,7 @@ class Shop extends Component {
 
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-6">
+            <div className="grid-item-main-text">
               <h4>Usability testing</h4>
               <div>
                 <h2>
@@ -289,12 +297,21 @@ class Shop extends Component {
                   desktop and 8 on mobile.
                 </h2>
               </div>
+              <h2>
+                A majority of participants across desktop and mobile tests
+                preferred the multi-page checkout and{" "}
+                <span className="font-bold">
+                  favored the use of the progress bar
+                </span>{" "}
+                as a way to visualize where they are in the checkout process and
+                to set expectations, despite being spread across multiple pages.
+              </h2>
             </div>
 
-            <div className="grid-item-1-6">
+            <div className="img-gray-container img-wrapper-column fade">
               <h2>
-                <span className="font-stats">7/8&nbsp;</span> desktop users
-                preferred the progress bar
+                <span className="font-stats font-success">7/8&nbsp;</span>{" "}
+                desktop users preferred the progress bar
               </h2>
               <br />
               {/* <div
@@ -306,8 +323,8 @@ class Shop extends Component {
                   </div>
                 </div> */}
               <h2>
-                <span className="font-stats">5/8&nbsp;</span> mobile users
-                preferred the progress bar
+                <span className="font-stats font-success">5/8&nbsp;</span>{" "}
+                mobile users preferred the progress bar
               </h2>
               {/* <div
                   className="img-gray-container img-wrapper fade"
@@ -319,19 +336,9 @@ class Shop extends Component {
                 </div> */}
             </div>
 
-            <h2 className="grid-item-1-6">
-              A majority of participants across desktop and mobile tests
-              preferred the multi-page checkout and{" "}
-              <span className="font-bold">
-                favored the use of the progress bar
-              </span>{" "}
-              as a way to visualize where they are in the checkout process and
-              to set expectations, despite being spread across multiple pages.
-            </h2>
-
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-6">
+            <div className="grid-item-main-text">
               <h4>Final designs</h4>
               <h2>
                 Based on the results of our usability tests, I finalized and
@@ -339,7 +346,7 @@ class Shop extends Component {
               </h2>
             </div>
             <div className="img-gray-container fade">
-              <h3>Cart</h3>
+              <h4>Cart</h4>
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={cartNew} alt="" />
@@ -351,7 +358,7 @@ class Shop extends Component {
               </div>
             </div>
             <div className="img-gray-container fade">
-              <h3>Checkout</h3>
+              <h4>Checkout</h4>
               <div className="img-wrapper">
                 <div className="img-wrapper-d-m">
                   <img className="img" src={checkoutNew} alt="" />
@@ -365,12 +372,12 @@ class Shop extends Component {
 
             <hr class="rounded" className="grid-item-full" />
 
-            <div className="grid-item-1-6">
+            <div className="grid-item-main-text">
               <h4>Impact</h4>
               <div>
                 <h2>
-                  After my summer internship at Square, the experiment GA'd and
-                  has since launched in all international markets, including
+                  The experiment launched in the U.S. and progressively was
+                  tested and launched in all international markets, including
                   Canada, Australia, the U.K., Ireland, France, Spain, and
                   Japan.
                 </h2>
@@ -403,13 +410,13 @@ class Shop extends Component {
                     navigator.clipboard.writeText("lois.bin@gmail.com");
                   }}
                 >
-                  <h2>lois.bin@gmail.com</h2>
+                  <h1>lois.bin@gmail.com</h1>
                 </a>
                 <img className="contact-icon" src={copy} />
               </div>
             </div>
 
-            <div className="grid-item-5">
+            <div className="grid-item-4">
               <h4>Social</h4>
               <div className="link-wrapper">
                 <a
@@ -417,7 +424,7 @@ class Shop extends Component {
                   href="http://linkedin.com/in/loisbin"
                   target="_blank"
                 >
-                  <h2>LinkedIn</h2>
+                  <h1>LinkedIn</h1>
                 </a>
                 <img className="contact-icon" src={arrow} />
               </div>
