@@ -122,7 +122,7 @@ class Sales extends Component {
               <h4>Impact</h4>
               <h2>
                 Launched to users in the U.S., after a{" "}
-                <span className=" font-success">+9% </span> stat-sig. increase
+                <span className=" font-success">+4% </span> stat-sig. increase
                 of sales accepted leads.
               </h2>
             </div>
@@ -273,7 +273,7 @@ class Sales extends Component {
             <hr class="rounded" className="grid-item-full" />
 
             <div className="grid-item-main-text">
-              <h4>Design & strategy</h4>
+              <h4>Ideation</h4>
               <h2>
                 We had to build a solution that would only show for upmarket
                 sellers, so we were able to use the existing Estimated Annual
@@ -443,7 +443,7 @@ class Sales extends Component {
                 style={{ flexDirection: "column" }}
               >
                 <h2>
-                  <span className="font-stats font-success">+9% </span> Sales
+                  <span className="font-stats font-success">+4% </span> Sales
                   Accepted Leads rate (stat-sig)
                 </h2>
                 <br />
@@ -490,7 +490,7 @@ class Sales extends Component {
             <div className="grid-item-full margin-v"></div>
 
             {/* copyright lol */}
-            <p className="grid-item-1">c. Lois Bin, 2025</p>
+            <p className="grid-item-1">c. Lois Bin, 2026</p>
           </div>
         </div>
       </div>

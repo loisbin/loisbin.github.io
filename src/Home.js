@@ -139,13 +139,24 @@ class Home extends Component {
             <h1 className="grid-item-proj-desc">Based in New York City.</h1>
             {/* <div className="grid-item-1" style={{ height: "25vh" }}></div> */}
             <hr class="rounded" className="grid-item-full" />
+            <h4 className="grid-item-1">Mobile • Growth</h4>
+            <Link className="grid-item-1-5" to="/lp">
+              <h1>Landing page redesign @ Amazon</h1>
+            </Link>
+            {/* <h1 className="grid-item-proj-desc">
+              Help users understand in-garage delivery.
+            </h1> */}
+            <Link className="grid-item-full" to="/lp">
+              <div className="grid-item-full proj-img" id="lp-redesign"></div>
+            </Link>
+            <hr class="rounded" className="grid-item-full" />
             <h4 className="grid-item-1">Onboarding • Growth</h4>
             <Link className="grid-item-1-5" to="/sales">
               <h1>Sales handoff @ Square</h1>
             </Link>
-            <h1 className="grid-item-proj-desc">
+            {/* <h1 className="grid-item-proj-desc">
               Connect upmarket businesses to white-glove onboarding.
-            </h1>
+            </h1> */}
             <Link className="grid-item-full" to="/sales">
               <div className="grid-item-full proj-img" id="sales-handoff"></div>
             </Link>
@@ -164,9 +175,9 @@ class Home extends Component {
             <Link className="grid-item-1-5" to="/shop">
               <h1>Cart & checkout @ Square</h1>
             </Link>
-            <h1 className="grid-item-proj-desc">
+            {/* <h1 className="grid-item-proj-desc">
               Redesign of the hardware cart & checkout experience.
-            </h1>
+            </h1> */}
             <Link className="grid-item-full" to="/shop">
               <div className="grid-item-full proj-img" id="shop-redesign"></div>
             </Link>
@@ -205,7 +216,7 @@ class Home extends Component {
             </div>
             <div className="grid-item-full margin-v"></div>
             {/* copyright lol */}
-            <p className="grid-item-1">c. Lois Bin, 2025</p>
+            <p className="grid-item-1">c. Lois Bin, 2026</p>
           </div>
         </div>
       </div>

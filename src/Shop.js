@@ -433,7 +433,7 @@ class Shop extends Component {
             <div className="grid-item-full margin-v"></div>
 
             {/* copyright lol */}
-            <p className="grid-item-1">c. Lois Bin, 2025</p>
+            <p className="grid-item-1">c. Lois Bin, 2026</p>
           </div>
         </div>
       </div>
