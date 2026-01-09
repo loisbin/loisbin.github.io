@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import "./Project.css";
 import arrow from "./misc/link-arrow.svg";
+import back from "./misc/Arrows/left arrow.svg";
 import copy from "./misc/copy.svg";
 
 import businessInfo from "./assets-sales/business-info.png";
@@ -67,7 +68,7 @@ class Sales extends Component {
         fades[i].style.opacity = 1;
         fades[i].animate(
           { opacity: [0, 1] },
-          { duration: 600, fill: "forwards", easing: "ease-in-out" }
+          { duration: 500, fill: "forwards", easing: "ease-in-out" }
         );
       }
     }
@@ -80,7 +81,7 @@ class Sales extends Component {
       .getElementsByClassName("grid-container")[0]
       .animate(
         { opacity: [0, 1] },
-        { duration: 1300, fill: "forwards", easing: "ease-in-out" }
+        { duration: 1000, fill: "forwards", easing: "ease-in-out" }
       );
     // document.getElementsByClassName('overview-title')[0].animate(
     //   {opacity: [0,1]},
@@ -97,62 +98,65 @@ class Sales extends Component {
     return (
       <div id="body">
         <div id="body-inner" onScroll={this.handleScroll}>
-          {/* nav bar */}
-          <div className="nav">
-            <div>
-              <Link className="link-proj" to="/">
-                <p style={{ fontWeight: 500 }}>Back</p>
-              </Link>
-            </div>
-          </div>
-
           <div className="grid-container">
-            <h4 className="grid-item-1">Onboarding • Growth</h4>
-            {/* <h4 className="grid-item-2">Q3 2023</h4> */}
-            <h1 className="grid-item-full">Sales handoff @ Square</h1>
-            <div className="grid-item-full proj-img" id="sales-handoff"></div>
-            <div className="grid-item-main-text">
-              <h4>Overview</h4>
-              <h2>
-                Give business owners with high processing volume the option to
-                get in touch with our sales team during signup.
-              </h2>
+            <Link className="back link-proj" to="/">
+              <div className="nav-wrapper">
+                <img src={back} />
+              </div>
+            </Link>
+            <div className="grid-item-main-text overview">
+              <div className="pill-container ">
+                <div className="pill">
+                  <h4>Onboarding</h4>
+                </div>
+                <div className="pill">
+                  <h4>Growth</h4>
+                </div>
+              </div>
+              {/* <h4 className="grid-item-2">Q3 2023</h4> */}
+              <h1>Sales handoff @ Square</h1>
+              <div>
+                <h4>Overview</h4>
+                <p>
+                  Give business owners with high processing volume the option to
+                  get in touch with our sales team during signup.
+                </p>
+              </div>
+              <div className="grid-item-secondary-text">
+                <h4>Impact</h4>
+                {/* <p>
+                  Launched to users in the U.S., after a{" "}
+                  <span className=" font-success">+4% </span> stat-sig. increase
+                  of sales accepted leads.
+                </p> */}
+                <p>Launched to users in the U.S.</p>
+              </div>
             </div>
-            <div className="grid-item-secondary-text">
-              <h4>Impact</h4>
-              <h2>
-                Launched to users in the U.S., after a{" "}
-                <span className=" font-success">+4% </span> stat-sig. increase
-                of sales accepted leads.
-              </h2>
-            </div>
-
-            {/* <div className="grid-item-img proj-img" id="square"></div> */}
-            {/* <div className='overview-img' id='overview-square'></div> */}
+            <div className="grid-right-panel proj-img" id="sales-handoff"></div>
 
             <hr class="rounded" className="grid-item-full" />
 
             <div className="grid-item-main-text">
               <h4>Problem</h4>
               <div>
-                <h2>
+                <p>
                   Upmarket sellers are businesses that are processing $250k+ per
                   year through Square. These are considered more established,
                   complex businesses that qualify for discounted processing &
                   SaaS rates and get white-glove onboarding. However, there was:
-                </h2>
-                <h2>
+                </p>
+                <p>
                   <span className="font-bold">Lack of awareness:</span> The
                   primary onboarding flow doesn’t make upmarket sellers signing
                   up aware of the special deals or onboarding services they’re
                   qualified for nor a way to receive them.
-                </h2>
-                <h2>
+                </p>
+                <p>
                   <span className="font-bold">Leaky onboarding:</span>{" "}
                   Therefore, Square ends up losing opportunities from upmarket
                   sellers going through our onboarding flow – a lose-lose
                   situation.
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -165,7 +169,7 @@ class Sales extends Component {
                   </span>
                 </h4>
                 <br />
-                <div className="img-wrapper-d">
+                <div className="img-wrapper-60">
                   <img className="img" src={businessInfo} alt="" />
                 </div>
               </div>
@@ -178,113 +182,108 @@ class Sales extends Component {
                   </span>
                 </h4>
                 <br />
-                <div className="img-wrapper-d">
+                <div className="img-wrapper-60">
                   <img className="img" src={businessType} alt="" />
                 </div>
               </div>
             </div>
 
             <br />
-
+            {/* 
             <div className="grid-item-main-text">
               <h4>Discovery</h4>
               <div>
-                <h2>
+                <p>
                   Pulling from previous research, experiments, and competitive
                   analyses of our onboarding & setup experiences, we defined the
                   pain points users had going through onboarding.
-                </h2>
-                <h2>
+                </p>
+                <p>
                   <span className="font-bold">
                     Access to support is crucial:
                   </span>{" "}
                   Difficulties with reaching support during onboarding remains a
                   high retractor for users.
-                </h2>
-                <h2>
+                </p>
+                <p>
                   <span className="font-bold">
                     Previous experiments were siloed:
                   </span>{" "}
                   A similar experiment was run only for restaurant sellers that
                   proved successful. However, there still remains a large
                   opportunity to route users from the primary onboarding flow.
-                </h2>
-                <h2>
+                </p>
+                <p>
                   <span className="font-bold">
                     Competitors lead with contacting sales:
                   </span>{" "}
                   When looking at competitors like Toast or Clover, they lead
                   with getting in touch with their team as the main way to get
                   setup with their systems.
-                </h2>
+                </p>
               </div>
-            </div>
+            </div> */}
 
-            <div className="grid-item-img">
+            <div className="grid-item-main-text">
               <h4>And so...</h4>
-              <div
-                className="img-gray-container img-wrapper"
-                style={{ justifyContent: "center" }}
-              >
-                <h2 className="how-might-we">
-                  How might we{" "}
-                  <span className="font-bold">
-                    give upmarket sellers options to contact our sales team
-                    during signup
-                  </span>
-                  , in order to{" "}
-                  <span className="font-bold font-success">
-                    increase the number of qualified sales leads
-                  </span>
-                  ?
-                </h2>
-              </div>
+            </div>
+            <div className="img-gray-container img-wrapper">
+              <p className="how-might-we">
+                How might we{" "}
+                <span className="font-bold">
+                  give upmarket sellers options to contact our sales team during
+                  signup
+                </span>
+                , in order to{" "}
+                <span className="font-bold font-success">
+                  increase the number of qualified sales leads
+                </span>
+                ?
+              </p>
             </div>
 
             <br />
 
             <div className="grid-item-main-text">
               <h4>Measuring success</h4>
-              <h2>
+              <p>
                 We collaborated closely with the sales team to understand the
                 sales funnel and decide on a valuable metric we can use to
                 measure success.
-              </h2>
-              <h2>
+              </p>
+              <p>
                 The SALs are leads that are qualified by the sales team to move
                 further down the funnel. The SAL rate – ratio of SAL from
                 Opportunities – was considered the best metric to observe for
                 the experiment.
-              </h2>
+              </p>
             </div>
 
-            <div className="grid-item-img">
-              <div
-                className="img-gray-container img-wrapper"
-                style={{ justifyContent: "center" }}
-              >
-                <h2>
-                  <span className="font-stats">SAL&nbsp;</span> Sales Accepted
-                  Leads
-                </h2>
-              </div>
+            <div
+              className="img-gray-container img-wrapper"
+              style={{ justifyContent: "center" }}
+            >
+              <p>
+                <span className="font-stats">SAL&nbsp;</span> Sales Accepted
+                Leads
+              </p>
             </div>
 
             <hr class="rounded" className="grid-item-full" />
 
             <div className="grid-item-main-text">
               <h4>Ideation</h4>
-              <h2>
+              <p>
                 We had to build a solution that would only show for upmarket
                 sellers, so we were able to use the existing Estimated Annual
                 Revenue question in onboarding to capture which users are
                 upmarket (over $250k annual revenue).
-              </h2>
+              </p>
             </div>
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-60">
+                <div className="img-wrapper-30">
                   <img className="img" src={userFlow} alt="" />
                 </div>
               </div>
@@ -294,20 +293,20 @@ class Sales extends Component {
 
             <div className="grid-item-main-text">
               <div>
-                <h2>
+                <p>
                   With a dynamic screen after the revenue question, we were able
                   to show upmarket sellers:
                   <ul>
                     <li>Options to contact sales.</li>{" "}
                     <li>The benefits of white-glove onboarding.</li>
                   </ul>
-                </h2>
+                </p>
               </div>
             </div>
 
             <div className="img-gray-container fade">
               <div className="img-wrapper">
-                <div className="img-wrapper-d">
+                <div className="img-wrapper-60">
                   <img className="img" src={handoffStartHighlight} alt="" />
                 </div>
               </div>
@@ -317,12 +316,12 @@ class Sales extends Component {
 
             <div className="grid-item-main-text">
               <div>
-                <h2>
+                <p>
                   Using 3rd-party integrations Marketo and Chili Piper to allow
                   users to schedule a call with our sales team was the fastest
                   option while ensuring a comprehensive experience. The tool was
                   re-skinned in order to be consistent with the Square brand.
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -338,10 +337,10 @@ class Sales extends Component {
 
             <div className="grid-item-main-text">
               <h4>Final designs</h4>
-              <h2>
+              <p>
                 Upmarket sellers will be shown options to contact sales right
                 away or to schedule a call for later.
-              </h2>
+              </p>
             </div>
 
             <div className="img-gray-container fade">
@@ -359,9 +358,9 @@ class Sales extends Component {
             <br />
 
             <div className="grid-item-main-text">
-              <h2>
+              <p>
                 The scheduler allows users to select an available date and time.
-              </h2>
+              </p>
             </div>
             <div className="img-gray-container fade">
               <div className="img-wrapper">
@@ -378,10 +377,10 @@ class Sales extends Component {
             <br />
 
             <div className="grid-item-main-text">
-              <h2>
+              <p>
                 The user's call is confirmed. They're also able to optionally
                 add any questions or notes for the sales team.
-              </h2>
+              </p>
             </div>
             <div className="img-gray-container fade">
               <div className="img-wrapper">
@@ -398,10 +397,10 @@ class Sales extends Component {
             <br />
 
             <div className="grid-item-main-text">
-              <h2>
+              <p>
                 Upmarket sellers are then able to continue to setup or go
                 straight to the dashboard.
-              </h2>
+              </p>
             </div>
             <div className="img-gray-container fade">
               <div className="img-wrapper">
@@ -419,11 +418,11 @@ class Sales extends Component {
 
             <div className="grid-item-main-text">
               <h4>Impact</h4>
-              <h2>
+              <p>
                 Based on the positive impact we observed, the feature launched
                 to 100% of U.S. users.
-              </h2>
-              <h2>
+              </p>
+              <p>
                 Our team discussed opportunities to further improve the
                 experience, such as:
                 <ul>
@@ -434,7 +433,7 @@ class Sales extends Component {
                     journey.
                   </li>
                 </ul>
-              </h2>
+              </p>
             </div>
 
             <div className="img-gray-container fade">
@@ -442,15 +441,15 @@ class Sales extends Component {
                 className="img-wrapper-column img-wrapper"
                 style={{ flexDirection: "column" }}
               >
-                <h2>
+                <p>
                   <span className="font-stats font-success">+4% </span> Sales
                   Accepted Leads rate (stat-sig)
-                </h2>
+                </p>
                 <br />
-                <h2>
+                <p>
                   <span className="font-stats">11% </span> opt-in rate from
                   upmarket signups
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -490,7 +489,7 @@ class Sales extends Component {
             <div className="grid-item-full margin-v"></div>
 
             {/* copyright lol */}
-            <p className="grid-item-1">c. Lois Bin, 2026</p>
+            <h5>c. Lois Bin, 2026</h5>
           </div>
         </div>
       </div>

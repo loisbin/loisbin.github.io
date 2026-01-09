@@ -47,19 +47,6 @@ class Home extends Component {
       }
     }
 
-    // Parallax scroll or smth
-    // const intro = document.getElementsByClassName('intro')[0];
-    // const projInfo = document.getElementsByClassName('proj-info-wrapper');
-    // const projImg = document.getElementsByClassName('proj-img');
-
-    // intro.style.transform = 'translateY(' + (-position/3) + 'px)';
-
-    // for (let i = 0; i < projInfo.length; i++) {
-    //   if (position + window.innerHeight > projImg[i].offsetTop+200) {
-    //     projInfo[i].style.transform = 'translateY(' + (-position/(3+i)+projImg[0].scrollHeight+(100*(-2+i))) + 'px)';
-    //   }
-    // }
-
     // Nav links not visible when at contact section
     const body = document.getElementById("body-inner");
     if (
@@ -70,15 +57,6 @@ class Home extends Component {
     } else {
       this.setState({ navOpacity: 1 });
     }
-
-    // INTRO TEXT
-    /*
-    if (position < window.innerHeight) {
-      const text = document.getElementsByClassName('intro')[0];
-      //text.style.transform = 'rotateX('+position/5+'deg)';
-      text.style.transform = 'matrix(1,' + (position/500) + ',' + (position/100) + ',' + (1+(position/500)) + ', 0,' + (-position) + ')';
-    }
-    */
   };
 
   componentDidMount() {
@@ -86,7 +64,7 @@ class Home extends Component {
       targets: [".nav", ".grid-container"],
       opacity: [0, 1],
       easing: "easeInOutExpo",
-      duration: 1300,
+      duration: 1000,
       //   delay: 400,
       //   translateX: [200,0],
     });
@@ -101,14 +79,15 @@ class Home extends Component {
       <div id="body">
         {/* body with padding */}
         <div id="body-inner" onScroll={this.handleScroll}>
-          {/* nav bar – for empty state, removing dynamic opacity*/}
-          {/* <div className="nav" style={{ opacity: navOpacity }}> */}
-          <div className="nav">
-            <div className="status-wrapper">
-              <div className="status-icon" />
-              <p>Lois Bin</p>
-            </div>
-            <div className="nav-contact">
+          <div className="grid-container">
+            <div className="nav grid-item-main-text">
+              <div className="status-wrapper">
+                <div className="status-icon" />
+                <p style={{ fontWeight: 400 }}>Lois</p>
+              </div>
+              <p className="grid-item-main-text">
+                Currently creating at Amazon in New York City.
+              </p>
               <div className="nav-wrapper">
                 <a
                   className="nav-link"
@@ -117,7 +96,7 @@ class Home extends Component {
                     navigator.clipboard.writeText("lois.bin@gmail.com");
                   }}
                 >
-                  lois.bin@gmail.com
+                  <p>lois.bin@gmail.com</p>
                 </a>
                 <img src={copy} />
               </div>
@@ -127,96 +106,80 @@ class Home extends Component {
                   href="http://linkedin.com/in/loisbin"
                   target="_blank"
                 >
-                  LinkedIn
+                  <p>LinkedIn</p>
                 </a>
                 <img src={arrow} />
               </div>
+              {/* copyright lol */}
+              <h5 className="copyright">c. Lois Bin, 2026</h5>
             </div>
-          </div>
-          <div className="grid-container">
             {/* intro */}
-            <h1 className="grid-item-1-5">Designing @ Amazon.</h1>
-            <h1 className="grid-item-proj-desc">Based in New York City.</h1>
             {/* <div className="grid-item-1" style={{ height: "25vh" }}></div> */}
-            <hr class="rounded" className="grid-item-full" />
-            <h4 className="grid-item-1">Mobile • Growth</h4>
-            <Link className="grid-item-1-5" to="/lp">
-              <h1>Landing page redesign @ Amazon</h1>
-            </Link>
-            {/* <h1 className="grid-item-proj-desc">
-              Help users understand in-garage delivery.
-            </h1> */}
-            <Link className="grid-item-full" to="/lp">
-              <div className="grid-item-full proj-img" id="lp-redesign"></div>
-            </Link>
-            <hr class="rounded" className="grid-item-full" />
-            <h4 className="grid-item-1">Onboarding • Growth</h4>
-            <Link className="grid-item-1-5" to="/sales">
-              <h1>Sales handoff @ Square</h1>
-            </Link>
-            {/* <h1 className="grid-item-proj-desc">
-              Connect upmarket businesses to white-glove onboarding.
-            </h1> */}
-            <Link className="grid-item-full" to="/sales">
-              <div className="grid-item-full proj-img" id="sales-handoff"></div>
-            </Link>
-            <hr class="rounded" className="grid-item-full" />
-            <h4 className="grid-item-1">Web • Checkout</h4>
-            <div className="grid-item-proj-desc link-wrapper">
-              <a
-                className="nav-link"
-                href="https://squareup.com/shop/hardware/us/en/cart"
-                target="_blank"
-              >
-                <h4>Live page</h4>
-              </a>
-              <img src={arrow} />
-            </div>
-            <Link className="grid-item-1-5" to="/shop">
-              <h1>Cart & checkout @ Square</h1>
-            </Link>
-            {/* <h1 className="grid-item-proj-desc">
-              Redesign of the hardware cart & checkout experience.
-            </h1> */}
-            <Link className="grid-item-full" to="/shop">
-              <div className="grid-item-full proj-img" id="shop-redesign"></div>
-            </Link>
-            <hr class="rounded" className="grid-item-full" />
-            {/* ~~~~~~END comment out for empty state~~~~~~ /*}
-          
-            {/* <div className='grid-item-full margin-v'></div> */}
-            {/* contact */}
-            <div className="grid-item-1">
-              <h4>Email</h4>
-              <div className="link-wrapper">
-                <a
-                  className="nav-link"
-                  href="#"
-                  onClick={() => {
-                    navigator.clipboard.writeText("lois.bin@gmail.com");
-                  }}
-                >
-                  <h1>lois.bin@gmail.com</h1>
-                </a>
-                <img className="contact-icon" src={copy} />
+            <div className="grid-right-panel">
+              <div className="pill-container">
+                <div className="pill">
+                  <h4>Mobile</h4>
+                </div>
+                <div className="pill">
+                  <h4>Growth</h4>
+                </div>
               </div>
-            </div>
-            <div className="grid-item-proj-desc">
-              <h4>Social</h4>
-              <div className="link-wrapper">
+              <Link className="grid-item-1-5" to="/lp">
+                <h1>Landing page redesign @ Amazon</h1>
+              </Link>
+              <p>Help users understand in-garage delivery.</p>
+              <Link className="grid-item-full" to="/lp">
+                <div className="grid-item-full proj-img" id="lp-redesign"></div>
+              </Link>
+              <hr class="rounded" className="grid-item-full" />
+              <div className="pill-container">
+                <div className="pill">
+                  <h4>Onboarding</h4>
+                </div>
+                <div className="pill">
+                  <h4>Growth</h4>
+                </div>
+              </div>
+              <Link className="grid-item-1-5" to="/sales">
+                <h1>Sales handoff @ Square</h1>
+              </Link>
+              <p>Connect upmarket businesses to white-glove onboarding.</p>
+              <Link className="grid-item-full" to="/sales">
+                <div
+                  className="grid-item-full proj-img"
+                  id="sales-handoff"
+                ></div>
+              </Link>
+              <hr class="rounded" className="grid-item-full" />
+              <div className="pill-container">
+                <div className="pill">
+                  <h4>Web</h4>
+                </div>
+                <div className="pill">
+                  <h4>Usability test</h4>
+                </div>
+              </div>
+              {/* <div className="link-wrapper">
                 <a
                   className="nav-link"
-                  href="http://linkedin.com/in/loisbin"
+                  href="https://squareup.com/shop/hardware/us/en/cart"
                   target="_blank"
                 >
-                  <h1>LinkedIn</h1>
+                  <h4>Live page</h4>
                 </a>
-                <img className="contact-icon" src={arrow} />
-              </div>
+                <img src={arrow} />
+              </div> */}
+              <Link className="grid-item-1-5" to="/shop">
+                <h1>Cart & checkout @ Square</h1>
+              </Link>
+              <p>Redesign of the shop's cart & checkout experience.</p>
+              <Link className="grid-item-full" to="/shop">
+                <div
+                  className="grid-item-full proj-img"
+                  id="shop-redesign"
+                ></div>
+              </Link>
             </div>
-            <div className="grid-item-full margin-v"></div>
-            {/* copyright lol */}
-            <p className="grid-item-1">c. Lois Bin, 2026</p>
           </div>
         </div>
       </div>

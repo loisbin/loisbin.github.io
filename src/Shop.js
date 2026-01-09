@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import "./Project.css";
 import arrow from "./misc/link-arrow.svg";
+import back from "./misc/Arrows/left arrow.svg";
 import copy from "./misc/copy.svg";
 
 import cartOld from "./assets-cart/cart-old.png";
@@ -42,20 +43,6 @@ class Shop extends Component {
   handleScroll() {
     let position = document.getElementById("body-inner").scrollTop;
 
-    //absolute to fixed links
-    // const links = document.getElementsByClassName('links')[0];
-    // if (position > window.innerHeight*.65) {
-    //   this.setState({'position': 'fixed'});
-    //   this.setState({'top': '0'});
-    // } else if (position < window.innerHeight*.65) {
-    //   this.setState({'position': 'absolute'});
-    //   this.setState({'top': '65%'});
-    // } else if (position > 100) {
-    //   this.setState({'visibility': 'visible'});
-    // } else if (position === 0) {
-    //   this.setState({'visibility': 'hidden'});
-    // }
-
     //FADE IN
     const fades = document.getElementsByClassName("fade");
     for (let i = 0; i < fades.length; i++) {
@@ -66,7 +53,7 @@ class Shop extends Component {
         fades[i].style.opacity = 1;
         fades[i].animate(
           { opacity: [0, 1] },
-          { duration: 600, fill: "forwards", easing: "ease-in-out" }
+          { duration: 500, fill: "forwards", easing: "ease-in-out" }
         );
       }
     }
@@ -79,12 +66,8 @@ class Shop extends Component {
       .getElementsByClassName("grid-container")[0]
       .animate(
         { opacity: [0, 1] },
-        { duration: 1300, fill: "forwards", easing: "ease-in-out" }
+        { duration: 1000, fill: "forwards", easing: "ease-in-out" }
       );
-    // document.getElementsByClassName('overview-title')[0].animate(
-    //   {opacity: [0,1]},
-    //   {duration: 800, fill: 'forwards', easing: 'ease-in-out'}
-    // )
   }
 
   render() {
@@ -96,43 +79,48 @@ class Shop extends Component {
     return (
       <div id="body">
         <div id="body-inner" onScroll={this.handleScroll}>
-          {/* nav bar */}
-          <div className="nav">
-            <div>
-              <Link className="link-proj" to="/">
-                <p style={{ fontWeight: 500 }}>Back</p>
-              </Link>
-            </div>
-          </div>
-
           <div className="grid-container">
-            <h4 className="grid-item-1-2">Web • Checkout</h4>
-            {/* <h4 className="grid-item-2">Q3 2020</h4> */}
-            <div className="grid-item-4 link-wrapper">
-              <a
-                className="nav-link"
-                href="https://squareup.com/shop/hardware/us/en/cart"
-                target="_blank"
-              >
-                <h4>Live page</h4>
-              </a>
-              <img src={arrow} />
+            <Link className="back link-proj" to="/">
+              <div className="nav-wrapper">
+                <img src={back} />
+              </div>
+            </Link>
+            <div className="grid-item-main-text overview">
+              <div className="pill-container ">
+                <div className="pill">
+                  <h4>Web</h4>
+                </div>
+                <div className="pill">
+                  <h4>Usability test</h4>
+                </div>
+              </div>
+              {/* <h4 className="grid-item-2">Q3 2020</h4> */}
+              {/* <div className="link-wrapper">
+                <a
+                  className="nav-link"
+                  href="https://squareup.com/shop/hardware/us/en/cart"
+                  target="_blank"
+                >
+                  <h4>Live page</h4>
+                </a>
+                <img src={arrow} />
+              </div> */}
+              <h1 className="grid-item-full">Cart & checkout @ Square</h1>
+              <div className="grid-item-main-text">
+                <h4>Overview</h4>
+                <p>
+                  Redesign of the hardware cart & checkout experience, in order
+                  to increase purchase completion rates.
+                </p>
+              </div>
+              <div className="grid-item-secondary-text">
+                <h4>Impact</h4>
+                <p>
+                  Launched to users in the U.S. & 7 international countries.
+                </p>
+              </div>
             </div>
-            <h1 className="grid-item-full">Cart & checkout @ Square</h1>
-            <div className="grid-item-full proj-img" id="shop-redesign"></div>
-            <div className="grid-item-main-text">
-              <h4>Overview</h4>
-              <h2>
-                Redesign of the hardware cart & checkout experience, in order to
-                increase purchase completion rates.
-              </h2>
-            </div>
-            <div className="grid-item-secondary-text">
-              <h4>Impact</h4>
-              <h2>
-                Launched to users in the U.S. & localized for 7 countries.
-              </h2>
-            </div>
+            <div className="grid-right-panel proj-img" id="shop-redesign"></div>
 
             {/* <div className="grid-item-img proj-img" id="square"></div> */}
             {/* <div className='overview-img' id='overview-square'></div> */}
@@ -142,11 +130,11 @@ class Shop extends Component {
             <div className="grid-item-main-text">
               <h4>Problem</h4>
               <div>
-                <h2>
+                <p>
                   <span className="font-bold"> No expectation setting:</span>{" "}
                   Users don’t have a proper sense of how long checkout is or how
                   many questions there are – leading to drop-off.
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -166,16 +154,16 @@ class Shop extends Component {
             <br />
 
             <div className="grid-item-main-text">
-              <h2>
+              <p>
                 <span className="font-bold">Lack of consistency:</span> Users
                 have to re-adjust expectations moving between the different
                 layouts from the cart & checkout pages.
-              </h2>
-              <h2>
+              </p>
+              <p>
                 <span className="font-bold">CTAs below the fold:</span> CTAs to
                 check out are at the bottom of the page and move below the fold
                 with a larger cart.{" "}
-              </h2>
+              </p>
             </div>
 
             <div className="img-gray-container fade">
@@ -202,7 +190,7 @@ class Shop extends Component {
                 className="img-gray-container img-wrapper"
                 style={{ justifyContent: "center" }}
               >
-                <h2 className="how-might-we">
+                <p className="how-might-we">
                   How might we{" "}
                   <span className="font-bold">
                     improve expectation-setting, consistency, and general UX{" "}
@@ -212,7 +200,7 @@ class Shop extends Component {
                     increase hardware purchase rates
                   </span>
                   ?
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -221,13 +209,13 @@ class Shop extends Component {
             <div className="grid-item-main-text">
               <h4>Explorations</h4>
               <div>
-                <h2>
+                <p>
                   After rounds of design explorations and looping in feedback
                   from the design team and our stakeholders from the hardware
                   shop team, we landed on two potential design solutions:
-                </h2>
+                </p>
                 <br />
-                <h2>
+                <p>
                   <span className="font-bold">
                     Single-page, scrollable checkout
                   </span>
@@ -238,7 +226,7 @@ class Shop extends Component {
                       steps.
                     </li>
                   </ul>
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -258,7 +246,7 @@ class Shop extends Component {
 
             <div className="grid-item-main-text">
               <div>
-                <h2>
+                <p>
                   <span className="font-bold">
                     Multi-page, progress bar checkout
                   </span>
@@ -269,7 +257,7 @@ class Shop extends Component {
                       progress bar.
                     </li>
                   </ul>
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -290,14 +278,14 @@ class Shop extends Component {
             <div className="grid-item-main-text">
               <h4>Usability testing</h4>
               <div>
-                <h2>
+                <p>
                   In order to validate which design will have the best outcome
                   with users, we usability tested both designs with{" "}
                   <span className="font-bold">16 participants </span> – 8 on
                   desktop and 8 on mobile.
-                </h2>
+                </p>
               </div>
-              <h2>
+              <p>
                 A majority of participants across desktop and mobile tests
                 preferred the multi-page checkout and{" "}
                 <span className="font-bold">
@@ -305,14 +293,14 @@ class Shop extends Component {
                 </span>{" "}
                 as a way to visualize where they are in the checkout process and
                 to set expectations, despite being spread across multiple pages.
-              </h2>
+              </p>
             </div>
 
             <div className="img-gray-container img-wrapper-column fade">
-              <h2>
+              <p>
                 <span className="font-stats font-success">7/8&nbsp;</span>{" "}
                 desktop users preferred the progress bar
-              </h2>
+              </p>
               <br />
               {/* <div
                   className="img-gray-container img-wrapper fade "
@@ -322,10 +310,10 @@ class Shop extends Component {
                     <img className="img" src={users78} alt="" />
                   </div>
                 </div> */}
-              <h2>
+              <p>
                 <span className="font-stats font-success">5/8&nbsp;</span>{" "}
                 mobile users preferred the progress bar
-              </h2>
+              </p>
               {/* <div
                   className="img-gray-container img-wrapper fade"
                   style={{ justifyContent: "center" }}
@@ -340,10 +328,10 @@ class Shop extends Component {
 
             <div className="grid-item-main-text">
               <h4>Final designs</h4>
-              <h2>
+              <p>
                 Based on the results of our usability tests, I finalized and
                 handed off designs using the multi-page, progress bar direction.
-              </h2>
+              </p>
             </div>
             <div className="img-gray-container fade">
               <h4>Cart</h4>
@@ -375,25 +363,12 @@ class Shop extends Component {
             <div className="grid-item-main-text">
               <h4>Impact</h4>
               <div>
-                <h2>
+                <p>
                   The experiment launched in the U.S. and progressively was
                   tested and launched in all international markets, including
                   Canada, Australia, the U.K., Ireland, France, Spain, and
                   Japan.
-                </h2>
-                <h2>
-                  You can view the live page{" "}
-                  <span>
-                    <a
-                      className="nav-link"
-                      href="https://squareup.com/shop/hardware/us/en/cart"
-                      target="_blank"
-                    >
-                      <span>here</span>
-                    </a>
-                    <img src={arrow} />
-                  </span>
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -433,7 +408,7 @@ class Shop extends Component {
             <div className="grid-item-full margin-v"></div>
 
             {/* copyright lol */}
-            <p className="grid-item-1">c. Lois Bin, 2026</p>
+            <h5>c. Lois Bin, 2026</h5>
           </div>
         </div>
       </div>

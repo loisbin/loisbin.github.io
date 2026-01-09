@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import "./Project.css";
 import arrow from "./misc/link-arrow.svg";
+import back from "./misc/Arrows/left arrow.svg";
 import copy from "./misc/copy.svg";
 
 import problem from "./assets-lp/problem.png";
@@ -37,20 +38,6 @@ class LP extends Component {
   handleScroll() {
     let position = document.getElementById("body-inner").scrollTop;
 
-    //absolute to fixed links
-    // const links = document.getElementsByClassName('links')[0];
-    // if (position > window.innerHeight*.65) {
-    //   this.setState({'position': 'fixed'});
-    //   this.setState({'top': '0'});
-    // } else if (position < window.innerHeight*.65) {
-    //   this.setState({'position': 'absolute'});
-    //   this.setState({'top': '65%'});
-    // } else if (position > 100) {
-    //   this.setState({'visibility': 'visible'});
-    // } else if (position === 0) {
-    //   this.setState({'visibility': 'hidden'});
-    // }
-
     //FADE IN
     const fades = document.getElementsByClassName("fade");
     for (let i = 0; i < fades.length; i++) {
@@ -61,7 +48,7 @@ class LP extends Component {
         fades[i].style.opacity = 1;
         fades[i].animate(
           { opacity: [0, 1] },
-          { duration: 600, fill: "forwards", easing: "ease-in-out" }
+          { duration: 500, fill: "forwards", easing: "ease-in-out" }
         );
       }
     }
@@ -74,7 +61,7 @@ class LP extends Component {
       .getElementsByClassName("grid-container")[0]
       .animate(
         { opacity: [0, 1] },
-        { duration: 1300, fill: "forwards", easing: "ease-in-out" }
+        { duration: 1000, fill: "forwards", easing: "ease-in-out" }
       );
   }
 
@@ -87,237 +74,215 @@ class LP extends Component {
     return (
       <div id="body">
         <div id="body-inner" onScroll={this.handleScroll}>
-          {/* nav bar */}
-          <div className="nav">
+          {/* <div className="nav">
             <div>
               <Link className="link-proj" to="/">
-                <p style={{ fontWeight: 500 }}>Back</p>
+                <p>Back</p>
               </Link>
             </div>
-          </div>
+          </div> */}
 
           <div className="grid-container">
-            <h4 className="grid-item-1">Mobile • Growth</h4>
-            {/* <h4 className="grid-item-2">Q4 2025</h4> */}
-            <h1 className="grid-item-full">Landing page redesign @ Amazon</h1>
-            <div className="grid-item-full proj-img" id="lp-redesign"></div>
-            <div className="grid-item-main-text">
-              <h4>Overview</h4>
-              <h2>
-                Help users understand the core benefits of Amazon In-Garage
-                Delivery to increase user acquistion.
-              </h2>
+            <Link className="back link-proj" to="/">
+              <div className="nav-wrapper">
+                <img src={back} />
+              </div>
+            </Link>
+            <div className="grid-item-main-text overview">
+              <div className="pill-container ">
+                <div className="pill">
+                  <h4>Mobile</h4>
+                </div>
+                <div className="pill">
+                  <h4>Growth</h4>
+                </div>
+              </div>
+              <h1>Landing page redesign @ Amazon</h1>
+              <div>
+                <h4>Overview</h4>
+                <p>
+                  Help users understand the core benefits of Amazon In-Garage
+                  Delivery to increase user acquistion.
+                </p>
+              </div>
+              <div className="grid-item-secondary-text">
+                <h4>Impact</h4>
+                <p>Launched to users in the U.S.</p>
+              </div>
             </div>
-            <div className="grid-item-secondary-text">
-              <h4>Impact</h4>
-              <h2>Launched to users in the U.S.</h2>
-            </div>
-
+            <div className="grid-right-panel proj-img" id="lp-redesign"></div>
             <hr class="rounded" className="grid-item-full" />
-
             <div className="grid-item-main-text">
               <h4>Problem</h4>
               <div>
-                <h2>
+                <p>
                   Customers land on the In-Garage Delivery landing page
                   interested in In-Garage Delivery but drop off due to security
                   concerns and lack of clarity on the service.
-                </h2>
-                <h2>
+                </p>
+                <p>
                   We wanted to test new messaging and revamp the design to
                   improve our CTR.
-                </h2>
+                </p>
               </div>
             </div>
-
             <div className="img-gray-container img-wrapper fade">
-              <div className="img-wrapper-50">
+              <div className="img-wrapper-30">
                 <img className="img" src={problem} alt="" />
               </div>
             </div>
-
             <br />
-
             <div className="grid-item-main-text">
               <h4>Previous tests</h4>
               <div>
-                <h2>
+                <p>
                   An A/B test ran in 2025 to test updates to security messaging.
-                </h2>
-                <h2>
+                </p>
+                <p>
                   However, it did not yield a lift in the landing page’s CTR.
-                </h2>
-                <h2>
+                </p>
+                <p>
                   Based on the previous experiment that only tested the hero
                   content, I wanted to test bolder changes based on user
                   insights as well as a lift in the landing page’s visuals.
-                </h2>
+                </p>
               </div>
             </div>
-
             <div className="img-gray-container img-wrapper fade">
-              <div className="img-wrapper-d">
+              <div className="img-wrapper-60">
                 <img className="img" src={previousTests} alt="" />
               </div>
             </div>
-
             <br />
-
             <div className="grid-item-main-text">
               <h4>Research</h4>
               <div>
-                <h2>
+                <p>
                   In order to discover opportunities for our landing page
                   re-design, I looked at the user surveys our Marketing team
                   sends out to users quarterly who’ve dropped off during
                   onboarding, CSAT, and churned customers as well.
-                </h2>
-                <h2>
+                </p>
+                <p>
                   There were clear patterns across our UXR that users had
                   security concerns and needed more clarity about information,
                   like eligibility and garage compatibility, in order to feel
                   more confident about using In-Garage Delivery.
-                </h2>
+                </p>
               </div>
             </div>
-
             <div className="img-gray-container img-wrapper fade">
-              <div className="img-wrapper-d">
+              <div className="img-wrapper-60">
                 <img className="img" src={research} alt="" />
               </div>
             </div>
-
             <br />
-
             <div className="grid-item-main-text">
               <h4>Measuring success</h4>
               <div>
-                <h2>
+                <p>
                   Our primary metric we measured was click-through rate (CTR).
-                </h2>
-                <h2>
+                </p>
+                <p>
                   We also measured secondary metrics like CTRs of the CTAs below
                   the fold to measure how engaged users were with the content.
-                </h2>
+                </p>
               </div>
             </div>
-
-            <div className="grid-item-img">
-              <div
-                className="img-gray-container img-wrapper"
-                style={{ justifyContent: "center", flexDirection: "column" }}
-              >
-                <h2>
-                  <span className="font-stats">Click-through rate&nbsp;</span>{" "}
-                  Primary metric
-                </h2>
-              </div>
+            <div
+              className="img-gray-container img-wrapper"
+              style={{ justifyContent: "center", flexDirection: "column" }}
+            >
+              <p>
+                <span className="font-stats">Click-through rate&nbsp;</span>{" "}
+                Primary metric
+              </p>
             </div>
-
             <br />
-
             <div className="grid-item-main-text">
               <h4>And so...</h4>
             </div>
-
-            <div className="grid-item-img">
-              <div
-                className="img-gray-container img-wrapper"
-                style={{ justifyContent: "center" }}
-              >
-                <h2 className="how-might-we">
-                  How might we improve the security and expectation setting of
-                  In-Garage Delivery, in order to increase the click-through
-                  rate?
-                </h2>
-              </div>
+            <div
+              className="img-gray-container img-wrapper"
+              style={{ justifyContent: "center" }}
+            >
+              <p className="how-might-we">
+                How might we improve the security and expectation setting of
+                In-Garage Delivery, in order to increase the click-through rate?
+              </p>
             </div>
-
             <hr class="rounded" className="grid-item-full" />
-
             <div className="grid-item-main-text">
               <h4>Explorations</h4>
-              <h2>
+              <p>
                 I started with high-level concepts where I first aligned with
                 the team on the content and hierarchy of the page. After
                 alignment, I worked with higher fidelity iterations of each
                 section – hero, security, pricing, etc. – working with our
                 copywriter to refine the messaging.
-              </h2>
-              <h2>
+              </p>
+              <p>
                 Once we had a set direction as a working team, we reviewed
                 designs with the Head of Marketing and Product, receiving
                 sign-off.
-              </h2>
+              </p>
             </div>
-
             <div className="img-gray-container img-wrapper fade">
               <div className="img-wrapper-d">
                 <img className="img" src={explorations} alt="" />
               </div>
             </div>
-
             <br />
-
             <div className="grid-item-main-text">
               <h4>Final designs</h4>
             </div>
-
             <div className="img-gray-container img-wrapper fade">
-              <div className="img-wrapper-60">
+              <div className="img-wrapper-50">
                 <img className="img" src={finals1} alt="" />
               </div>
             </div>
-
             <div className="img-gray-container img-wrapper fade">
               <div className="img-wrapper-d">
                 <img className="img" src={finals2} alt="" />
               </div>
             </div>
-
             <div className="img-gray-container img-wrapper fade">
-              <div className="img-wrapper-60">
+              <div className="img-wrapper-50">
                 <img className="img" src={finals3} alt="" />
               </div>
             </div>
-
             <br />
-
             <hr class="rounded" className="grid-item-full" />
-
             <div className="grid-item-main-text">
               <h4>Impact</h4>
 
-              <h2>
+              <p>
                 We observed a stat. sig. positive increase in our primary
                 metric.{" "}
-              </h2>
-              <h2>
+              </p>
+              <p>
                 What may be a bigger win was observing up to 2x CTR on CTAs down
                 the page, indicating users were scrolling further and more
                 engaged with the content below the fold.
-              </h2>
+              </p>
             </div>
-
             <div className="img-gray-container fade">
               <div
                 className="img-wrapper-column img-wrapper"
                 style={{ flexDirection: "column" }}
               >
-                <h2>
+                <p>
                   <span className="font-stats font-success">+0.54% </span>{" "}
                   click-through rate
-                </h2>
+                </p>
                 <br />
-                <h2>
+                <p>
                   <span className="font-stats font-success">up to 2x </span>{" "}
                   clicks below the fold
-                </h2>
+                </p>
               </div>
             </div>
-
             <hr class="rounded" className="grid-item-full" />
-
             {/* contact */}
             <div className="grid-item-1">
               <h4>Email</h4>
@@ -334,7 +299,6 @@ class LP extends Component {
                 <img className="contact-icon" src={copy} />
               </div>
             </div>
-
             <div className="grid-item-4">
               <h4>Social</h4>
               <div className="link-wrapper">
@@ -348,11 +312,9 @@ class LP extends Component {
                 <img className="contact-icon" src={arrow} />
               </div>
             </div>
-
             <div className="grid-item-full margin-v"></div>
-
             {/* copyright lol */}
-            <p className="grid-item-1">c. Lois Bin, 2026</p>
+            <h5>c. Lois Bin, 2026</h5>
           </div>
         </div>
       </div>
