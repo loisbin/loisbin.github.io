@@ -107,7 +107,7 @@ class LP extends Component {
               </div>
               <div className="grid-item-secondary-text">
                 <h4>Impact</h4>
-                <p>Launched to users in the U.S.</p>
+                <p>Increased CTR by up to 30%.</p>
               </div>
             </div>
             <div className="grid-right-panel proj-img" id="lp-redesign"></div>
@@ -256,14 +256,19 @@ class LP extends Component {
             <div className="grid-item-main-text">
               <h4>Impact</h4>
 
-              <p>
+              {/* <p>
                 We observed a stat. sig. positive increase in our primary
                 metric.{" "}
               </p>
               <p>
-                What may be a bigger win was observing up to 2x CTR on CTAs down
-                the page, indicating users were scrolling further and more
-                engaged with the content below the fold.
+                What may be a bigger win was observing up to a combined +30% CTR
+                on CTAs down the page, indicating users were scrolling further
+                and more engaged with the content below the fold.
+              </p> */}
+              <p>
+                We observed up to a combined relative increase of +30% CTR on
+                CTAs down the page indicating users were scrolling further and
+                more engaged with the content below the fold.
               </p>
             </div>
             <div className="img-gray-container fade">
@@ -271,14 +276,14 @@ class LP extends Component {
                 className="img-wrapper-column img-wrapper"
                 style={{ flexDirection: "column" }}
               >
-                <p>
-                  <span className="font-stats font-success">+0.54% </span>{" "}
-                  click-through rate
-                </p>
+                {/* <p>
+                  <span className="font-stats font-success">+0.6% </span> CTR on
+                  primary CTA
+                </p> */}
                 <br />
                 <p>
-                  <span className="font-stats font-success">up to 2x </span>{" "}
-                  clicks below the fold
+                  <span className="font-stats font-success">+30%</span> CTR of
+                  CTAs down the page
                 </p>
               </div>
             </div>
