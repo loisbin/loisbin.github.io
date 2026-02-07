@@ -86,7 +86,7 @@ class Home extends Component {
                 <p style={{ fontWeight: 400 }}>Lois</p>
               </div>
               <p className="grid-item-main-text">
-                Currently creating at Amazon in New York City.
+                Currently designing at Squarespace in New York City.
               </p>
               <div className="nav-wrapper">
                 <a
@@ -124,15 +124,15 @@ class Home extends Component {
                   <h4>Growth</h4>
                 </div>
               </div>
-              <Link className="grid-item-1-5" to="/lp">
-                <h1>Landing page redesign @ Amazon</h1>
-              </Link>
+              {/* <Link className="grid-item-1-5" to="/lp"> */}
+              <h1>Landing page redesign @ Amazon</h1>
+              {/* </Link> */}
               <p>Help users understand in-garage delivery.</p>
-              <Link className="grid-item-full" to="/lp">
-                <div className="grid-item-full proj-img" id="lp-redesign"></div>
-              </Link>
+              {/* <Link className="grid-item-full" to="/lp"> */}
+              <div className="grid-item-full proj-img" id="lp-redesign"></div>
+              {/* </Link> */}
               <hr class="rounded" className="grid-item-full" />
-              <div className="pill-container">
+              {/* <div className="pill-container">
                 <div className="pill">
                   <h4>Onboarding</h4>
                 </div>
@@ -150,7 +150,7 @@ class Home extends Component {
                   id="sales-handoff"
                 ></div>
               </Link>
-              <hr class="rounded" className="grid-item-full" />
+              <hr class="rounded" className="grid-item-full" /> */}
               <div className="pill-container">
                 <div className="pill">
                   <h4>Web</h4>
@@ -169,16 +169,13 @@ class Home extends Component {
                 </a>
                 <img src={arrow} />
               </div> */}
-              <Link className="grid-item-1-5" to="/shop">
-                <h1>Cart & checkout @ Square</h1>
-              </Link>
+              {/* <Link className="grid-item-1-5" to="/shop"> */}
+              <h1>Cart & checkout @ Square</h1>
+              {/* </Link> */}
               <p>Redesign of the shop's cart & checkout experience.</p>
-              <Link className="grid-item-full" to="/shop">
-                <div
-                  className="grid-item-full proj-img"
-                  id="shop-redesign"
-                ></div>
-              </Link>
+              {/* <Link className="grid-item-full" to="/shop"> */}
+              <div className="grid-item-full proj-img" id="shop-redesign"></div>
+              {/* </Link> */}
             </div>
           </div>
         </div>
